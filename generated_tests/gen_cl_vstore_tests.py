@@ -32,9 +32,13 @@ VEC_SIZES = ['2', '3', '4', '8', '16']
 DIR_NAME = os.path.join("cl", "vstore")
 
 
-def gen_array(size):
+def gen_array(size, type_name):
     random.seed(size)
-    return ' '.join([str(random.randint(0, 255)) for i in range(size)])
+    if type_name in ['half', 'float', 'double']:
+        convert = lambda x: float(x).hex()
+    else:
+        convert = lambda x: str(x)
+    return ' '.join([convert(random.randint(0, 255)) for i in range(size)])
 
 
 def ext_req(type_name):
@@ -86,7 +90,7 @@ def begin_test(suffix, type_name, mem_type, vec_sizes, addr_space, aligned):
                    padd_zeros = ("0 " * (modsize - size)),
                    offset_modsize_size_zeros = ("0 " * (modsize + size + offset)),
                    offset_size=modsize + size + offset + 1, n=s,
-                   gen_array=gen_array(size),
+                   gen_array=gen_array(size, type_name),
                    suffix=suffix, addr_space=addr_space,
                    canary=canary)))
 
