@@ -242,6 +242,9 @@ piglit_make_generated_tests(
 	builtin_cl_math_tests.list
 	gen_cl_math_builtins.py)
 piglit_make_generated_tests(
+	builtin_cl_native_math_tests.list
+	gen_cl_native_math_builtins.py)
+piglit_make_generated_tests(
 	builtin_cl_relational_tests.list
 	gen_cl_relational_builtins.py)
 piglit_make_generated_tests(
@@ -301,6 +304,7 @@ add_custom_target(gen-gl-tests
 add_custom_target(gen-cl-tests
 	DEPENDS builtin_cl_int_tests.list
 			builtin_cl_math_tests.list
+			builtin_cl_native_math_tests.list
 			builtin_cl_relational_tests.list
 			builtin_cl_common_tests.list
 			builtin_cl_shuffle_tests.list
