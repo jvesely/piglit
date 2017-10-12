@@ -148,6 +148,10 @@ add_program_test_dir(grouptools.join('program', 'execute', 'builtin'),
                      GENERATED_TESTS_DIR,
                      base_gen_dir)
 add_program_test_dir(grouptools.join('program', 'execute', 'builtin'),
+                     os.path.join('cl', 'builtin', 'native_math'),
+                     GENERATED_TESTS_DIR,
+                     base_gen_dir)
+add_program_test_dir(grouptools.join('program', 'execute', 'builtin'),
                      os.path.join('cl', 'builtin', 'relational'),
                      GENERATED_TESTS_DIR,
                      base_gen_dir)
