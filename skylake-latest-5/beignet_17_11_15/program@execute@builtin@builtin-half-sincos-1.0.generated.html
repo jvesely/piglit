@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//END"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>program@execute@builtin@builtin-half-sincos-1.0.generated - Details</title>
+    <link rel="stylesheet" href="../result.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Results for program@execute@builtin@builtin-half-sincos-1.0.generated</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> fail</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:03.510653</b>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre>## Test: Test half sincos built-in on CL 1.1 (/home/orome/piglit/tests/cl/program/program-tester.c) ##
+
+# Running on:
+#   Platform: Intel Gen OCL Driver
+#   Device: Intel(R) HD Graphics Skylake Halo GT2
+#   OpenCL version: 2.0
+#   OpenCL C version: 2.0
+#   Build options:  -cl-std=CL2.0
+Build log for device Intel(R) HD Graphics Skylake Halo GT2:
+ -------- 
+stringInput.cl:145:16: error: declaring variable of type &#39;half&#39; is not allowed
+stringInput.cl:175:14: error: declaring variable of type &#39;__local half&#39; is not allowed
+stringInput.cl:206:34: error: loading directly from pointer to type &#39;__global half&#39; requires cl_khr_fp16. Use vector data load builtin functions instead
+stringInput.cl:210:17: warning: incompatible pointer types initializing &#39;__global half2 *&#39; with an expression of type &#39;__global half *&#39;
+stringInput.cl:215:17: warning: incompatible pointer types initializing &#39;__global half4 *&#39; with an expression of type &#39;__global half *&#39;
+stringInput.cl:220:17: warning: incompatible pointer types initializing &#39;__global half8 *&#39; with an expression of type &#39;__global half *&#39;
+stringInput.cl:225:18: warning: incompatible pointer types initializing &#39;__global half16 *&#39; with an expression of type &#39;__global half *&#39;
+
+ -------- 
+# Result:
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre>Could not build program: CL_BUILD_PROGRAM_FAILURE
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_SOURCE_DIR=&#34;/home/orome/piglit&#34; PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          </pre>/home/orome/piglit/bin/cl-program-tester /home/orome/piglit/generated_tests/cl/builtin/math/builtin-half-sincos-1.0.generated.cl</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>

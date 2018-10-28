@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//END"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>program@execute@builtin@builtin-half-remquo-1.0.generated - Details</title>
+    <link rel="stylesheet" href="../result.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Results for program@execute@builtin@builtin-half-remquo-1.0.generated</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> fail</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:02.908140</b>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre>## Test: Test half remquo built-in on CL 1.1 (/home/orome/piglit/tests/cl/program/program-tester.c) ##
+
+# Running on:
+#   Platform: Intel Gen OCL Driver
+#   Device: Intel(R) HD Graphics Skylake Halo GT2
+#   OpenCL version: 2.0
+#   OpenCL C version: 2.0
+#   Build options:  -cl-std=CL2.0
+Build log for device Intel(R) HD Graphics Skylake Halo GT2:
+ -------- 
+stringInput.cl:161:34: error: loading directly from pointer to type &#39;__global half&#39; requires cl_khr_fp16. Use vector data load builtin functions instead
+stringInput.cl:167:80: warning: incompatible pointer types passing &#39;short2 *&#39; to parameter of type &#39;__generic int2 *&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_20.h:164:72: note: passing argument to parameter &#39;param2&#39; here
+stringInput.cl:173:80: warning: incompatible pointer types passing &#39;short4 *&#39; to parameter of type &#39;__generic int4 *&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_20.h:166:72: note: passing argument to parameter &#39;param2&#39; here
+stringInput.cl:179:80: warning: incompatible pointer types passing &#39;short8 *&#39; to parameter of type &#39;__generic int8 *&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_20.h:167:72: note: passing argument to parameter &#39;param2&#39; here
+stringInput.cl:185:83: warning: incompatible pointer types passing &#39;short16 *&#39; to parameter of type &#39;__generic int16 *&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_20.h:168:76: note: passing argument to parameter &#39;param2&#39; here
+stringInput.cl:191:34: error: loading directly from pointer to type &#39;__global half&#39; requires cl_khr_fp16. Use vector data load builtin functions instead
+stringInput.cl:197:80: warning: incompatible pointer types passing &#39;__local short2 *&#39; to parameter of type &#39;__generic int2 *&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_20.h:164:72: note: passing argument to parameter &#39;param2&#39; here
+stringInput.cl:203:80: warning: incompatible pointer types passing &#39;__local short4 *&#39; to parameter of type &#39;__generic int4 *&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_20.h:166:72: note: passing argument to parameter &#39;param2&#39; here
+stringInput.cl:209:80: warning: incompatible pointer types passing &#39;__local short8 *&#39; to parameter of type &#39;__generic int8 *&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_20.h:167:72: note: passing argument to parameter &#39;param2&#39; here
+stringInput.cl:215:83: warning: incompatible pointer types passing &#39;__local short16 *&#39; to parameter of type &#39;__generic int16 *&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_20.h:168:76: note: passing argument to parameter &#39;param2&#39; here
+stringInput.cl:221:34: error: loading directly from pointer to type &#39;__global half&#39; requires cl_khr_fp16. Use vector data load builtin functions instead
+stringInput.cl:225:18: warning: incompatible pointer types initializing &#39;__global short2 *&#39; with an expression of type &#39;__global short *&#39;
+stringInput.cl:226:80: warning: incompatible pointer types passing &#39;__global short2 *&#39; to parameter of type &#39;__generic int2 *&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_20.h:164:72: note: passing argument to parameter &#39;param2&#39; here
+stringInput.cl:230:18: warning: incompatible pointer types initializing &#39;__global short4 *&#39; with an expression of type &#39;__global short *&#39;
+stringInput.cl:231:80: warning: incompatible pointer types passing &#39;__global short4 *&#39; to parameter of type &#39;__generic int4 *&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_20.h:166:72: note: passing argument to parameter &#39;param2&#39; here
+stringInput.cl:235:18: warning: incompatible pointer types initializing &#39;__global short8 *&#39; with an expression of type &#39;__global short *&#39;
+stringInput.cl:236:80: warning: incompatible pointer types passing &#39;__global short8 *&#39; to parameter of type &#39;__generic int8 *&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_20.h:167:72: note: passing argument to parameter &#39;param2&#39; here
+stringInput.cl:240:19: warning: incompatible pointer types initializing &#39;__global short16 *&#39; with an expression of type &#39;__global short *&#39;
+stringInput.cl:241:83: warning: incompatible pointer types passing &#39;__global short16 *&#39; to parameter of type &#39;__generic int16 *&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_20.h:168:76: note: passing argument to parameter &#39;param2&#39; here
+
+ -------- 
+# Result:
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre>Could not build program: CL_BUILD_PROGRAM_FAILURE
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_SOURCE_DIR=&#34;/home/orome/piglit&#34; PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          </pre>/home/orome/piglit/bin/cl-program-tester /home/orome/piglit/generated_tests/cl/builtin/math/builtin-half-remquo-1.0.generated.cl</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>

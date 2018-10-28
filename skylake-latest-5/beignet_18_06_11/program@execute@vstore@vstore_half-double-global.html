@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//END"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>program@execute@vstore@vstore_half-double-global - Details</title>
+    <link rel="stylesheet" href="../result.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Results for program@execute@vstore@vstore_half-double-global</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> fail</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:00.710727</b>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre>## Test: Vector store_half global double2,3,4,8,16 (/home/orome/piglit/tests/cl/program/program-tester.c) ##
+
+# Running on:
+#   Platform: Intel Gen OCL Driver
+#   Device: Intel(R) HD Graphics Skylake Halo GT2
+#   OpenCL version: 2.0
+#   OpenCL C version: 2.0
+#   Build options:  -cl-std=CL2.0
+Build log for device Intel(R) HD Graphics Skylake Halo GT2:
+ -------- 
+stringInput.cl:113:18: error: passing &#39;double2&#39; (vector of 2 &#39;double&#39; values) to parameter of incompatible type &#39;float2&#39; (vector of 2 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:122:46: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:119:18: error: passing &#39;double2&#39; (vector of 2 &#39;double&#39; values) to parameter of incompatible type &#39;float2&#39; (vector of 2 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:122:46: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:120:18: error: passing &#39;double2&#39; (vector of 2 &#39;double&#39; values) to parameter of incompatible type &#39;float2&#39; (vector of 2 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:122:46: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:126:18: error: passing &#39;double3&#39; (vector of 3 &#39;double&#39; values) to parameter of incompatible type &#39;float3&#39; (vector of 3 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:124:46: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:132:18: error: passing &#39;double3&#39; (vector of 3 &#39;double&#39; values) to parameter of incompatible type &#39;float3&#39; (vector of 3 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:124:46: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:133:18: error: passing &#39;double3&#39; (vector of 3 &#39;double&#39; values) to parameter of incompatible type &#39;float3&#39; (vector of 3 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:124:46: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:139:18: error: passing &#39;double4&#39; (vector of 4 &#39;double&#39; values) to parameter of incompatible type &#39;float4&#39; (vector of 4 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:126:46: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:145:18: error: passing &#39;double4&#39; (vector of 4 &#39;double&#39; values) to parameter of incompatible type &#39;float4&#39; (vector of 4 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:126:46: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:146:18: error: passing &#39;double4&#39; (vector of 4 &#39;double&#39; values) to parameter of incompatible type &#39;float4&#39; (vector of 4 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:126:46: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:152:18: error: passing &#39;double8&#39; (vector of 8 &#39;double&#39; values) to parameter of incompatible type &#39;float8&#39; (vector of 8 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:128:46: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:158:18: error: passing &#39;double8&#39; (vector of 8 &#39;double&#39; values) to parameter of incompatible type &#39;float8&#39; (vector of 8 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:128:46: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:159:18: error: passing &#39;double8&#39; (vector of 8 &#39;double&#39; values) to parameter of incompatible type &#39;float8&#39; (vector of 8 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:128:46: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:165:19: error: passing &#39;double16&#39; (vector of 16 &#39;double&#39; values) to parameter of incompatible type &#39;float16&#39; (vector of 16 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:130:48: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:171:19: error: passing &#39;double16&#39; (vector of 16 &#39;double&#39; values) to parameter of incompatible type &#39;float16&#39; (vector of 16 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:130:48: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+stringInput.cl:172:19: error: passing &#39;double16&#39; (vector of 16 &#39;double&#39; values) to parameter of incompatible type &#39;float16&#39; (vector of 16 &#39;float&#39; values)
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:143:1: note: passing argument to parameter &#39;data&#39; here
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:134:3: note: expanded from macro &#39;DECL_HALF_ST_SPACE&#39;
+/home/orome/.local/lib64/beignet/include/ocl_vload_20.h:130:48: note: expanded from macro &#39;DECL_HALF_ST_SPACE_ROUND&#39;
+
+ -------- 
+# Result:
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre>Could not build program: CL_BUILD_PROGRAM_FAILURE
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_SOURCE_DIR=&#34;/home/orome/piglit&#34; PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          </pre>/home/orome/piglit/bin/cl-program-tester /home/orome/piglit/generated_tests/cl/vstore/vstore_half-double-global.cl</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>

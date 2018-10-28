@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//END"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>program@execute@builtin@builtin-half-ldexp-1.0.generated - Details</title>
+    <link rel="stylesheet" href="../result.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Results for program@execute@builtin@builtin-half-ldexp-1.0.generated</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> fail</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:01.307982</b>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre>## Test: Test half ldexp built-in on CL 1.1 (/home/orome/piglit/tests/cl/program/program-tester.c) ##
+
+# Running on:
+#   Platform: Intel Gen OCL Driver
+#   Device: Intel(R) HD Graphics Skylake Halo GT2
+#   OpenCL version: 2.0
+#   OpenCL C version: 2.0
+#   Build options:  -cl-std=CL2.0
+Build log for device Intel(R) HD Graphics Skylake Halo GT2:
+ -------- 
+stringInput.cl:91:33: error: loading directly from pointer to type &#39;__global half&#39; requires cl_khr_fp16. Use vector data load builtin functions instead
+stringInput.cl:95:11: error: no matching function for call to &#39;ldexp&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:921:20: note: candidate function not viable: no known conversion from &#39;short2&#39; (vector of 2 &#39;short&#39; values) to &#39;int2&#39; (vector of 2 &#39;int&#39; values) for 2nd argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:929:20: note: candidate function not viable: no known conversion from &#39;short2&#39; (vector of 2 &#39;short&#39; values) to &#39;int&#39; for 2nd argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:47:20: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;float&#39; for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:129:19: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;half&#39; for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:235:21: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;double&#39; for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:902:21: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;float2&#39; (vector of 2 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:903:21: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;float3&#39; (vector of 3 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:904:21: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;float4&#39; (vector of 4 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:905:21: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;float8&#39; (vector of 8 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:906:22: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;float16&#39; (vector of 16 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:910:21: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;float2&#39; (vector of 2 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:911:21: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;float3&#39; (vector of 3 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:912:21: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;float4&#39; (vector of 4 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:913:21: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;float8&#39; (vector of 8 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:914:22: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;float16&#39; (vector of 16 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:922:20: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;half3&#39; (vector of 3 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:923:20: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;half4&#39; (vector of 4 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:924:20: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;half8&#39; (vector of 8 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:925:21: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;half16&#39; (vector of 16 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:930:20: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;half3&#39; (vector of 3 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:931:20: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;half4&#39; (vector of 4 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:932:20: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;half8&#39; (vector of 8 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:933:21: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;half16&#39; (vector of 16 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1864:22: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;double2&#39; (vector of 2 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1865:22: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;double3&#39; (vector of 3 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1866:22: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;double4&#39; (vector of 4 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1867:22: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;double8&#39; (vector of 8 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1868:23: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;double16&#39; (vector of 16 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1872:22: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;double2&#39; (vector of 2 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1873:22: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;double3&#39; (vector of 3 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1874:22: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;double4&#39; (vector of 4 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1875:22: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;double8&#39; (vector of 8 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1876:23: note: candidate function not viable: no known conversion from &#39;half2&#39; (vector of 2 &#39;half&#39; values) to &#39;double16&#39; (vector of 16 &#39;double&#39; values) for 1st argument
+stringInput.cl:99:11: error: no matching function for call to &#39;ldexp&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:923:20: note: candidate function not viable: no known conversion from &#39;short4&#39; (vector of 4 &#39;short&#39; values) to &#39;int4&#39; (vector of 4 &#39;int&#39; values) for 2nd argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:931:20: note: candidate function not viable: no known conversion from &#39;short4&#39; (vector of 4 &#39;short&#39; values) to &#39;int&#39; for 2nd argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:47:20: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;float&#39; for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:129:19: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;half&#39; for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:235:21: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;double&#39; for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:902:21: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;float2&#39; (vector of 2 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:903:21: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;float3&#39; (vector of 3 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:904:21: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;float4&#39; (vector of 4 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:905:21: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;float8&#39; (vector of 8 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:906:22: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;float16&#39; (vector of 16 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:910:21: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;float2&#39; (vector of 2 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:911:21: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;float3&#39; (vector of 3 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:912:21: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;float4&#39; (vector of 4 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:913:21: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;float8&#39; (vector of 8 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:914:22: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;float16&#39; (vector of 16 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:921:20: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;half2&#39; (vector of 2 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:922:20: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;half3&#39; (vector of 3 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:924:20: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;half8&#39; (vector of 8 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:925:21: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;half16&#39; (vector of 16 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:929:20: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;half2&#39; (vector of 2 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:930:20: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;half3&#39; (vector of 3 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:932:20: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;half8&#39; (vector of 8 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:933:21: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;half16&#39; (vector of 16 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1864:22: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;double2&#39; (vector of 2 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1865:22: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;double3&#39; (vector of 3 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1866:22: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;double4&#39; (vector of 4 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1867:22: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;double8&#39; (vector of 8 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1868:23: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;double16&#39; (vector of 16 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1872:22: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;double2&#39; (vector of 2 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1873:22: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;double3&#39; (vector of 3 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1874:22: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;double4&#39; (vector of 4 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1875:22: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;double8&#39; (vector of 8 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1876:23: note: candidate function not viable: no known conversion from &#39;half4&#39; (vector of 4 &#39;half&#39; values) to &#39;double16&#39; (vector of 16 &#39;double&#39; values) for 1st argument
+stringInput.cl:103:11: error: no matching function for call to &#39;ldexp&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:924:20: note: candidate function not viable: no known conversion from &#39;short8&#39; (vector of 8 &#39;short&#39; values) to &#39;int8&#39; (vector of 8 &#39;int&#39; values) for 2nd argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:932:20: note: candidate function not viable: no known conversion from &#39;short8&#39; (vector of 8 &#39;short&#39; values) to &#39;int&#39; for 2nd argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:47:20: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;float&#39; for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:129:19: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;half&#39; for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:235:21: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;double&#39; for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:902:21: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;float2&#39; (vector of 2 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:903:21: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;float3&#39; (vector of 3 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:904:21: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;float4&#39; (vector of 4 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:905:21: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;float8&#39; (vector of 8 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:906:22: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;float16&#39; (vector of 16 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:910:21: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;float2&#39; (vector of 2 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:911:21: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;float3&#39; (vector of 3 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:912:21: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;float4&#39; (vector of 4 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:913:21: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;float8&#39; (vector of 8 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:914:22: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;float16&#39; (vector of 16 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:921:20: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;half2&#39; (vector of 2 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:922:20: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;half3&#39; (vector of 3 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:923:20: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;half4&#39; (vector of 4 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:925:21: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;half16&#39; (vector of 16 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:929:20: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;half2&#39; (vector of 2 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:930:20: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;half3&#39; (vector of 3 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:931:20: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;half4&#39; (vector of 4 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:933:21: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;half16&#39; (vector of 16 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1864:22: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;double2&#39; (vector of 2 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1865:22: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;double3&#39; (vector of 3 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1866:22: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;double4&#39; (vector of 4 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1867:22: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;double8&#39; (vector of 8 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1868:23: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;double16&#39; (vector of 16 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1872:22: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;double2&#39; (vector of 2 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1873:22: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;double3&#39; (vector of 3 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1874:22: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;double4&#39; (vector of 4 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1875:22: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;double8&#39; (vector of 8 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1876:23: note: candidate function not viable: no known conversion from &#39;half8&#39; (vector of 8 &#39;half&#39; values) to &#39;double16&#39; (vector of 16 &#39;double&#39; values) for 1st argument
+stringInput.cl:107:12: error: no matching function for call to &#39;ldexp&#39;
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:925:21: note: candidate function not viable: no known conversion from &#39;short16&#39; (vector of 16 &#39;short&#39; values) to &#39;int16&#39; (vector of 16 &#39;int&#39; values) for 2nd argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:933:21: note: candidate function not viable: no known conversion from &#39;short16&#39; (vector of 16 &#39;short&#39; values) to &#39;int&#39; for 2nd argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:47:20: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;float&#39; for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:129:19: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;half&#39; for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:235:21: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;double&#39; for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:902:21: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;float2&#39; (vector of 2 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:903:21: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;float3&#39; (vector of 3 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:904:21: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;float4&#39; (vector of 4 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:905:21: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;float8&#39; (vector of 8 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:906:22: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;float16&#39; (vector of 16 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:910:21: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;float2&#39; (vector of 2 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:911:21: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;float3&#39; (vector of 3 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:912:21: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;float4&#39; (vector of 4 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:913:21: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;float8&#39; (vector of 8 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:914:22: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;float16&#39; (vector of 16 &#39;float&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:921:20: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;half2&#39; (vector of 2 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:922:20: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;half3&#39; (vector of 3 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:923:20: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;half4&#39; (vector of 4 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:924:20: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;half8&#39; (vector of 8 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:929:20: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;half2&#39; (vector of 2 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:930:20: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;half3&#39; (vector of 3 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:931:20: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;half4&#39; (vector of 4 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:932:20: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;half8&#39; (vector of 8 &#39;half&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1864:22: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;double2&#39; (vector of 2 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1865:22: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;double3&#39; (vector of 3 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1866:22: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;double4&#39; (vector of 4 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1867:22: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;double8&#39; (vector of 8 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1868:23: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;double16&#39; (vector of 16 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1872:22: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;double2&#39; (vector of 2 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1873:22: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;double3&#39; (vector of 3 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1874:22: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;double4&#39; (vector of 4 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1875:22: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;double8&#39; (vector of 8 &#39;double&#39; values) for 1st argument
+/home/orome/.local/lib64/beignet/include/ocl_math_common.h:1876:23: note: candidate function not viable: no known conversion from &#39;half16&#39; (vector of 16 &#39;half&#39; values) to &#39;double16&#39; (vector of 16 &#39;double&#39; values) for 1st argument
+
+ -------- 
+# Result:
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre>Could not build program: CL_BUILD_PROGRAM_FAILURE
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_SOURCE_DIR=&#34;/home/orome/piglit&#34; PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          </pre>/home/orome/piglit/bin/cl-program-tester /home/orome/piglit/generated_tests/cl/builtin/math/builtin-half-ldexp-1.0.generated.cl</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>
