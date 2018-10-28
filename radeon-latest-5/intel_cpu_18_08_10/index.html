@@ -1,0 +1,198 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//END"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>intel_cpu_18_08_10 - System info</title>
+    <link rel="stylesheet" href="../result.css" type="text/css" />
+  </head>
+  <body>
+    <h1>System info for intel_cpu_18_08_10</h1>
+    <p>
+      <a href="../index.html">Back to summary</a>
+    </p>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>totals</td>
+        <td>
+          <table>
+            <tr><td>pass</td><td>3988</td></tr>
+            <tr><td>skip</td><td>50</td></tr>
+            <tr><td>fail</td><td>30</td></tr>
+            <tr><td>crash</td><td>3</td></tr>
+            <tr><td>warn</td><td>0</td></tr>
+            <tr><td>timeout</td><td>0</td></tr>
+            <tr><td>notrun</td><td>0</td></tr>
+            <tr><td>incomplete</td><td>0</td></tr>
+            <tr><td>dmesg-warn</td><td>0</td></tr>
+            <tr><td>dmesg-fail</td><td>0</td></tr>
+            <tr><td>total</td><td>4071</td></tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>time_elapsed</td>
+        <td>0:01:37.318110</td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td>intel_cpu_18_08_10</td>
+      </tr>
+      <tr>
+        <td>options</td>
+        <td>OrderedDict([('execute', True), ('valgrind', False), ('sync', False), ('deqp_mustpass', False), ('process_isolation', True), ('jobs', None), ('env', OrderedDict([('PIGLIT_SOURCE_DIR', '/home/vesely/piglit'), ('PIGLIT_PLATFORM', 'mixed_glx_egl')])), ('profile', ['tests/cl.py']), ('log_level', 'quiet'), ('concurrent', 'some'), ('include_filter', []), ('exclude_filter', []), ('dmesg', False), ('monitoring', False), ('platform', 'mixed_glx_egl'), ('forced_test_list', None), ('ignore_missing', False), ('timeout', None)])</td>
+      </tr>
+      <tr>
+        <td>info</td>
+        <td>
+          <table>
+                <tr><td>clinfo</td><td><pre>Number of platforms                               1
+  Platform Name                                   Intel(R) OpenCL
+  Platform Vendor                                 Intel(R) Corporation
+  Platform Version                                OpenCL 1.2 LINUX
+  Platform Profile                                FULL_PROFILE
+  Platform Extensions                             cl_khr_icd cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_depth_images cl_khr_3d_image_writes cl_intel_exec_by_local_thread cl_khr_spir cl_khr_fp64 
+  Platform Extensions function suffix             INTEL
+
+  Platform Name                                   Intel(R) OpenCL
+Number of devices                                 1
+  Device Name                                     Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+  Device Vendor                                   Intel(R) Corporation
+  Device Vendor ID                                0x8086
+  Device Version                                  OpenCL 1.2 (Build 25)
+  Driver Version                                  1.2.0.25
+  Device OpenCL C Version                         OpenCL C 1.2 
+  Device Type                                     CPU
+  Device Available                                Yes
+  Device Profile                                  FULL_PROFILE
+  Max compute units                               8
+  Max clock frequency                             3400MHz
+  Device Partition                                (core)
+    Max number of sub-devices                     8
+    Supported partition types                     by counts, equally, by names (Intel)
+  Max work item dimensions                        3
+  Max work item sizes                             8192x8192x8192
+  Max work group size                             8192
+  Compiler Available                              Yes
+  Linker Available                                Yes
+  Preferred work group size multiple              128
+  Preferred / native vector sizes                 
+    char                                                 1 / 16      
+    short                                                1 / 8       
+    int                                                  1 / 4       
+    long                                                 1 / 2       
+    half                                                 0 / 0        (n/a)
+    float                                                1 / 8       
+    double                                               1 / 4        (cl_khr_fp64)
+  Half-precision Floating-point support           (n/a)
+  Single-precision Floating-point support         (core)
+    Denormals                                     Yes
+    Infinity and NANs                             Yes
+    Round to nearest                              Yes
+    Round to zero                                 No
+    Round to infinity                             No
+    IEEE754-2008 fused multiply-add               No
+    Support is emulated in software               No
+    Correctly-rounded divide and sqrt operations  No
+  Double-precision Floating-point support         (cl_khr_fp64)
+    Denormals                                     Yes
+    Infinity and NANs                             Yes
+    Round to nearest                              Yes
+    Round to zero                                 Yes
+    Round to infinity                             Yes
+    IEEE754-2008 fused multiply-add               Yes
+    Support is emulated in software               No
+  Address bits                                    64, Little-Endian
+  Global memory size                              33610207232 (31.3GiB)
+  Error Correction support                        No
+  Max memory allocation                           8402551808 (7.825GiB)
+  Unified memory for Host and Device              Yes
+  Minimum alignment for any data type             128 bytes
+  Alignment of base address                       1024 bits (128 bytes)
+  Global Memory cache type                        Read/Write
+  Global Memory cache size                        262144 (256KiB)
+  Global Memory cache line size                   64 bytes
+  Image support                                   Yes
+    Max number of samplers per kernel             480
+    Max size for 1D images from buffer            525159488 pixels
+    Max 1D or 2D image array size                 2048 images
+    Max 2D image size                             16384x16384 pixels
+    Max 3D image size                             2048x2048x2048 pixels
+    Max number of read image args                 480
+    Max number of write image args                480
+  Local memory type                               Global
+  Local memory size                               32768 (32KiB)
+  Max constant buffer size                        131072 (128KiB)
+  Max number of constant args                     480
+  Max size of kernel argument                     3840 (3.75KiB)
+  Queue properties                                
+    Out-of-order execution                        Yes
+    Profiling                                     Yes
+    Local thread execution (Intel)                Yes
+  Prefer user sync for interop                    No
+  Profiling timer resolution                      1ns
+  Execution capabilities                          
+    Run OpenCL kernels                            Yes
+    Run native kernels                            Yes
+    SPIR versions                                 1.2
+  printf() buffer size                            1048576 (1024KiB)
+  Built-in kernels                                
+  Device Extensions                               cl_khr_icd cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_depth_images cl_khr_3d_image_writes cl_intel_exec_by_local_thread cl_khr_spir cl_khr_fp64 
+
+NULL platform behavior
+  clGetPlatformInfo(NULL, CL_PLATFORM_NAME, ...)  Intel(R) OpenCL
+  clGetDeviceIDs(NULL, CL_DEVICE_TYPE_ALL, ...)   Success [INTEL]
+  clCreateContext(NULL, ...) [default]            Success [INTEL]
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_DEFAULT)  Success (1)
+    Platform Name                                 Intel(R) OpenCL
+    Device Name                                           Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_CPU)  Success (1)
+    Platform Name                                 Intel(R) OpenCL
+    Device Name                                           Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_GPU)  No devices found in platform
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_ACCELERATOR)  No devices found in platform
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_CUSTOM)  No devices found in platform
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_ALL)  Success (1)
+    Platform Name                                 Intel(R) OpenCL
+    Device Name                                           Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+
+ICD loader properties
+  ICD loader Name                                 OpenCL ICD Loader
+  ICD loader Vendor                               OCL Icd free software
+  ICD loader Version                              2.2.12
+  ICD loader Profile                              OpenCL 2.2
+</pre></td></tr>
+                <tr><td>lspci</td><td><pre>00:00.0 Host bridge [0600]: Intel Corporation Xeon E3-1200 v2/3rd Gen Core processor DRAM Controller [8086:0150] (rev 09)
+00:01.0 PCI bridge [0604]: Intel Corporation Xeon E3-1200 v2/3rd Gen Core processor PCI Express Root Port [8086:0151] (rev 09)
+00:02.0 VGA compatible controller [0300]: Intel Corporation Xeon E3-1200 v2/3rd Gen Core processor Graphics Controller [8086:0162] (rev 09)
+00:14.0 USB controller [0c03]: Intel Corporation 7 Series/C210 Series Chipset Family USB xHCI Host Controller [8086:1e31] (rev 04)
+00:16.0 Communication controller [0780]: Intel Corporation 7 Series/C216 Chipset Family MEI Controller #1 [8086:1e3a] (rev 04)
+00:16.3 Serial controller [0700]: Intel Corporation 7 Series/C210 Series Chipset Family KT Controller [8086:1e3d] (rev 04)
+00:19.0 Ethernet controller [0200]: Intel Corporation 82579LM Gigabit Network Connection (Lewisville) [8086:1502] (rev 04)
+00:1a.0 USB controller [0c03]: Intel Corporation 7 Series/C216 Chipset Family USB Enhanced Host Controller #2 [8086:1e2d] (rev 04)
+00:1b.0 Audio device [0403]: Intel Corporation 7 Series/C216 Chipset Family High Definition Audio Controller [8086:1e20] (rev 04)
+00:1d.0 USB controller [0c03]: Intel Corporation 7 Series/C216 Chipset Family USB Enhanced Host Controller #1 [8086:1e26] (rev 04)
+00:1e.0 PCI bridge [0604]: Intel Corporation 82801 PCI Bridge [8086:244e] (rev a4)
+00:1f.0 ISA bridge [0601]: Intel Corporation Q77 Express Chipset LPC Controller [8086:1e47] (rev 04)
+00:1f.2 SATA controller [0106]: Intel Corporation 7 Series/C210 Series Chipset Family 6-port SATA Controller [AHCI mode] [8086:1e02] (rev 04)
+00:1f.3 SMBus [0c05]: Intel Corporation 7 Series/C216 Chipset Family SMBus Controller [8086:1e22] (rev 04)
+01:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Turks PRO [Radeon HD 7570] [1002:675d]
+01:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Turks HDMI Audio [Radeon HD 6500/6600 / 6700M Series] [1002:aa90]
+</pre></td></tr>
+                <tr><td>uname</td><td><pre>Linux adriatix 4.17.12-200.fc28.x86_64 #1 SMP Fri Aug 3 15:01:13 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+</pre></td></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <a href="../index.html">Back to summary</a>
+    </p>
+  </body>
+</html>

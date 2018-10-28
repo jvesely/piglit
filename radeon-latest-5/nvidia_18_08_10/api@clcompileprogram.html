@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//END"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>api@clcompileprogram - Details</title>
+    <link rel="stylesheet" href="../result.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Results for api@clcompileprogram</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> fail</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:00.609181</b>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre>## Test: clCompileProgram (/ilab/users/jv356/piglit/tests/cl/api/compile-program.c) ##
+
+# Running on:
+#   Platform: NVIDIA CUDA
+#   OpenCL version: 1.2
+Unexpected CL error: CL_BUILD_PROGRAM_FAILURE -11
+Expected CL error: CL_INVALID_COMPILER_OPTIONS -66
+Unexpected CL error: CL_BUILD_PROGRAM_FAILURE -11
+Expected CL error: CL_COMPILE_PROGRAM_FAILURE -15
+Unexpected CL error: CL_SUCCESS 0
+Expected CL error: CL_INVALID_OPERATION -59
+# Result:
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre>Failed (error code: CL_BUILD_PROGRAM_FAILURE): Trigger CL_INVALID_COMPILER_OPTIONS if the build options specified by options are invalid.
+Failed (error code: CL_BUILD_PROGRAM_FAILURE): Trigger CL_COMPILE_PROGRAM_FAILURE if there is a failure to compile the program source.
+Failed (error code: CL_SUCCESS): Trigger CL_INVALID_OPERATION if there are kernel objects attached to program.
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34; PIGLIT_SOURCE_DIR=&#34;/ilab/users/jv356/piglit&#34;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          </pre>/ilab/users/jv356/piglit/bin/cl-api-compile-program</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>
