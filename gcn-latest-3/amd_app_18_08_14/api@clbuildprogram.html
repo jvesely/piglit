@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//END"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>api@clbuildprogram - Details</title>
+    <link rel="stylesheet" href="../result.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Results for api@clbuildprogram</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> fail</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:02.610651</b>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre>## Test: clBuildProgram (/home/jvesely/piglit/tests/cl/api/build-program.c) ##
+
+# Running on:
+#   Platform: AMD Accelerated Parallel Processing
+#   OpenCL version: 2.0
+Unexpected CL error: CL_SUCCESS 0
+Expected CL error: CL_INVALID_VALUE -30
+Unexpected CL error: CL_INVALID_COMPILER_OPTIONS -66
+Expected CL error: CL_INVALID_BUILD_OPTIONS -43
+Unexpected CL error: CL_SUCCESS 0
+Expected CL error: CL_INVALID_OPERATION -59
+Unexpected CL error: CL_INVALID_VALUE -30
+# Result:
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre>&lt;built-in&gt;:2:17: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+#define __gfx801-xnack__ 1
+                ^
+&lt;built-in&gt;:3:17: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+#define __gfx801-xnack 1
+                ^
+&lt;built-in&gt;:3:9: warning: &#39;__gfx801&#39; macro redefined [-Wmacro-redefined]
+#define __gfx801-xnack 1
+        ^
+&lt;built-in&gt;:2:9: note: previous definition is here
+#define __gfx801-xnack__ 1
+        ^
+3 warnings generated.
+&lt;built-in&gt;:2:17: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+#define __gfx801-xnack__ 1
+                ^
+&lt;built-in&gt;:3:17: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+#define __gfx801-xnack 1
+                ^
+&lt;built-in&gt;:3:9: warning: &#39;__gfx801&#39; macro redefined [-Wmacro-redefined]
+#define __gfx801-xnack 1
+        ^
+&lt;built-in&gt;:2:9: note: previous definition is here
+#define __gfx801-xnack__ 1
+        ^
+3 warnings generated.
+&lt;built-in&gt;:2:17: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+#define __gfx801-xnack__ 1
+                ^
+&lt;built-in&gt;:3:17: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+#define __gfx801-xnack 1
+                ^
+&lt;built-in&gt;:3:9: warning: &#39;__gfx801&#39; macro redefined [-Wmacro-redefined]
+#define __gfx801-xnack 1
+        ^
+&lt;built-in&gt;:2:9: note: previous definition is here
+#define __gfx801-xnack__ 1
+        ^
+3 warnings generated.
+Failed (error code: CL_SUCCESS): Trigger CL_INVALID_VALUE if pfn_notify is NULL and user_data is not NULL.
+Failed (error code: CL_INVALID_COMPILER_OPTIONS): Trigger CL_INVALID_BUILD_OPTIONS if the build options specified by options are invalid.
+&lt;built-in&gt;:2:17: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+#define __gfx801-xnack__ 1
+                ^
+&lt;built-in&gt;:3:17: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+#define __gfx801-xnack 1
+                ^
+&lt;built-in&gt;:3:9: warning: &#39;__gfx801&#39; macro redefined [-Wmacro-redefined]
+#define __gfx801-xnack 1
+        ^
+&lt;built-in&gt;:2:9: note: previous definition is here
+#define __gfx801-xnack__ 1
+        ^
+/tmp/AMD_715_55/t_715_57.cl:1:1: error: &#39;kernel&#39; attribute only applies to functions
+kernel void dummy_kernel {}
+^
+/tmp/AMD_715_55/t_715_57.cl:1:13: error: program scope variable must reside in constant address space
+kernel void dummy_kernel {}
+            ^
+/tmp/AMD_715_55/t_715_57.cl:1:25: error: expected &#39;;&#39; after top level declarator
+kernel void dummy_kernel {}
+                        ^
+                        ;
+3 warnings and 3 errors generated.
+&lt;built-in&gt;:2:17: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+#define __gfx801-xnack__ 1
+                ^
+&lt;built-in&gt;:3:17: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+#define __gfx801-xnack 1
+                ^
+&lt;built-in&gt;:3:9: warning: &#39;__gfx801&#39; macro redefined [-Wmacro-redefined]
+#define __gfx801-xnack 1
+        ^
+&lt;built-in&gt;:2:9: note: previous definition is here
+#define __gfx801-xnack__ 1
+        ^
+3 warnings generated.
+&lt;built-in&gt;:2:17: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+#define __gfx801-xnack__ 1
+                ^
+&lt;built-in&gt;:3:17: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+#define __gfx801-xnack 1
+                ^
+&lt;built-in&gt;:3:9: warning: &#39;__gfx801&#39; macro redefined [-Wmacro-redefined]
+#define __gfx801-xnack 1
+        ^
+&lt;built-in&gt;:2:9: note: previous definition is here
+#define __gfx801-xnack__ 1
+        ^
+3 warnings generated.
+Failed (error code: CL_SUCCESS): Trigger CL_INVALID_OPERATION if there are kernel objects attached to program.
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_SOURCE_DIR=&#34;/home/jvesely/piglit&#34; PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          </pre>/home/jvesely/piglit/bin/cl-api-build-program</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>
