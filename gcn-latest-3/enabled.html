@@ -14,13 +14,13 @@
     <p>Currently showing: enabled</p>
     <p>Show:
         <a href="index.html">all</a>
-          | <a href="fixes.html">fixes</a>
           | <a href="changes.html">changes</a>
-          | <a href="problems.html">problems</a>
-          | <a href="skips.html">skips</a>
-          | enabled
+          | <a href="fixes.html">fixes</a>
           | <a href="regressions.html">regressions</a>
           | <a href="disabled.html">disabled</a>
+          | <a href="skips.html">skips</a>
+          | enabled
+          | <a href="problems.html">problems</a>
     </p>
     <table>
       <colgroup>
@@ -36,30 +36,50 @@
         <col />
         <col />
         <col />
+        <col />
+        <col />
+        <col />
+        <col />
       </colgroup>
       <tr>
         <th/>
-          <th class="head"><b>carrizo_llvm7_18_10_29</b><br />          (<a href="carrizo_llvm7_18_10_29/index.html">info</a>)</th>
-          <th class="head"><b>carrizo_llvm_18_10_27</b><br />          (<a href="carrizo_llvm_18_10_27/index.html">info</a>)</th>
+          <th class="head"><b>carrizo_llvm5_18_10_31</b><br />          (<a href="carrizo_llvm5_18_10_31/index.html">info</a>)</th>
+          <th class="head"><b>carrizo_llvm6_18_10_31</b><br />          (<a href="carrizo_llvm6_18_10_31/index.html">info</a>)</th>
+          <th class="head"><b>carrizo_llvm7_18_10_31</b><br />          (<a href="carrizo_llvm7_18_10_31/index.html">info</a>)</th>
           <th class="head"><b>carrizo_llvm_18_10_28</b><br />          (<a href="carrizo_llvm_18_10_28/index.html">info</a>)</th>
           <th class="head"><b>carrizo_llvm_18_10_29</b><br />          (<a href="carrizo_llvm_18_10_29/index.html">info</a>)</th>
-          <th class="head"><b>iceland_llvm7_18_10_29</b><br />          (<a href="iceland_llvm7_18_10_29/index.html">info</a>)</th>
-          <th class="head"><b>iceland_llvm_18_10_27</b><br />          (<a href="iceland_llvm_18_10_27/index.html">info</a>)</th>
+          <th class="head"><b>carrizo_llvm_18_10_31</b><br />          (<a href="carrizo_llvm_18_10_31/index.html">info</a>)</th>
+          <th class="head"><b>iceland_llvm5_18_10_31</b><br />          (<a href="iceland_llvm5_18_10_31/index.html">info</a>)</th>
+          <th class="head"><b>iceland_llvm6_18_10_31</b><br />          (<a href="iceland_llvm6_18_10_31/index.html">info</a>)</th>
+          <th class="head"><b>iceland_llvm7_18_10_31</b><br />          (<a href="iceland_llvm7_18_10_31/index.html">info</a>)</th>
           <th class="head"><b>iceland_llvm_18_10_28</b><br />          (<a href="iceland_llvm_18_10_28/index.html">info</a>)</th>
           <th class="head"><b>iceland_llvm_18_10_29</b><br />          (<a href="iceland_llvm_18_10_29/index.html">info</a>)</th>
+          <th class="head"><b>iceland_llvm_18_10_31</b><br />          (<a href="iceland_llvm_18_10_31/index.html">info</a>)</th>
           <th class="head"><b>amd_app_18_08_14</b><br />          (<a href="amd_app_18_08_14/index.html">info</a>)</th>
           <th class="head"><b>pocl_18_08_10</b><br />          (<a href="pocl_18_08_10/index.html">info</a>)</th>
       </tr>
       <tr>
         <td class="head"><b>all</b></td>
+          <td class="crash">
+            <b>4187/4203</b>
+          </td>
           <td class="fail">
             <b>4189/4229</b>
+          </td>
+          <td class="fail">
+            <b>4190/4229</b>
           </td>
           <td class="fail">
             <b>4189/4229</b>
           </td>
           <td class="fail">
             <b>4189/4229</b>
+          </td>
+          <td class="fail">
+            <b>4189/4229</b>
+          </td>
+          <td class="crash">
+            <b>4187/4203</b>
           </td>
           <td class="fail">
             <b>4189/4229</b>
@@ -92,6 +112,12 @@
                 <b>api</b>
               </div>
             </td>
+              <td class="crash">
+                <b>45/48</b>
+              </td>
+              <td class="fail">
+                <b>45/48</b>
+              </td>
               <td class="fail">
                 <b>45/48</b>
               </td>
@@ -99,6 +125,12 @@
                 <b>45/48</b>
               </td>
               <td class="fail">
+                <b>45/48</b>
+              </td>
+              <td class="fail">
+                <b>45/48</b>
+              </td>
+              <td class="crash">
                 <b>45/48</b>
               </td>
               <td class="fail">
@@ -130,6 +162,18 @@
                 <b>clgetmemobjectinfo</b>
               </div>
             </td>
+              <td class="pass">
+                <b>9/9</b>
+              </td>
+              <td class="pass">
+                <b>9/9</b>
+              </td>
+              <td class="pass">
+                <b>9/9</b>
+              </td>
+              <td class="pass">
+                <b>9/9</b>
+              </td>
               <td class="pass">
                 <b>9/9</b>
               </td>
@@ -201,6 +245,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/api@clgetmemobjectinfo.html">
               pass
@@ -219,14 +279,26 @@
                 <b>program</b>
               </div>
             </td>
+              <td class="crash">
+                <b>4115/4127</b>
+              </td>
               <td class="fail">
                 <b>4117/4153</b>
+              </td>
+              <td class="fail">
+                <b>4118/4153</b>
               </td>
               <td class="fail">
                 <b>4117/4153</b>
               </td>
               <td class="fail">
                 <b>4117/4153</b>
+              </td>
+              <td class="fail">
+                <b>4117/4153</b>
+              </td>
+              <td class="crash">
+                <b>4115/4127</b>
               </td>
               <td class="fail">
                 <b>4117/4153</b>
@@ -257,14 +329,26 @@
                 <b>execute</b>
               </div>
             </td>
+              <td class="crash">
+                <b>4080/4090</b>
+              </td>
               <td class="fail">
                 <b>4080/4116</b>
+              </td>
+              <td class="fail">
+                <b>4081/4116</b>
               </td>
               <td class="fail">
                 <b>4080/4116</b>
               </td>
               <td class="fail">
                 <b>4080/4116</b>
+              </td>
+              <td class="fail">
+                <b>4080/4116</b>
+              </td>
+              <td class="crash">
+                <b>4080/4090</b>
               </td>
               <td class="fail">
                 <b>4080/4116</b>
@@ -295,6 +379,18 @@
                 <b>builtin</b>
               </div>
             </td>
+              <td class="pass">
+                <b>1739/1739</b>
+              </td>
+              <td class="pass">
+                <b>1739/1739</b>
+              </td>
+              <td class="pass">
+                <b>1739/1739</b>
+              </td>
+              <td class="pass">
+                <b>1739/1739</b>
+              </td>
               <td class="pass">
                 <b>1739/1739</b>
               </td>
@@ -357,6 +453,18 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="pass">
                 <b>5/5</b>
               </td>
@@ -371,6 +479,22 @@
             popcount char1
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -457,6 +581,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-char-popcount-1.2.generated.html">
               pass
@@ -477,6 +617,22 @@
             popcount char2
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -563,6 +719,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-char-popcount-1.2.generated.html">
               pass
@@ -583,6 +755,22 @@
             popcount char8
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -660,6 +848,18 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="pass">
                 <b>5/5</b>
               </td>
@@ -674,6 +874,22 @@
             popcount int1
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -760,6 +976,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-int-popcount-1.2.generated.html">
               pass
@@ -780,6 +1012,22 @@
             popcount int2
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -866,6 +1114,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-int-popcount-1.2.generated.html">
               pass
@@ -886,6 +1150,22 @@
             popcount int8
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -963,6 +1243,18 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="pass">
                 <b>5/5</b>
               </td>
@@ -977,6 +1269,22 @@
             popcount long1
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1063,6 +1371,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-long-popcount-1.2.generated.html">
               pass
@@ -1083,6 +1407,22 @@
             popcount long2
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1169,6 +1509,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-long-popcount-1.2.generated.html">
               pass
@@ -1189,6 +1545,22 @@
             popcount long8
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1266,6 +1638,18 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="pass">
                 <b>5/5</b>
               </td>
@@ -1280,6 +1664,22 @@
             popcount short1
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1366,6 +1766,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-short-popcount-1.2.generated.html">
               pass
@@ -1386,6 +1802,22 @@
             popcount short2
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1472,6 +1904,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-short-popcount-1.2.generated.html">
               pass
@@ -1492,6 +1940,22 @@
             popcount short8
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1569,6 +2033,18 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="pass">
                 <b>5/5</b>
               </td>
@@ -1583,6 +2059,22 @@
             popcount uchar1
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1669,6 +2161,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-uchar-popcount-1.2.generated.html">
               pass
@@ -1689,6 +2197,22 @@
             popcount uchar2
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1775,6 +2299,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-uchar-popcount-1.2.generated.html">
               pass
@@ -1795,6 +2335,22 @@
             popcount uchar8
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1872,6 +2428,18 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="pass">
                 <b>5/5</b>
               </td>
@@ -1886,6 +2454,22 @@
             popcount uint1
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1972,6 +2556,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-uint-popcount-1.2.generated.html">
               pass
@@ -1992,6 +2592,22 @@
             popcount uint2
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2078,6 +2694,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-uint-popcount-1.2.generated.html">
               pass
@@ -2098,6 +2730,22 @@
             popcount uint8
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2175,6 +2823,18 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="pass">
                 <b>5/5</b>
               </td>
@@ -2189,6 +2849,22 @@
             popcount ulong1
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2275,6 +2951,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-ulong-popcount-1.2.generated.html">
               pass
@@ -2295,6 +2987,22 @@
             popcount ulong2
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2381,6 +3089,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-ulong-popcount-1.2.generated.html">
               pass
@@ -2401,6 +3125,22 @@
             popcount ulong8
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2478,6 +3218,18 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="pass">
                 <b>5/5</b>
               </td>
@@ -2492,6 +3244,22 @@
             popcount ushort1
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2578,6 +3346,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-ushort-popcount-1.2.generated.html">
               pass
@@ -2598,6 +3382,22 @@
             popcount ushort2
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2684,6 +3484,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@builtin@builtin-ushort-popcount-1.2.generated.html">
               pass
@@ -2704,6 +3520,22 @@
             popcount ushort8
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2781,6 +3613,18 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="pass">
                 <b>2/2</b>
               </td>
@@ -2795,6 +3639,22 @@
             callee saved sgpr
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2879,6 +3739,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@call-clobbers-amdgcn.html">
               pass
@@ -2894,9 +3770,320 @@
             
             <td>
               <div class="head" style="margin-left: 5.25em">
+                <b>calls-large-struct</b>
+              </div>
+            </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>1/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+            
+            </tr><tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            byval struct
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            byval struct align 8
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls-large-struct.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            sret struct
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls-large-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+              <div class="head" style="margin-left: 5.25em">
                 <b>calls-struct</b>
               </div>
             </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
               <td class="fail">
                 <b>0/3</b>
               </td>
@@ -2905,6 +4092,12 @@
               </td>
               <td class="fail">
                 <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
               </td>
               <td class="fail">
                 <b>0/3</b>
@@ -2935,6 +4128,22 @@
             byval struct
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3023,10 +4232,200 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="pocl_18_08_10/program@execute@calls-struct.html">
               pass
             </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            regs struct
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls-struct.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            small struct in regs
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls-struct.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
           </td>
         </tr>
         
@@ -3074,8 +4473,1905 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="pocl_18_08_10/program@execute@calls-struct.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            struct_smallregs struct
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls-struct.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls-struct.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+              <div class="head" style="margin-left: 5.25em">
+                <b>calls-workitem-id</b>
+              </div>
+            </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="pass">
+                <b>2/2</b>
+              </td>
+              <td class="pass">
+                <b>2/2</b>
+              </td>
+            
+            </tr><tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            callee function stack passed get_local_id
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            callee function stack passed get_local_id with byval
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            callee function use get_global_id 0..2
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls-workitem-id.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@calls-workitem-id.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            callee function use get_global_id(0)
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls-workitem-id.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls-workitem-id.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@calls-workitem-id.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+              <div class="head" style="margin-left: 5.25em">
+                <b>calls</b>
+              </div>
+            </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
+              <td class="pass">
+                <b>10/10</b>
+              </td>
+              <td class="pass">
+                <b>10/10</b>
+              </td>
+            
+            </tr><tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            call call_i32_func_p0i32_i32_caller_stack
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            call call_i32_func_p0i32_i32_indirect_function_stack
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            call call_i32_func_p0i32_i32_indirect_kernel_stack
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            call call_i32_func_void_callee_stack
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            call i32_func_void
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            call i64_func_void
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            call void_func_void
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            callee stack corruption
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            kernel call stack argument
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            nested calls
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+              <div class="head" style="margin-left: 5.25em">
+                <b>image-attributes</b>
+              </div>
+            </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/1</b>
+              </td>
+              <td class="fail">
+                <b>0/1</b>
+              </td>
+              <td class="fail">
+                <b>0/1</b>
+              </td>
+              <td class="fail">
+                <b>0/1</b>
+              </td>
+              <td class="fail">
+                <b>0/1</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/1</b>
+              </td>
+              <td class="fail">
+                <b>0/1</b>
+              </td>
+              <td class="fail">
+                <b>0/1</b>
+              </td>
+              <td class="fail">
+                <b>0/1</b>
+              </td>
+              <td class="fail">
+                <b>0/1</b>
+              </td>
+              <td class="pass">
+                <b>1/1</b>
+              </td>
+              <td class="pass">
+                <b>1/1</b>
+              </td>
+            
+            </tr><tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            write unsigned integer to cl_unsigned_int8 cl_rgba image.
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@image-attributes.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@image-attributes.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@image-attributes.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@image-attributes.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@image-attributes.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@image-attributes.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@image-attributes.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@image-attributes.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@image-attributes.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@image-attributes.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@image-attributes.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@image-attributes.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+              <div class="head" style="margin-left: 5.25em">
+                <b>image-read-2d</b>
+              </div>
+            </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="pass">
+                <b>3/3</b>
+              </td>
+              <td class="pass">
+                <b>3/3</b>
+              </td>
+            
+            </tr><tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            read float from cl_float cl_rgba image.
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@image-read-2d.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@image-read-2d.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            read signed integer from cl_signed_int8 cl_rgba image.
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@image-read-2d.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@image-read-2d.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            read unsigned integer from cl_unsigned_int8 cl_rgba image.
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@image-read-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@image-read-2d.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@image-read-2d.html">
               pass
             </a>
           </td>
@@ -3088,6 +6384,18 @@
                 <b>image-write-2d</b>
               </div>
             </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="notrun">
                 <b>0/0</b>
               </td>
@@ -3126,6 +6434,22 @@
             write float to cl_float cl_rgba image.
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3212,6 +6536,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@image-write-2d.html">
               pass
@@ -3265,6 +6605,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@image-write-2d.html">
               pass
@@ -3282,9 +6638,728 @@
             
             <td>
               <div class="head" style="margin-left: 5.25em">
+                <b>realign-stack</b>
+              </div>
+            </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+            
+            </tr><tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            call stack realignment 128
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            call stack realignment 16
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            call stack realignment 32
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            call stack realignment 64
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@realign-stack.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+              <div class="head" style="margin-left: 5.25em">
+                <b>sampler</b>
+              </div>
+            </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
+              </td>
+              <td class="pass">
+                <b>3/3</b>
+              </td>
+              <td class="pass">
+                <b>3/3</b>
+              </td>
+            
+            </tr><tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            read from image using clamp_to_edge addressing mode
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@sampler.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@sampler.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            read from image using linear filtering and normalized coords
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@sampler.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@sampler.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            read from image using linear filtering and unnormalized coords
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@sampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@sampler.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@sampler.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+              <div class="head" style="margin-left: 5.25em">
                 <b>scalar-logical-float</b>
               </div>
             </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="notrun">
                 <b>0/0</b>
               </td>
@@ -3323,6 +7398,22 @@
             !0
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3409,6 +7500,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@scalar-logical-float.html">
               pass
@@ -3429,6 +7536,22 @@
             !num
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3515,6 +7638,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@scalar-logical-float.html">
               pass
@@ -3535,6 +7674,22 @@
             0||0
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3621,6 +7776,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@scalar-logical-float.html">
               pass
@@ -3641,6 +7812,22 @@
             num&&0
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3727,6 +7914,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@scalar-logical-float.html">
               pass
@@ -3780,6 +7983,22 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="pass">
             <a href="amd_app_18_08_14/program@execute@scalar-logical-float.html">
               pass
@@ -3788,6 +8007,412 @@
           
           <td class="pass">
             <a href="pocl_18_08_10/program@execute@scalar-logical-float.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+            
+            <td>
+              <div class="head" style="margin-left: 5.25em">
+                <b>tail-calls</b>
+              </div>
+            </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
+              <td class="pass">
+                <b>4/4</b>
+              </td>
+              <td class="pass">
+                <b>4/4</b>
+              </td>
+            
+            </tr><tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            basic tail call
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@tail-calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@tail-calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            tail call with fewer arguments than acller
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@tail-calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@tail-calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            tail call with more arguments than caller
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@tail-calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@tail-calls.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 7.0em">
+            tail call with stack passed argument
+          </div>
+        </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm6_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm7_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_28/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_29/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="carrizo_llvm_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm6_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm7_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_28/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_29/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="iceland_llvm_18_10_31/program@execute@tail-calls.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="amd_app_18_08_14/program@execute@tail-calls.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/program@execute@tail-calls.html">
               pass
             </a>
           </td>
