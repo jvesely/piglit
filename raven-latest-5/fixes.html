@@ -14,13 +14,13 @@
     <p>Currently showing: fixes</p>
     <p>Show:
         <a href="index.html">all</a>
-          | <a href="enabled.html">enabled</a>
-          | <a href="changes.html">changes</a>
-          | <a href="regressions.html">regressions</a>
           | <a href="problems.html">problems</a>
-          | <a href="disabled.html">disabled</a>
+          | <a href="changes.html">changes</a>
           | fixes
+          | <a href="regressions.html">regressions</a>
           | <a href="skips.html">skips</a>
+          | <a href="disabled.html">disabled</a>
+          | <a href="enabled.html">enabled</a>
     </p>
     <table>
       <colgroup>
@@ -36,13 +36,13 @@
       </colgroup>
       <tr>
         <th/>
-          <th class="head"><b>raven_18_10_27</b><br />          (<a href="raven_18_10_27/index.html">info</a>)</th>
           <th class="head"><b>raven_18_10_28</b><br />          (<a href="raven_18_10_28/index.html">info</a>)</th>
           <th class="head"><b>raven_18_10_29</b><br />          (<a href="raven_18_10_29/index.html">info</a>)</th>
           <th class="head"><b>raven_18_10_31</b><br />          (<a href="raven_18_10_31/index.html">info</a>)</th>
           <th class="head"><b>raven_18_11_01</b><br />          (<a href="raven_18_11_01/index.html">info</a>)</th>
-          <th class="head"><b>raven_gentoo_18_10_31</b><br />          (<a href="raven_gentoo_18_10_31/index.html">info</a>)</th>
+          <th class="head"><b>raven_18_11_02</b><br />          (<a href="raven_18_11_02/index.html">info</a>)</th>
           <th class="head"><b>raven_gentoo_18_11_01</b><br />          (<a href="raven_gentoo_18_11_01/index.html">info</a>)</th>
+          <th class="head"><b>raven_gentoo_18_11_02</b><br />          (<a href="raven_gentoo_18_11_02/index.html">info</a>)</th>
       </tr>
       <tr>
         <td class="head"><b>all</b></td>
@@ -50,9 +50,6 @@
             <b>4190/4230</b>
           </td>
           <td class="fail">
-            <b>4190/4230</b>
-          </td>
-          <td class="fail">
             <b>4191/4230</b>
           </td>
           <td class="fail">
@@ -66,6 +63,9 @@
           </td>
           <td class="fail">
             <b>4191/4230</b>
+          </td>
+          <td class="fail">
+            <b>4190/4230</b>
           </td>
       </tr>
       
@@ -81,9 +81,6 @@
                 <b>4117/4153</b>
               </td>
               <td class="fail">
-                <b>4117/4153</b>
-              </td>
-              <td class="fail">
                 <b>4118/4153</b>
               </td>
               <td class="fail">
@@ -97,6 +94,9 @@
               </td>
               <td class="fail">
                 <b>4118/4153</b>
+              </td>
+              <td class="fail">
+                <b>4117/4153</b>
               </td>
             
             </tr><tr>
@@ -110,9 +110,6 @@
                 <b>4080/4116</b>
               </td>
               <td class="fail">
-                <b>4080/4116</b>
-              </td>
-              <td class="fail">
                 <b>4081/4116</b>
               </td>
               <td class="fail">
@@ -126,6 +123,9 @@
               </td>
               <td class="fail">
                 <b>4081/4116</b>
+              </td>
+              <td class="fail">
+                <b>4080/4116</b>
               </td>
             
             </tr><tr>
@@ -139,9 +139,6 @@
                 <b>0/3</b>
               </td>
               <td class="fail">
-                <b>0/3</b>
-              </td>
-              <td class="fail">
                 <b>1/3</b>
               </td>
               <td class="fail">
@@ -155,6 +152,9 @@
               </td>
               <td class="fail">
                 <b>1/3</b>
+              </td>
+              <td class="fail">
+                <b>0/3</b>
               </td>
             
             </tr><tr>
@@ -164,12 +164,6 @@
             byval struct align 8
           </div>
         </td>
-          
-          <td class="fail">
-            <a href="raven_18_10_27/program@execute@calls-large-struct.html">
-              fail
-            </a>
-          </td>
           
           <td class="fail">
             <a href="raven_18_10_28/program@execute@calls-large-struct.html">
@@ -196,7 +190,7 @@
           </td>
           
           <td class="fail">
-            <a href="raven_gentoo_18_10_31/program@execute@calls-large-struct.html">
+            <a href="raven_18_11_02/program@execute@calls-large-struct.html">
               fail
             </a>
           </td>
@@ -204,6 +198,12 @@
           <td class="pass">
             <a href="raven_gentoo_18_11_01/program@execute@calls-large-struct.html">
               pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="raven_gentoo_18_11_02/program@execute@calls-large-struct.html">
+              fail
             </a>
           </td>
         </tr>
