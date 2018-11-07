@@ -1,5 +1,3 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -7,206 +5,21 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Result summary</title>
-    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="status.css" type="text/css" />
   </head>
   <body>
     <h1>Result summary</h1>
     <p>Currently showing: changes</p>
     <p>Show:
-        <a href="index.html">all</a>
-          | <a href="fixes.html">fixes</a>
-          | changes
-          | <a href="skips.html">skips</a>
+      <a href="index.html">index</a>
           | <a href="enabled.html">enabled</a>
-          | <a href="regressions.html">regressions</a>
           | <a href="disabled.html">disabled</a>
+          | changes
+          | <a href="regressions.html">regressions</a>
+          | <a href="fixes.html">fixes</a>
           | <a href="problems.html">problems</a>
+          | <a href="skips.html">skips</a>
     </p>
-    <table>
-      <colgroup>
-        <col />
-
-        <col />
-        <col />
-        <col />
-        <col />
-        <col />
-        <col />
-        <col />
-      </colgroup>
-      <tr>
-        <th/>
-          <th class="head"><b>raven_18_11_01</b><br />          (<a href="raven_18_11_01/index.html">info</a>)</th>
-          <th class="head"><b>raven_18_11_02</b><br />          (<a href="raven_18_11_02/index.html">info</a>)</th>
-          <th class="head"><b>raven_18_11_04</b><br />          (<a href="raven_18_11_04/index.html">info</a>)</th>
-          <th class="head"><b>raven_18_11_05</b><br />          (<a href="raven_18_11_05/index.html">info</a>)</th>
-          <th class="head"><b>raven_18_11_06</b><br />          (<a href="raven_18_11_06/index.html">info</a>)</th>
-          <th class="head"><b>raven_gentoo_18_11_05</b><br />          (<a href="raven_gentoo_18_11_05/index.html">info</a>)</th>
-          <th class="head"><b>raven_gentoo_18_11_06</b><br />          (<a href="raven_gentoo_18_11_06/index.html">info</a>)</th>
-      </tr>
-      <tr>
-        <td class="head"><b>all</b></td>
-          <td class="fail">
-            <b>4190/4230</b>
-          </td>
-          <td class="fail">
-            <b>4190/4230</b>
-          </td>
-          <td class="fail">
-            <b>4190/4230</b>
-          </td>
-          <td class="fail">
-            <b>4190/4230</b>
-          </td>
-          <td class="fail">
-            <b>4190/4230</b>
-          </td>
-          <td class="fail">
-            <b>4191/4230</b>
-          </td>
-          <td class="fail">
-            <b>4190/4230</b>
-          </td>
-      </tr>
-      
-        
-        <tr>
-            
-            <td>
-              <div class="head" style="margin-left: 1.75em">
-                <b>program</b>
-              </div>
-            </td>
-              <td class="fail">
-                <b>4117/4153</b>
-              </td>
-              <td class="fail">
-                <b>4117/4153</b>
-              </td>
-              <td class="fail">
-                <b>4117/4153</b>
-              </td>
-              <td class="fail">
-                <b>4117/4153</b>
-              </td>
-              <td class="fail">
-                <b>4117/4153</b>
-              </td>
-              <td class="fail">
-                <b>4118/4153</b>
-              </td>
-              <td class="fail">
-                <b>4117/4153</b>
-              </td>
-            
-            </tr><tr>
-            
-            <td>
-              <div class="head" style="margin-left: 3.5em">
-                <b>execute</b>
-              </div>
-            </td>
-              <td class="fail">
-                <b>4080/4116</b>
-              </td>
-              <td class="fail">
-                <b>4080/4116</b>
-              </td>
-              <td class="fail">
-                <b>4080/4116</b>
-              </td>
-              <td class="fail">
-                <b>4080/4116</b>
-              </td>
-              <td class="fail">
-                <b>4080/4116</b>
-              </td>
-              <td class="fail">
-                <b>4081/4116</b>
-              </td>
-              <td class="fail">
-                <b>4080/4116</b>
-              </td>
-            
-            </tr><tr>
-            
-            <td>
-              <div class="head" style="margin-left: 5.25em">
-                <b>calls-large-struct</b>
-              </div>
-            </td>
-              <td class="fail">
-                <b>0/3</b>
-              </td>
-              <td class="fail">
-                <b>0/3</b>
-              </td>
-              <td class="fail">
-                <b>0/3</b>
-              </td>
-              <td class="fail">
-                <b>0/3</b>
-              </td>
-              <td class="fail">
-                <b>0/3</b>
-              </td>
-              <td class="fail">
-                <b>1/3</b>
-              </td>
-              <td class="fail">
-                <b>0/3</b>
-              </td>
-            
-            </tr><tr>
-        
-        <td>
-          <div class="group" style="margin-left: 7.0em">
-            byval struct align 8
-          </div>
-        </td>
-          
-          <td class="fail">
-            <a href="raven_18_11_01/program@execute@calls-large-struct.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="raven_18_11_02/program@execute@calls-large-struct.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="raven_18_11_04/program@execute@calls-large-struct.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="raven_18_11_05/program@execute@calls-large-struct.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="raven_18_11_06/program@execute@calls-large-struct.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="raven_gentoo_18_11_05/program@execute@calls-large-struct.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="raven_gentoo_18_11_06/program@execute@calls-large-struct.html">
-              fail
-            </a>
-          </td>
-        </tr>
-    </table>
+    <h1>No changes</h1>
   </body>
 </html>
