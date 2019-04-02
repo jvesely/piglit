@@ -12,12 +12,12 @@
     <p>Currently showing: regressions</p>
     <p>Show:
         <a href="index.html">all</a>
-          | <a href="enabled.html">enabled</a>
-          | <a href="skips.html">skips</a>
           | <a href="disabled.html">disabled</a>
-          | <a href="problems.html">problems</a>
-          | <a href="changes.html">changes</a>
+          | <a href="skips.html">skips</a>
           | regressions
+          | <a href="problems.html">problems</a>
+          | <a href="enabled.html">enabled</a>
+          | <a href="changes.html">changes</a>
           | <a href="fixes.html">fixes</a>
     </p>
     <table>
@@ -36,14 +36,14 @@
       </colgroup>
       <tr>
         <th/>
-          <th class="head"><b>radeon6_19_03_29</b><br>          (<a href="radeon6_19_03_29/index.html">info</a>)</th>
-          <th class="head"><b>radeon7_19_03_29</b><br>          (<a href="radeon7_19_03_29/index.html">info</a>)</th>
-          <th class="head"><b>radeon8_19_03_29</b><br>          (<a href="radeon8_19_03_29/index.html">info</a>)</th>
-          <th class="head"><b>radeon_19_03_25</b><br>          (<a href="radeon_19_03_25/index.html">info</a>)</th>
-          <th class="head"><b>radeon_19_03_26</b><br>          (<a href="radeon_19_03_26/index.html">info</a>)</th>
-          <th class="head"><b>radeon_19_03_27</b><br>          (<a href="radeon_19_03_27/index.html">info</a>)</th>
+          <th class="head"><b>radeon6_19_04_02</b><br>          (<a href="radeon6_19_04_02/index.html">info</a>)</th>
+          <th class="head"><b>radeon7_19_04_02</b><br>          (<a href="radeon7_19_04_02/index.html">info</a>)</th>
+          <th class="head"><b>radeon8_19_04_02</b><br>          (<a href="radeon8_19_04_02/index.html">info</a>)</th>
           <th class="head"><b>radeon_19_03_28</b><br>          (<a href="radeon_19_03_28/index.html">info</a>)</th>
           <th class="head"><b>radeon_19_03_29</b><br>          (<a href="radeon_19_03_29/index.html">info</a>)</th>
+          <th class="head"><b>radeon_19_03_30</b><br>          (<a href="radeon_19_03_30/index.html">info</a>)</th>
+          <th class="head"><b>radeon_19_04_01</b><br>          (<a href="radeon_19_04_01/index.html">info</a>)</th>
+          <th class="head"><b>radeon_19_04_02</b><br>          (<a href="radeon_19_04_02/index.html">info</a>)</th>
           <th class="head"><b>pocl_18_08_10</b><br>          (<a href="pocl_18_08_10/index.html">info</a>)</th>
       </tr>
       <tr>
@@ -63,8 +63,8 @@
           <td class="crash">
             <b>3374/3517</b>
           </td>
-          <td class="crash">
-            <b>3374/3517</b>
+          <td class="fail">
+            <b>4/20</b>
           </td>
           <td class="crash">
             <b>3374/3517</b>
@@ -101,7 +101,7 @@
                 <b>46/48</b>
               </td>
               <td class="fail">
-                <b>46/48</b>
+                <b>4/20</b>
               </td>
               <td class="fail">
                 <b>46/48</b>
@@ -117,42 +117,402 @@
         
         <td>
           <div class="group" style="margin-left: 3.5em">
+            clbuildprogram
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clbuildprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clbuildprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clbuildprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clbuildprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clbuildprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clbuildprogram.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clbuildprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clbuildprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clbuildprogram.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clcreatebuffer
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clcreatebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clcreatebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clcreatebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clcreatebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clcreatebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clcreatebuffer.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clcreatebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clcreatebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clcreatebuffer.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clcreatecontext
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clcreatecontext.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clcreatecontext.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clcreatecontext.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clcreatecontext.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clcreatecontext.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clcreatecontext.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clcreatecontext.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clcreatecontext.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clcreatecontext.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clcreateimage
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clcreateimage.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clcreateimage.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clcreateimage.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clcreateimage.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clcreateimage.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clcreateimage.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clcreateimage.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clcreateimage.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clcreateimage.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clcreatekernel
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clcreatekernel.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clcreatekernel.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clcreatekernel.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clcreatekernel.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clcreatekernel.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clcreatekernel.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clcreatekernel.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clcreatekernel.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clcreatekernel.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clcreatekernelsinprogram
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clcreatekernelsinprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clcreatekernelsinprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clcreatekernelsinprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clcreatekernelsinprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clcreatekernelsinprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clcreatekernelsinprogram.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clcreatekernelsinprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clcreatekernelsinprogram.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clcreatekernelsinprogram.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
             clcreateprogramwithbinary
           </div>
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/api@clcreateprogramwithbinary.html">
+            <a href="radeon6_19_04_02/api@clcreateprogramwithbinary.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon7_19_03_29/api@clcreateprogramwithbinary.html">
+            <a href="radeon7_19_04_02/api@clcreateprogramwithbinary.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon8_19_03_29/api@clcreateprogramwithbinary.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="radeon_19_03_25/api@clcreateprogramwithbinary.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="radeon_19_03_26/api@clcreateprogramwithbinary.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="radeon_19_03_27/api@clcreateprogramwithbinary.html">
+            <a href="radeon8_19_04_02/api@clcreateprogramwithbinary.html">
               pass
             </a>
           </td>
@@ -170,8 +530,530 @@
           </td>
           
           <td class="fail">
+            <a href="radeon_19_03_30/api@clcreateprogramwithbinary.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clcreateprogramwithbinary.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clcreateprogramwithbinary.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="pocl_18_08_10/api@clcreateprogramwithbinary.html">
               fail
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clcreateprogramwithsource
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clcreateprogramwithsource.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clcreateprogramwithsource.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clcreateprogramwithsource.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clcreateprogramwithsource.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clcreateprogramwithsource.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clcreateprogramwithsource.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clcreateprogramwithsource.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clcreateprogramwithsource.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clcreateprogramwithsource.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clcreatesampler
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clcreatesampler.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clcreatesampler.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clcreatesampler.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clcreatesampler.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clcreatesampler.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clcreatesampler.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clcreatesampler.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clcreatesampler.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clcreatesampler.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clenqueuecopybuffer
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clenqueuecopybuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clenqueuecopybuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clenqueuecopybuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clenqueuecopybuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clenqueuecopybuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clenqueuecopybuffer.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clenqueuecopybuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clenqueuecopybuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clenqueuecopybuffer.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clenqueuecopybufferrect
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clenqueuecopybufferrect.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clenqueuecopybufferrect.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clenqueuecopybufferrect.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clenqueuecopybufferrect.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clenqueuecopybufferrect.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clenqueuecopybufferrect.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clenqueuecopybufferrect.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clenqueuecopybufferrect.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clenqueuecopybufferrect.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clenqueuereadbuffer and clenqueuewritebuffer
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clenqueuereadbuffer and clenqueuewritebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clenqueuereadbuffer and clenqueuewritebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clenqueuereadbuffer and clenqueuewritebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clenqueuereadbuffer and clenqueuewritebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clenqueuereadbuffer and clenqueuewritebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clenqueuereadbuffer and clenqueuewritebuffer.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clenqueuereadbuffer and clenqueuewritebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clenqueuereadbuffer and clenqueuewritebuffer.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clenqueuereadbuffer and clenqueuewritebuffer.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clgetkernelinfo
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clgetkernelinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clgetkernelinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clgetkernelinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clgetkernelinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clgetkernelinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clgetkernelinfo.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clgetkernelinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clgetkernelinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clgetkernelinfo.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clgetmemobjectinfo
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clgetmemobjectinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clgetmemobjectinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clgetmemobjectinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clgetmemobjectinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clgetmemobjectinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clgetmemobjectinfo.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clgetmemobjectinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clgetmemobjectinfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clgetmemobjectinfo.html">
+              pass
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 3.5em">
+            clgetprograminfo
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/api@clgetprograminfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/api@clgetprograminfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/api@clgetprograminfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/api@clgetprograminfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/api@clgetprograminfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_03_30/api@clgetprograminfo.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/api@clgetprograminfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/api@clgetprograminfo.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="pocl_18_08_10/api@clgetprograminfo.html">
+              pass
             </a>
           </td>
         </tr>
@@ -198,8 +1080,8 @@
               <td class="crash">
                 <b>3300/3441</b>
               </td>
-              <td class="crash">
-                <b>3300/3441</b>
+              <td class="skip">
+                <b>0/0</b>
               </td>
               <td class="crash">
                 <b>3300/3441</b>
@@ -233,8 +1115,8 @@
               <td class="crash">
                 <b>3265/3404</b>
               </td>
-              <td class="crash">
-                <b>3265/3404</b>
+              <td class="skip">
+                <b>0/0</b>
               </td>
               <td class="crash">
                 <b>3265/3404</b>
@@ -250,42 +1132,87 @@
         
         <td>
           <div class="group" style="margin-left: 5.25em">
-            i32-stack-array
+            clz-optimizations
           </div>
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/program@execute@i32-stack-array.html">
+            <a href="radeon6_19_04_02/program@execute@clz-optimizations.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon7_19_04_02/program@execute@clz-optimizations.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon8_19_04_02/program@execute@clz-optimizations.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_28/program@execute@clz-optimizations.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_03_29/program@execute@clz-optimizations.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon_19_03_30/program@execute@clz-optimizations.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_01/program@execute@clz-optimizations.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon_19_04_02/program@execute@clz-optimizations.html">
               pass
             </a>
           </td>
           
           <td class="crash">
-            <a href="radeon7_19_03_29/program@execute@i32-stack-array.html">
+            <a href="pocl_18_08_10/program@execute@clz-optimizations.html">
+              crash
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 5.25em">
+            i32-stack-array
+          </div>
+        </td>
+          
+          <td class="pass">
+            <a href="radeon6_19_04_02/program@execute@i32-stack-array.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon7_19_04_02/program@execute@i32-stack-array.html">
               crash
             </a>
           </td>
           
           <td class="crash">
-            <a href="radeon8_19_03_29/program@execute@i32-stack-array.html">
-              crash
-            </a>
-          </td>
-          
-          <td class="crash">
-            <a href="radeon_19_03_25/program@execute@i32-stack-array.html">
-              crash
-            </a>
-          </td>
-          
-          <td class="crash">
-            <a href="radeon_19_03_26/program@execute@i32-stack-array.html">
-              crash
-            </a>
-          </td>
-          
-          <td class="crash">
-            <a href="radeon_19_03_27/program@execute@i32-stack-array.html">
+            <a href="radeon8_19_04_02/program@execute@i32-stack-array.html">
               crash
             </a>
           </td>
@@ -298,6 +1225,24 @@
           
           <td class="crash">
             <a href="radeon_19_03_29/program@execute@i32-stack-array.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon_19_03_30/program@execute@i32-stack-array.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon_19_04_01/program@execute@i32-stack-array.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon_19_04_02/program@execute@i32-stack-array.html">
               crash
             </a>
           </td>
@@ -318,37 +1263,19 @@
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/program@execute@multiple-stack-objects.html">
+            <a href="radeon6_19_04_02/program@execute@multiple-stack-objects.html">
               pass
             </a>
           </td>
           
           <td class="crash">
-            <a href="radeon7_19_03_29/program@execute@multiple-stack-objects.html">
+            <a href="radeon7_19_04_02/program@execute@multiple-stack-objects.html">
               crash
             </a>
           </td>
           
           <td class="crash">
-            <a href="radeon8_19_03_29/program@execute@multiple-stack-objects.html">
-              crash
-            </a>
-          </td>
-          
-          <td class="crash">
-            <a href="radeon_19_03_25/program@execute@multiple-stack-objects.html">
-              crash
-            </a>
-          </td>
-          
-          <td class="crash">
-            <a href="radeon_19_03_26/program@execute@multiple-stack-objects.html">
-              crash
-            </a>
-          </td>
-          
-          <td class="crash">
-            <a href="radeon_19_03_27/program@execute@multiple-stack-objects.html">
+            <a href="radeon8_19_04_02/program@execute@multiple-stack-objects.html">
               crash
             </a>
           </td>
@@ -361,6 +1288,24 @@
           
           <td class="crash">
             <a href="radeon_19_03_29/program@execute@multiple-stack-objects.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon_19_03_30/program@execute@multiple-stack-objects.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon_19_04_01/program@execute@multiple-stack-objects.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon_19_04_02/program@execute@multiple-stack-objects.html">
               crash
             </a>
           </td>
@@ -394,8 +1339,8 @@
               <td class="crash">
                 <b>328/394</b>
               </td>
-              <td class="crash">
-                <b>328/394</b>
+              <td class="skip">
+                <b>0/0</b>
               </td>
               <td class="crash">
                 <b>328/394</b>
@@ -429,8 +1374,8 @@
               <td class="fail">
                 <b>4/10</b>
               </td>
-              <td class="fail">
-                <b>4/10</b>
+              <td class="notrun">
+                <b>0/0</b>
               </td>
               <td class="fail">
                 <b>4/10</b>
@@ -451,38 +1396,20 @@
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/program@execute@vload@vload-short-private.html">
+            <a href="radeon6_19_04_02/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon7_19_03_29/program@execute@vload@vload-short-private.html">
+            <a href="radeon7_19_04_02/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon8_19_03_29/program@execute@vload@vload-short-private.html">
+            <a href="radeon8_19_04_02/program@execute@vload@vload-short-private.html">
               pass
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_25/program@execute@vload@vload-short-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_26/program@execute@vload@vload-short-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_27/program@execute@vload@vload-short-private.html">
-              fail
             </a>
           </td>
           
@@ -494,6 +1421,22 @@
           
           <td class="fail">
             <a href="radeon_19_03_29/program@execute@vload@vload-short-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_01/program@execute@vload@vload-short-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_02/program@execute@vload@vload-short-private.html">
               fail
             </a>
           </td>
@@ -514,38 +1457,20 @@
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/program@execute@vload@vload-short-private.html">
+            <a href="radeon6_19_04_02/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon7_19_03_29/program@execute@vload@vload-short-private.html">
+            <a href="radeon7_19_04_02/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon8_19_03_29/program@execute@vload@vload-short-private.html">
+            <a href="radeon8_19_04_02/program@execute@vload@vload-short-private.html">
               pass
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_25/program@execute@vload@vload-short-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_26/program@execute@vload@vload-short-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_27/program@execute@vload@vload-short-private.html">
-              fail
             </a>
           </td>
           
@@ -557,6 +1482,22 @@
           
           <td class="fail">
             <a href="radeon_19_03_29/program@execute@vload@vload-short-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_01/program@execute@vload@vload-short-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_02/program@execute@vload@vload-short-private.html">
               fail
             </a>
           </td>
@@ -577,38 +1518,20 @@
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/program@execute@vload@vload-short-private.html">
+            <a href="radeon6_19_04_02/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon7_19_03_29/program@execute@vload@vload-short-private.html">
+            <a href="radeon7_19_04_02/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon8_19_03_29/program@execute@vload@vload-short-private.html">
+            <a href="radeon8_19_04_02/program@execute@vload@vload-short-private.html">
               pass
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_25/program@execute@vload@vload-short-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_26/program@execute@vload@vload-short-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_27/program@execute@vload@vload-short-private.html">
-              fail
             </a>
           </td>
           
@@ -620,6 +1543,22 @@
           
           <td class="fail">
             <a href="radeon_19_03_29/program@execute@vload@vload-short-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_01/program@execute@vload@vload-short-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_02/program@execute@vload@vload-short-private.html">
               fail
             </a>
           </td>
@@ -640,38 +1579,20 @@
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/program@execute@vload@vload-short-private.html">
+            <a href="radeon6_19_04_02/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon7_19_03_29/program@execute@vload@vload-short-private.html">
+            <a href="radeon7_19_04_02/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon8_19_03_29/program@execute@vload@vload-short-private.html">
+            <a href="radeon8_19_04_02/program@execute@vload@vload-short-private.html">
               pass
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_25/program@execute@vload@vload-short-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_26/program@execute@vload@vload-short-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_27/program@execute@vload@vload-short-private.html">
-              fail
             </a>
           </td>
           
@@ -683,6 +1604,22 @@
           
           <td class="fail">
             <a href="radeon_19_03_29/program@execute@vload@vload-short-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_01/program@execute@vload@vload-short-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_02/program@execute@vload@vload-short-private.html">
               fail
             </a>
           </td>
@@ -716,8 +1653,8 @@
               <td class="fail">
                 <b>4/10</b>
               </td>
-              <td class="fail">
-                <b>4/10</b>
+              <td class="notrun">
+                <b>0/0</b>
               </td>
               <td class="fail">
                 <b>4/10</b>
@@ -738,38 +1675,20 @@
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/program@execute@vload@vload-ushort-private.html">
+            <a href="radeon6_19_04_02/program@execute@vload@vload-ushort-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon7_19_03_29/program@execute@vload@vload-ushort-private.html">
+            <a href="radeon7_19_04_02/program@execute@vload@vload-ushort-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon8_19_03_29/program@execute@vload@vload-ushort-private.html">
+            <a href="radeon8_19_04_02/program@execute@vload@vload-ushort-private.html">
               pass
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_25/program@execute@vload@vload-ushort-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_26/program@execute@vload@vload-ushort-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_27/program@execute@vload@vload-ushort-private.html">
-              fail
             </a>
           </td>
           
@@ -781,6 +1700,22 @@
           
           <td class="fail">
             <a href="radeon_19_03_29/program@execute@vload@vload-ushort-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_01/program@execute@vload@vload-ushort-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_02/program@execute@vload@vload-ushort-private.html">
               fail
             </a>
           </td>
@@ -801,38 +1736,20 @@
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/program@execute@vload@vload-ushort-private.html">
+            <a href="radeon6_19_04_02/program@execute@vload@vload-ushort-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon7_19_03_29/program@execute@vload@vload-ushort-private.html">
+            <a href="radeon7_19_04_02/program@execute@vload@vload-ushort-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon8_19_03_29/program@execute@vload@vload-ushort-private.html">
+            <a href="radeon8_19_04_02/program@execute@vload@vload-ushort-private.html">
               pass
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_25/program@execute@vload@vload-ushort-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_26/program@execute@vload@vload-ushort-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_27/program@execute@vload@vload-ushort-private.html">
-              fail
             </a>
           </td>
           
@@ -844,6 +1761,22 @@
           
           <td class="fail">
             <a href="radeon_19_03_29/program@execute@vload@vload-ushort-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_01/program@execute@vload@vload-ushort-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_02/program@execute@vload@vload-ushort-private.html">
               fail
             </a>
           </td>
@@ -864,38 +1797,20 @@
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/program@execute@vload@vload-ushort-private.html">
+            <a href="radeon6_19_04_02/program@execute@vload@vload-ushort-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon7_19_03_29/program@execute@vload@vload-ushort-private.html">
+            <a href="radeon7_19_04_02/program@execute@vload@vload-ushort-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon8_19_03_29/program@execute@vload@vload-ushort-private.html">
+            <a href="radeon8_19_04_02/program@execute@vload@vload-ushort-private.html">
               pass
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_25/program@execute@vload@vload-ushort-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_26/program@execute@vload@vload-ushort-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_27/program@execute@vload@vload-ushort-private.html">
-              fail
             </a>
           </td>
           
@@ -907,6 +1822,22 @@
           
           <td class="fail">
             <a href="radeon_19_03_29/program@execute@vload@vload-ushort-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_01/program@execute@vload@vload-ushort-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_02/program@execute@vload@vload-ushort-private.html">
               fail
             </a>
           </td>
@@ -927,38 +1858,20 @@
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/program@execute@vload@vload-ushort-private.html">
+            <a href="radeon6_19_04_02/program@execute@vload@vload-ushort-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon7_19_03_29/program@execute@vload@vload-ushort-private.html">
+            <a href="radeon7_19_04_02/program@execute@vload@vload-ushort-private.html">
               pass
             </a>
           </td>
           
           <td class="pass">
-            <a href="radeon8_19_03_29/program@execute@vload@vload-ushort-private.html">
+            <a href="radeon8_19_04_02/program@execute@vload@vload-ushort-private.html">
               pass
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_25/program@execute@vload@vload-ushort-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_26/program@execute@vload@vload-ushort-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_27/program@execute@vload@vload-ushort-private.html">
-              fail
             </a>
           </td>
           
@@ -970,6 +1883,22 @@
           
           <td class="fail">
             <a href="radeon_19_03_29/program@execute@vload@vload-ushort-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_01/program@execute@vload@vload-ushort-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_02/program@execute@vload@vload-ushort-private.html">
               fail
             </a>
           </td>
@@ -1003,8 +1932,8 @@
               <td class="fail">
                 <b>316/318</b>
               </td>
-              <td class="fail">
-                <b>316/318</b>
+              <td class="skip">
+                <b>0/0</b>
               </td>
               <td class="fail">
                 <b>316/318</b>
@@ -1025,37 +1954,19 @@
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/program@execute@vstore@vstore-long-private.html">
+            <a href="radeon6_19_04_02/program@execute@vstore@vstore-long-private.html">
               pass
             </a>
           </td>
           
           <td class="fail">
-            <a href="radeon7_19_03_29/program@execute@vstore@vstore-long-private.html">
+            <a href="radeon7_19_04_02/program@execute@vstore@vstore-long-private.html">
               fail
             </a>
           </td>
           
           <td class="fail">
-            <a href="radeon8_19_03_29/program@execute@vstore@vstore-long-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_25/program@execute@vstore@vstore-long-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_26/program@execute@vstore@vstore-long-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_27/program@execute@vstore@vstore-long-private.html">
+            <a href="radeon8_19_04_02/program@execute@vstore@vstore-long-private.html">
               fail
             </a>
           </td>
@@ -1068,6 +1979,24 @@
           
           <td class="fail">
             <a href="radeon_19_03_29/program@execute@vstore@vstore-long-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon_19_03_30/program@execute@vstore@vstore-long-private.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_01/program@execute@vstore@vstore-long-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_02/program@execute@vstore@vstore-long-private.html">
               fail
             </a>
           </td>
@@ -1088,37 +2017,19 @@
         </td>
           
           <td class="pass">
-            <a href="radeon6_19_03_29/program@execute@vstore@vstore-ulong-private.html">
+            <a href="radeon6_19_04_02/program@execute@vstore@vstore-ulong-private.html">
               pass
             </a>
           </td>
           
           <td class="fail">
-            <a href="radeon7_19_03_29/program@execute@vstore@vstore-ulong-private.html">
+            <a href="radeon7_19_04_02/program@execute@vstore@vstore-ulong-private.html">
               fail
             </a>
           </td>
           
           <td class="fail">
-            <a href="radeon8_19_03_29/program@execute@vstore@vstore-ulong-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_25/program@execute@vstore@vstore-ulong-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_26/program@execute@vstore@vstore-ulong-private.html">
-              fail
-            </a>
-          </td>
-          
-          <td class="fail">
-            <a href="radeon_19_03_27/program@execute@vstore@vstore-ulong-private.html">
+            <a href="radeon8_19_04_02/program@execute@vstore@vstore-ulong-private.html">
               fail
             </a>
           </td>
@@ -1131,6 +2042,24 @@
           
           <td class="fail">
             <a href="radeon_19_03_29/program@execute@vstore@vstore-ulong-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon_19_03_30/program@execute@vstore@vstore-ulong-private.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_01/program@execute@vstore@vstore-ulong-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon_19_04_02/program@execute@vstore@vstore-ulong-private.html">
               fail
             </a>
           </td>
