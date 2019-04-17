@@ -20,14 +20,14 @@
         <td>totals</td>
         <td>
           <table>
-            <tr><td>pass</td><td>4183</td></tr>
-            <tr><td>fail</td><td>39</td></tr>
-            <tr><td>skip</td><td>25</td></tr>
-            <tr><td>warn</td><td>7</td></tr>
-            <tr><td>incomplete</td><td>4</td></tr>
+            <tr><td>pass</td><td>4189</td></tr>
+            <tr><td>fail</td><td>40</td></tr>
+            <tr><td>skip</td><td>29</td></tr>
             <tr><td>crash</td><td>1</td></tr>
+            <tr><td>warn</td><td>0</td></tr>
             <tr><td>timeout</td><td>0</td></tr>
             <tr><td>notrun</td><td>0</td></tr>
+            <tr><td>incomplete</td><td>0</td></tr>
             <tr><td>dmesg-warn</td><td>0</td></tr>
             <tr><td>dmesg-fail</td><td>0</td></tr>
             <tr><td>total</td><td>4259</td></tr>
@@ -36,7 +36,7 @@
       </tr>
       <tr>
         <td>time_elapsed</td>
-        <td>0:06:10.977471</td>
+        <td>0:05:48.329044</td>
       </tr>
       <tr>
         <td>name</td>
@@ -50,28 +50,21 @@
         <td>info</td>
         <td>
           <table>
-                <tr><td>clinfo</td><td><pre>Number of platforms                               2
+                <tr><td>clinfo</td><td><pre>Number of platforms                               1
   Platform Name                                   Clover
   Platform Vendor                                 Mesa
-  Platform Version                                OpenCL 1.1 Mesa 18.3.6
+  Platform Version                                OpenCL 1.1 Mesa 19.1.0-devel (git-bdac962962)
   Platform Profile                                FULL_PROFILE
   Platform Extensions                             cl_khr_icd
   Platform Extensions function suffix             MESA
 
-  Platform Name                                   Portable Computing Language
-  Platform Vendor                                 The pocl project
-  Platform Version                                OpenCL 1.2 pocl 1.2 RelWithDebInfo, LLVM 7.0.1, SLEEF, DISTRO, POCL_DEBUG
-  Platform Profile                                FULL_PROFILE
-  Platform Extensions                             cl_khr_icd
-  Platform Extensions function suffix             POCL
-
   Platform Name                                   Clover
 Number of devices                                 2
-  Device Name                                     AMD Radeon R7 Graphics (CARRIZO, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 7.0.1)
+  Device Name                                     AMD Radeon R7 Graphics (CARRIZO, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 9.0.0)
   Device Vendor                                   AMD
   Device Vendor ID                                0x1002
-  Device Version                                  OpenCL 1.1 Mesa 18.3.6
-  Driver Version                                  18.3.6
+  Device Version                                  OpenCL 1.1 Mesa 19.1.0-devel (git-bdac962962)
+  Driver Version                                  19.1.0-devel
   Device OpenCL C Version                         OpenCL C 1.1 
   Device Type                                     GPU
   Device Available                                Yes
@@ -139,11 +132,11 @@ Number of devices                                 2
     Run native kernels                            No
   Device Extensions                               cl_khr_byte_addressable_store cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_fp64 cl_khr_fp16
 
-  Device Name                                     AMD Radeon (TM) R7 M340 (ICELAND, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 7.0.1)
+  Device Name                                     AMD Radeon (TM) R7 M340 (ICELAND, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 9.0.0)
   Device Vendor                                   AMD
   Device Vendor ID                                0x1002
-  Device Version                                  OpenCL 1.1 Mesa 18.3.6
-  Driver Version                                  18.3.6
+  Device Version                                  OpenCL 1.1 Mesa 19.1.0-devel (git-bdac962962)
+  Driver Version                                  19.1.0-devel
   Device OpenCL C Version                         OpenCL C 1.1 
   Device Type                                     GPU
   Device Available                                Yes
@@ -211,108 +204,24 @@ Number of devices                                 2
     Run native kernels                            No
   Device Extensions                               cl_khr_byte_addressable_store cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_fp64 cl_khr_fp16
 
-  Platform Name                                   Portable Computing Language
-Number of devices                                 1
-  Device Name                                     pthread-AMD FX-9800P RADEON R7, 12 COMPUTE CORES 4C+8G
-  Device Vendor                                   AuthenticAMD
-  Device Vendor ID                                0x6c636f70
-  Device Version                                  OpenCL 1.2 pocl HSTR: pthread-x86_64-unknown-linux-gnu-bdver4
-  Driver Version                                  1.2
-  Device OpenCL C Version                         OpenCL C 1.2 pocl
-  Device Type                                     CPU
-  Device Available                                Yes
-  Device Profile                                  FULL_PROFILE
-  Max compute units                               4
-  Max clock frequency                             2700MHz
-  Device Partition                                (core)
-    Max number of sub-devices                     4
-    Supported partition types                     equally, by counts
-  Max work item dimensions                        3
-  Max work item sizes                             4096x4096x4096
-  Max work group size                             4096
-  Compiler Available                              Yes
-  Linker Available                                Yes
-  Preferred work group size multiple              8
-  Preferred / native vector sizes                 
-    char                                                16 / 16      
-    short                                               16 / 16      
-    int                                                  8 / 8       
-    long                                                 4 / 4       
-    half                                                 0 / 0        (n/a)
-    float                                                8 / 8       
-    double                                               4 / 4        (cl_khr_fp64)
-  Half-precision Floating-point support           (n/a)
-  Single-precision Floating-point support         (core)
-    Denormals                                     Yes
-    Infinity and NANs                             Yes
-    Round to nearest                              Yes
-    Round to zero                                 Yes
-    Round to infinity                             Yes
-    IEEE754-2008 fused multiply-add               Yes
-    Support is emulated in software               No
-    Correctly-rounded divide and sqrt operations  Yes
-  Double-precision Floating-point support         (cl_khr_fp64)
-    Denormals                                     Yes
-    Infinity and NANs                             Yes
-    Round to nearest                              Yes
-    Round to zero                                 Yes
-    Round to infinity                             Yes
-    IEEE754-2008 fused multiply-add               Yes
-    Support is emulated in software               No
-  Address bits                                    64, Little-Endian
-  Global memory size                              14163070976 (13.19GiB)
-  Error Correction support                        No
-  Max memory allocation                           4294967296 (4GiB)
-  Unified memory for Host and Device              Yes
-  Minimum alignment for any data type             128 bytes
-  Alignment of base address                       1024 bits (128 bytes)
-  Global Memory cache type                        Read/Write
-  Global Memory cache size                        1048576 (1024KiB)
-  Global Memory cache line size                   64 bytes
-  Image support                                   Yes
-    Max number of samplers per kernel             16
-    Max size for 1D images from buffer            268435456 pixels
-    Max 1D or 2D image array size                 2048 images
-    Max 2D image size                             16384x16384 pixels
-    Max 3D image size                             2048x2048x2048 pixels
-    Max number of read image args                 128
-    Max number of write image args                128
-  Local memory type                               Global
-  Local memory size                               524288 (512KiB)
-  Max constant buffer size                        524288 (512KiB)
-  Max number of constant args                     8
-  Max size of kernel argument                     1024
-  Queue properties                                
-    Out-of-order execution                        No
-    Profiling                                     Yes
-  Prefer user sync for interop                    Yes
-  Profiling timer resolution                      1ns
-  Execution capabilities                          
-    Run OpenCL kernels                            Yes
-    Run native kernels                            Yes
-  printf() buffer size                            16777216 (16MiB)
-  Built-in kernels                                
-  Device Extensions                               cl_khr_byte_addressable_store cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_3d_image_writes cl_khr_fp64 cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_fp64
-
 NULL platform behavior
   clGetPlatformInfo(NULL, CL_PLATFORM_NAME, ...)  Clover
   clGetDeviceIDs(NULL, CL_DEVICE_TYPE_ALL, ...)   Success [MESA]
   clCreateContext(NULL, ...) [default]            Success [MESA]
-  clCreateContext(NULL, ...) [other]              Success [POCL]
   clCreateContextFromType(NULL, CL_DEVICE_TYPE_DEFAULT)  Success (1)
     Platform Name                                 Clover
-    Device Name                                   AMD Radeon R7 Graphics (CARRIZO, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 7.0.1)
+    Device Name                                   AMD Radeon R7 Graphics (CARRIZO, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 9.0.0)
   clCreateContextFromType(NULL, CL_DEVICE_TYPE_CPU)  No devices found in platform
   clCreateContextFromType(NULL, CL_DEVICE_TYPE_GPU)  Success (2)
     Platform Name                                 Clover
-    Device Name                                   AMD Radeon R7 Graphics (CARRIZO, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 7.0.1)
-    Device Name                                   AMD Radeon (TM) R7 M340 (ICELAND, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 7.0.1)
+    Device Name                                   AMD Radeon R7 Graphics (CARRIZO, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 9.0.0)
+    Device Name                                   AMD Radeon (TM) R7 M340 (ICELAND, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 9.0.0)
   clCreateContextFromType(NULL, CL_DEVICE_TYPE_ACCELERATOR)  No devices found in platform
   clCreateContextFromType(NULL, CL_DEVICE_TYPE_CUSTOM)  No devices found in platform
   clCreateContextFromType(NULL, CL_DEVICE_TYPE_ALL)  Success (2)
     Platform Name                                 Clover
-    Device Name                                   AMD Radeon R7 Graphics (CARRIZO, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 7.0.1)
-    Device Name                                   AMD Radeon (TM) R7 M340 (ICELAND, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 7.0.1)
+    Device Name                                   AMD Radeon R7 Graphics (CARRIZO, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 9.0.0)
+    Device Name                                   AMD Radeon (TM) R7 M340 (ICELAND, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 9.0.0)
 
 ICD loader properties
   ICD loader Name                                 OpenCL ICD Loader

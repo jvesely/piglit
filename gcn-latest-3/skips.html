@@ -12,13 +12,13 @@
     <p>Currently showing: skips</p>
     <p>Show:
         <a href="index.html">all</a>
-          | <a href="disabled.html">disabled</a>
-          | <a href="regressions.html">regressions</a>
-          | <a href="changes.html">changes</a>
           | <a href="enabled.html">enabled</a>
-          | skips
-          | <a href="problems.html">problems</a>
+          | <a href="changes.html">changes</a>
           | <a href="fixes.html">fixes</a>
+          | <a href="disabled.html">disabled</a>
+          | <a href="problems.html">problems</a>
+          | skips
+          | <a href="regressions.html">regressions</a>
     </p>
     <table>
       <colgroup>
@@ -80,8 +80,8 @@
           <td class="fail">
             <b>4189/4229</b>
           </td>
-          <td class="incomplete">
-            <b>4183/4234</b>
+          <td class="crash">
+            <b>4189/4230</b>
           </td>
           <td class="crash">
             <b>4187/4203</b>
@@ -138,8 +138,8 @@
               <td class="fail">
                 <b>45/48</b>
               </td>
-              <td class="incomplete">
-                <b>41/52</b>
+              <td class="fail">
+                <b>45/48</b>
               </td>
               <td class="crash">
                 <b>45/48</b>
@@ -318,9 +318,9 @@
             </a>
           </td>
           
-          <td class="incomplete">
+          <td class="skip">
             <a href="carrizo_llvm_19_04_17/api@clenqueuefillbuffer.html">
-              incomplete
+              skip
             </a>
           </td>
           
@@ -423,9 +423,9 @@
             </a>
           </td>
           
-          <td class="incomplete">
+          <td class="skip">
             <a href="carrizo_llvm_19_04_17/api@clenqueuefillimage.html">
-              incomplete
+              skip
             </a>
           </td>
           
@@ -528,9 +528,9 @@
             </a>
           </td>
           
-          <td class="incomplete">
+          <td class="skip">
             <a href="carrizo_llvm_19_04_17/api@clenqueuemigratememobjects.html">
-              incomplete
+              skip
             </a>
           </td>
           
@@ -633,9 +633,9 @@
             </a>
           </td>
           
-          <td class="fail">
+          <td class="skip">
             <a href="carrizo_llvm_19_04_17/api@clgetextensionfunctionaddressforplatform.html">
-              fail
+              skip
             </a>
           </td>
           

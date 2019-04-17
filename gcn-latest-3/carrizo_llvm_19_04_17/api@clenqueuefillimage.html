@@ -9,7 +9,7 @@
     <h1>Results for api@clenqueuefillimage</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> incomplete</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -20,16 +20,25 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>None</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00</td>
+        <td>0:00:00.162091</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre></pre>
+          <pre>## Test: clEnqueueFillImage (/home/jvesely/piglit/tests/cl/api/enqueue-fill-image.c) ##
+
+# Platform supporting only version 1.1. Running test on that version.
+# Running on:
+#   Platform: Clover
+#   Device: AMD Radeon R7 Graphics (CARRIZO, DRM 3.27.0, 5.0.6-200.fc29.x86_64, LLVM 9.0.0)
+#   OpenCL version: 2.0
+Trying to run test with version (1.1) lower than version_min: 12
+# Result:
+</pre>
         </td>
       </tr>
       <tr>
@@ -39,9 +48,15 @@
         </td>
       </tr>
       <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_SOURCE_DIR=&#34;/home/jvesely/piglit&#34; PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34;</pre>
+        </td>
+      </tr>
+      <tr>
         <td>Command</td>
         <td>
-          <pre></pre>
+          <pre>/home/jvesely/piglit/bin/cl-api-enqueue-fill-image</pre>
         </td>
       </tr>
       <tr>

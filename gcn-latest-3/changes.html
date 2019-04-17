@@ -12,13 +12,13 @@
     <p>Currently showing: changes</p>
     <p>Show:
         <a href="index.html">all</a>
-          | <a href="disabled.html">disabled</a>
-          | <a href="regressions.html">regressions</a>
-          | changes
           | <a href="enabled.html">enabled</a>
-          | <a href="skips.html">skips</a>
-          | <a href="problems.html">problems</a>
+          | changes
           | <a href="fixes.html">fixes</a>
+          | <a href="disabled.html">disabled</a>
+          | <a href="problems.html">problems</a>
+          | <a href="skips.html">skips</a>
+          | <a href="regressions.html">regressions</a>
     </p>
     <table>
       <colgroup>
@@ -80,8 +80,8 @@
           <td class="fail">
             <b>4189/4229</b>
           </td>
-          <td class="incomplete">
-            <b>4183/4234</b>
+          <td class="crash">
+            <b>4189/4230</b>
           </td>
           <td class="crash">
             <b>4187/4203</b>
@@ -138,8 +138,8 @@
               <td class="fail">
                 <b>45/48</b>
               </td>
-              <td class="incomplete">
-                <b>41/52</b>
+              <td class="fail">
+                <b>45/48</b>
               </td>
               <td class="crash">
                 <b>45/48</b>
@@ -528,9 +528,9 @@
             </a>
           </td>
           
-          <td class="warn">
+          <td class="pass">
             <a href="carrizo_llvm_19_04_17/api@clcreatecommandqueue.html">
-              warn
+              pass
             </a>
           </td>
           
@@ -1158,9 +1158,9 @@
             </a>
           </td>
           
-          <td class="incomplete">
+          <td class="skip">
             <a href="carrizo_llvm_19_04_17/api@clenqueuefillbuffer.html">
-              incomplete
+              skip
             </a>
           </td>
           
@@ -1263,9 +1263,9 @@
             </a>
           </td>
           
-          <td class="incomplete">
+          <td class="skip">
             <a href="carrizo_llvm_19_04_17/api@clenqueuefillimage.html">
-              incomplete
+              skip
             </a>
           </td>
           
@@ -1368,9 +1368,9 @@
             </a>
           </td>
           
-          <td class="incomplete">
+          <td class="skip">
             <a href="carrizo_llvm_19_04_17/api@clenqueuemigratememobjects.html">
-              incomplete
+              skip
             </a>
           </td>
           
@@ -1473,9 +1473,9 @@
             </a>
           </td>
           
-          <td class="incomplete">
+          <td class="fail">
             <a href="carrizo_llvm_19_04_17/api@clenqueuereadbuffer and clenqueuewritebuffer.html">
-              incomplete
+              fail
             </a>
           </td>
           
@@ -1538,216 +1538,6 @@
         
         <td>
           <div class="group" style="margin-left: 3.5em">
-            clgetcommandqueueinfo
-          </div>
-        </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm5_19_04_17/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm6_19_04_17/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm7_19_04_17/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm8_19_04_17/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm_19_04_14/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm_19_04_15/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="warn">
-            <a href="carrizo_llvm_19_04_17/api@clgetcommandqueueinfo.html">
-              warn
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm5_19_04_17/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm6_19_04_17/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm7_19_04_17/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm8_19_04_17/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_14/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_15/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_17/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="amd_app_18_08_14/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="pocl_18_08_10/api@clgetcommandqueueinfo.html">
-              pass
-            </a>
-          </td>
-        </tr>
-        
-        <tr>
-        
-        <td>
-          <div class="group" style="margin-left: 3.5em">
-            clgetdeviceinfo
-          </div>
-        </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm5_19_04_17/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm6_19_04_17/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm7_19_04_17/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm8_19_04_17/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm_19_04_14/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm_19_04_15/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="warn">
-            <a href="carrizo_llvm_19_04_17/api@clgetdeviceinfo.html">
-              warn
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm5_19_04_17/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm6_19_04_17/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm7_19_04_17/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm8_19_04_17/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_14/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_15/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_17/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="amd_app_18_08_14/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="pocl_18_08_10/api@clgetdeviceinfo.html">
-              pass
-            </a>
-          </td>
-        </tr>
-        
-        <tr>
-        
-        <td>
-          <div class="group" style="margin-left: 3.5em">
             clgetextensionfunctionaddressforplatform
           </div>
         </td>
@@ -1788,9 +1578,9 @@
             </a>
           </td>
           
-          <td class="fail">
+          <td class="skip">
             <a href="carrizo_llvm_19_04_17/api@clgetextensionfunctionaddressforplatform.html">
-              fail
+              skip
             </a>
           </td>
           
@@ -2404,111 +2194,6 @@
         
         <td>
           <div class="group" style="margin-left: 3.5em">
-            clretaincomandqueue and clreleasecommandqueue
-          </div>
-        </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm5_19_04_17/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm6_19_04_17/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm7_19_04_17/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm8_19_04_17/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm_19_04_14/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm_19_04_15/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="warn">
-            <a href="carrizo_llvm_19_04_17/api@clretaincomandqueue and clreleasecommandqueue.html">
-              warn
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm5_19_04_17/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm6_19_04_17/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm7_19_04_17/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm8_19_04_17/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_14/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_15/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_17/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="amd_app_18_08_14/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="pocl_18_08_10/api@clretaincomandqueue and clreleasecommandqueue.html">
-              pass
-            </a>
-          </td>
-        </tr>
-        
-        <tr>
-        
-        <td>
-          <div class="group" style="margin-left: 3.5em">
             clretainevent and clreleaseevent
           </div>
         </td>
@@ -2901,8 +2586,8 @@
               <td class="fail">
                 <b>27/28</b>
               </td>
-              <td class="warn">
-                <b>25/28</b>
+              <td class="fail">
+                <b>27/28</b>
               </td>
               <td class="fail">
                 <b>27/28</b>
@@ -2933,111 +2618,6 @@
               </td>
             
             </tr><tr>
-        
-        <td>
-          <div class="group" style="margin-left: 3.5em">
-            flush after enqueue kernel
-          </div>
-        </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm5_19_04_17/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm6_19_04_17/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm7_19_04_17/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm8_19_04_17/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm_19_04_14/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm_19_04_15/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="warn">
-            <a href="carrizo_llvm_19_04_17/custom@flush after enqueue kernel.html">
-              warn
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm5_19_04_17/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm6_19_04_17/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm7_19_04_17/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm8_19_04_17/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_14/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_15/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_17/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="amd_app_18_08_14/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="pocl_18_08_10/custom@flush after enqueue kernel.html">
-              pass
-            </a>
-          </td>
-        </tr>
-        
-        <tr>
         
         <td>
           <div class="group" style="margin-left: 3.5em">
@@ -3081,9 +2661,9 @@
             </a>
           </td>
           
-          <td class="warn">
+          <td class="fail">
             <a href="carrizo_llvm_19_04_17/custom@r600 create release buffer bug.html">
-              warn
+              fail
             </a>
           </td>
           
@@ -3137,111 +2717,6 @@
           
           <td class="pass">
             <a href="pocl_18_08_10/custom@r600 create release buffer bug.html">
-              pass
-            </a>
-          </td>
-        </tr>
-        
-        <tr>
-        
-        <td>
-          <div class="group" style="margin-left: 3.5em">
-            run simple kernel
-          </div>
-        </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm5_19_04_17/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm6_19_04_17/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm7_19_04_17/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm8_19_04_17/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm_19_04_14/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="carrizo_llvm_19_04_15/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="warn">
-            <a href="carrizo_llvm_19_04_17/custom@run simple kernel.html">
-              warn
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm5_19_04_17/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm6_19_04_17/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm7_19_04_17/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm8_19_04_17/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_14/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_15/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="iceland_llvm_19_04_17/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="amd_app_18_08_14/custom@run simple kernel.html">
-              pass
-            </a>
-          </td>
-          
-          <td class="pass">
-            <a href="pocl_18_08_10/custom@run simple kernel.html">
               pass
             </a>
           </td>
