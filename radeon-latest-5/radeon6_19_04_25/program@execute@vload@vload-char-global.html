@@ -24,7 +24,7 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:01.285532</td>
+        <td>0:00:01.278248</td>
       </tr>
       <tr>
         <td>Stdout</td>
@@ -36,7 +36,7 @@
         <td>Stderr</td>
         <td>
           <pre>Overran sorted position:
-t70: i32,ch = load&lt;LD2[%8(addrspace=1)](align=1)(tbaa=&lt;0x1518688&gt;), anyext from i16&gt; t204, t20, undef:i32
+t70: i32,ch = load&lt;LD2[%8(addrspace=1)](align=1)(tbaa=&lt;0x18b2748&gt;), anyext from i16&gt; t204, t20, undef:i32
   t20: i32 = add nuw t285, Constant:i32&lt;1&gt;
     t285: i32 = CONST_ADDRESS Constant:i32&lt;8228&gt;
       t284: i32 = Constant&lt;8228&gt;
@@ -45,7 +45,7 @@ t70: i32,ch = load&lt;LD2[%8(addrspace=1)](align=1)(tbaa=&lt;0x1518688&gt;), any
 Checking if this is due to cycles
 Detected cycle in SelectionDAG
 Offending node:
-t70: i32,ch = load&lt;LD2[%8(addrspace=1)](align=1)(tbaa=&lt;0x1518688&gt;), anyext from i16&gt; t204, t20, undef:i32
+t70: i32,ch = load&lt;LD2[%8(addrspace=1)](align=1)(tbaa=&lt;0x18b2748&gt;), anyext from i16&gt; t204, t20, undef:i32
   t20: i32 = add nuw t285, Constant:i32&lt;1&gt;
     t285: i32 = CONST_ADDRESS Constant:i32&lt;8228&gt;
       t284: i32 = Constant&lt;8228&gt;

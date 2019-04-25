@@ -24,7 +24,7 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:09.394514</td>
+        <td>0:00:09.343722</td>
       </tr>
       <tr>
         <td>Stdout</td>
@@ -34,7 +34,7 @@
 # Platform supporting only version 1.1. Running test on that version.
 # Running on:
 #   Platform: Clover
-#   Device: AMD TURKS (DRM 2.50.0 / 5.0.8-200.fc29.x86_64, LLVM 9.0.0)
+#   Device: AMD TURKS (DRM 2.50.0 / 5.0.9-200.fc29.x86_64, LLVM 9.0.0)
 #   OpenCL version: 2.0
 #   OpenCL C version: 1.1
 #   Build options:  -cl-std=CL1.1
@@ -84,7 +84,7 @@ Using kernel vload8_private
 Setting kernel arguments...
 Running the kernel...
 Validating results...
-Expecting 116 (0x74) with tolerance 0, but got 120 (0x78)
+Expecting 116 (0x74) with tolerance 0, but got 189 (0xbd)
 Error at short[1]
  Argument 1: FAIL
 &gt; Running kernel test: vector load private offset ushort8
@@ -92,7 +92,7 @@ Using kernel vload8_private_offset
 Setting kernel arguments...
 Running the kernel...
 Validating results...
-Expecting 116 (0x74) with tolerance 0, but got 0 (0x0)
+Expecting 116 (0x74) with tolerance 0, but got 17136 (0x42f0)
 Error at short[1]
  Argument 1: FAIL
 &gt; Running kernel test: vector load private ushort16
@@ -108,7 +108,7 @@ Using kernel vload16_private_offset
 Setting kernel arguments...
 Running the kernel...
 Validating results...
-Expecting 185 (0xb9) with tolerance 0, but got 0 (0x0)
+Expecting 185 (0xb9) with tolerance 0, but got 7168 (0x1c00)
 Error at short[1]
  Argument 1: FAIL
 &gt;&gt; Some or all of the tests FAILED
