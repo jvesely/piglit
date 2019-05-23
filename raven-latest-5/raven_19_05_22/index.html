@@ -20,8 +20,8 @@
         <td>totals</td>
         <td>
           <table>
-            <tr><td>pass</td><td>4190</td></tr>
-            <tr><td>fail</td><td>40</td></tr>
+            <tr><td>pass</td><td>4184</td></tr>
+            <tr><td>fail</td><td>46</td></tr>
             <tr><td>skip</td><td>29</td></tr>
             <tr><td>warn</td><td>0</td></tr>
             <tr><td>timeout</td><td>0</td></tr>
@@ -36,7 +36,7 @@
       </tr>
       <tr>
         <td>time_elapsed</td>
-        <td>0:02:09.463203</td>
+        <td>0:02:48.731827</td>
       </tr>
       <tr>
         <td>name</td>
@@ -53,18 +53,18 @@
                 <tr><td>clinfo</td><td><pre>Number of platforms                               1
   Platform Name                                   Clover
   Platform Vendor                                 Mesa
-  Platform Version                                OpenCL 1.1 Mesa 19.0.5
+  Platform Version                                OpenCL 1.1 Mesa 19.2.0-devel (git-dfb023f14c)
   Platform Profile                                FULL_PROFILE
   Platform Extensions                             cl_khr_icd
   Platform Extensions function suffix             MESA
 
   Platform Name                                   Clover
 Number of devices                                 1
-  Device Name                                     AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 7.1.0)
+  Device Name                                     AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 9.0.0)
   Device Vendor                                   AMD
   Device Vendor ID                                0x1002
-  Device Version                                  OpenCL 1.1 Mesa 19.0.5
-  Driver Version                                  19.0.5
+  Device Version                                  OpenCL 1.1 Mesa 19.2.0-devel (git-dfb023f14c)
+  Driver Version                                  19.2.0-devel
   Device OpenCL C Version                         OpenCL C 1.1 
   Device Type                                     GPU
   Device Profile                                  FULL_PROFILE
@@ -138,16 +138,16 @@ NULL platform behavior
   clCreateContext(NULL, ...) [default]            Success [MESA]
   clCreateContextFromType(NULL, CL_DEVICE_TYPE_DEFAULT)  Success (1)
     Platform Name                                 Clover
-    Device Name                                   AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 7.1.0)
+    Device Name                                   AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 9.0.0)
   clCreateContextFromType(NULL, CL_DEVICE_TYPE_CPU)  No devices found in platform
   clCreateContextFromType(NULL, CL_DEVICE_TYPE_GPU)  Success (1)
     Platform Name                                 Clover
-    Device Name                                   AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 7.1.0)
+    Device Name                                   AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 9.0.0)
   clCreateContextFromType(NULL, CL_DEVICE_TYPE_ACCELERATOR)  No devices found in platform
   clCreateContextFromType(NULL, CL_DEVICE_TYPE_CUSTOM)  No devices found in platform
   clCreateContextFromType(NULL, CL_DEVICE_TYPE_ALL)  Success (1)
     Platform Name                                 Clover
-    Device Name                                   AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 7.1.0)
+    Device Name                                   AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 9.0.0)
 
 ICD loader properties
   ICD loader Name                                 OpenCL ICD Loader
@@ -175,13 +175,14 @@ client glx vendor string: Mesa Project and SGI
 client glx version string: 1.4
 client glx extensions:
     GLX_ARB_context_flush_control, GLX_ARB_create_context, 
-    GLX_ARB_create_context_profile, GLX_ARB_create_context_robustness, 
-    GLX_ARB_fbconfig_float, GLX_ARB_framebuffer_sRGB, 
-    GLX_ARB_get_proc_address, GLX_ARB_multisample, GLX_EXT_buffer_age, 
-    GLX_EXT_create_context_es2_profile, GLX_EXT_create_context_es_profile, 
-    GLX_EXT_fbconfig_packed_float, GLX_EXT_framebuffer_sRGB, 
-    GLX_EXT_import_context, GLX_EXT_texture_from_pixmap, GLX_EXT_visual_info, 
-    GLX_EXT_visual_rating, GLX_INTEL_swap_event, GLX_MESA_copy_sub_buffer, 
+    GLX_ARB_create_context_no_error, GLX_ARB_create_context_profile, 
+    GLX_ARB_create_context_robustness, GLX_ARB_fbconfig_float, 
+    GLX_ARB_framebuffer_sRGB, GLX_ARB_get_proc_address, GLX_ARB_multisample, 
+    GLX_EXT_buffer_age, GLX_EXT_create_context_es2_profile, 
+    GLX_EXT_create_context_es_profile, GLX_EXT_fbconfig_packed_float, 
+    GLX_EXT_framebuffer_sRGB, GLX_EXT_import_context, 
+    GLX_EXT_texture_from_pixmap, GLX_EXT_visual_info, GLX_EXT_visual_rating, 
+    GLX_INTEL_swap_event, GLX_MESA_copy_sub_buffer, 
     GLX_MESA_multithread_makecurrent, GLX_MESA_query_renderer, 
     GLX_MESA_swap_control, GLX_OML_swap_method, GLX_OML_sync_control, 
     GLX_SGIS_multisample, GLX_SGIX_fbconfig, GLX_SGIX_pbuffer, 
@@ -189,21 +190,21 @@ client glx extensions:
     GLX_SGI_swap_control, GLX_SGI_video_sync
 GLX version: 1.4
 GLX extensions:
-    GLX_ARB_create_context, GLX_ARB_create_context_profile, 
-    GLX_ARB_fbconfig_float, GLX_ARB_framebuffer_sRGB, 
-    GLX_ARB_get_proc_address, GLX_ARB_multisample, GLX_EXT_buffer_age, 
-    GLX_EXT_create_context_es2_profile, GLX_EXT_create_context_es_profile, 
-    GLX_EXT_fbconfig_packed_float, GLX_EXT_framebuffer_sRGB, 
-    GLX_EXT_import_context, GLX_EXT_texture_from_pixmap, GLX_EXT_visual_info, 
-    GLX_EXT_visual_rating, GLX_MESA_copy_sub_buffer, GLX_MESA_query_renderer, 
-    GLX_MESA_swap_control, GLX_OML_swap_method, GLX_OML_sync_control, 
-    GLX_SGIS_multisample, GLX_SGIX_fbconfig, GLX_SGIX_pbuffer, 
-    GLX_SGIX_visual_select_group, GLX_SGI_make_current_read, 
-    GLX_SGI_video_sync
+    GLX_ARB_create_context, GLX_ARB_create_context_no_error, 
+    GLX_ARB_create_context_profile, GLX_ARB_fbconfig_float, 
+    GLX_ARB_framebuffer_sRGB, GLX_ARB_get_proc_address, GLX_ARB_multisample, 
+    GLX_EXT_buffer_age, GLX_EXT_create_context_es2_profile, 
+    GLX_EXT_create_context_es_profile, GLX_EXT_fbconfig_packed_float, 
+    GLX_EXT_framebuffer_sRGB, GLX_EXT_import_context, 
+    GLX_EXT_texture_from_pixmap, GLX_EXT_visual_info, GLX_EXT_visual_rating, 
+    GLX_MESA_copy_sub_buffer, GLX_MESA_query_renderer, GLX_MESA_swap_control, 
+    GLX_OML_swap_method, GLX_OML_sync_control, GLX_SGIS_multisample, 
+    GLX_SGIX_fbconfig, GLX_SGIX_pbuffer, GLX_SGIX_visual_select_group, 
+    GLX_SGI_make_current_read, GLX_SGI_video_sync
 Extended renderer info (GLX_MESA_query_renderer):
     Vendor: X.Org (0x1002)
-    Device: AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 7.1.0) (0x15dd)
-    Version: 19.0.5
+    Device: AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 9.0.0) (0x15dd)
+    Version: 19.2.0
     Accelerated: yes
     Video memory: 256MB
     Unified memory: no
@@ -213,19 +214,19 @@ Extended renderer info (GLX_MESA_query_renderer):
     Max GLES1 profile version: 1.1
     Max GLES[23] profile version: 3.2
 Memory info (GL_ATI_meminfo):
-    VBO free memory - total: 19 MB, largest block: 19 MB
-    VBO free aux. memory - total: 2776 MB, largest block: 2776 MB
-    Texture free memory - total: 19 MB, largest block: 19 MB
-    Texture free aux. memory - total: 2776 MB, largest block: 2776 MB
-    Renderbuffer free memory - total: 19 MB, largest block: 19 MB
-    Renderbuffer free aux. memory - total: 2776 MB, largest block: 2776 MB
+    VBO free memory - total: 11 MB, largest block: 11 MB
+    VBO free aux. memory - total: 2745 MB, largest block: 2745 MB
+    Texture free memory - total: 11 MB, largest block: 11 MB
+    Texture free aux. memory - total: 2745 MB, largest block: 2745 MB
+    Renderbuffer free memory - total: 11 MB, largest block: 11 MB
+    Renderbuffer free aux. memory - total: 2745 MB, largest block: 2745 MB
 Memory info (GL_NVX_gpu_memory_info):
     Dedicated video memory: 256 MB
     Total available memory: 3328 MB
-    Currently available dedicated video memory: 19 MB
+    Currently available dedicated video memory: 11 MB
 OpenGL vendor string: X.Org
-OpenGL renderer string: AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 7.1.0)
-OpenGL core profile version string: 4.5 (Core Profile) Mesa 19.0.5
+OpenGL renderer string: AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 9.0.0)
+OpenGL core profile version string: 4.5 (Core Profile) Mesa 19.2.0-devel (git-dfb023f14c)
 OpenGL core profile shading language version string: 4.50
 OpenGL core profile context flags: (none)
 OpenGL core profile profile mask: core profile
@@ -263,15 +264,16 @@ OpenGL core profile extensions:
     GL_ARB_internalformat_query, GL_ARB_internalformat_query2, 
     GL_ARB_invalidate_subdata, GL_ARB_map_buffer_alignment, 
     GL_ARB_map_buffer_range, GL_ARB_multi_bind, GL_ARB_multi_draw_indirect, 
-    GL_ARB_occlusion_query2, GL_ARB_pipeline_statistics_query, 
-    GL_ARB_pixel_buffer_object, GL_ARB_point_sprite, 
-    GL_ARB_polygon_offset_clamp, GL_ARB_program_interface_query, 
-    GL_ARB_provoking_vertex, GL_ARB_query_buffer_object, 
-    GL_ARB_robust_buffer_access_behavior, GL_ARB_robustness, 
-    GL_ARB_sample_shading, GL_ARB_sampler_objects, GL_ARB_seamless_cube_map, 
-    GL_ARB_seamless_cubemap_per_texture, GL_ARB_separate_shader_objects, 
-    GL_ARB_shader_atomic_counter_ops, GL_ARB_shader_atomic_counters, 
-    GL_ARB_shader_ballot, GL_ARB_shader_bit_encoding, GL_ARB_shader_clock, 
+    GL_ARB_occlusion_query2, GL_ARB_parallel_shader_compile, 
+    GL_ARB_pipeline_statistics_query, GL_ARB_pixel_buffer_object, 
+    GL_ARB_point_sprite, GL_ARB_polygon_offset_clamp, 
+    GL_ARB_program_interface_query, GL_ARB_provoking_vertex, 
+    GL_ARB_query_buffer_object, GL_ARB_robust_buffer_access_behavior, 
+    GL_ARB_robustness, GL_ARB_sample_shading, GL_ARB_sampler_objects, 
+    GL_ARB_seamless_cube_map, GL_ARB_seamless_cubemap_per_texture, 
+    GL_ARB_separate_shader_objects, GL_ARB_shader_atomic_counter_ops, 
+    GL_ARB_shader_atomic_counters, GL_ARB_shader_ballot, 
+    GL_ARB_shader_bit_encoding, GL_ARB_shader_clock, 
     GL_ARB_shader_draw_parameters, GL_ARB_shader_group_vote, 
     GL_ARB_shader_image_load_store, GL_ARB_shader_image_size, 
     GL_ARB_shader_objects, GL_ARB_shader_precision, 
@@ -307,25 +309,26 @@ OpenGL core profile extensions:
     GL_EXT_memory_object_fd, GL_EXT_packed_depth_stencil, GL_EXT_packed_float, 
     GL_EXT_pixel_buffer_object, GL_EXT_polygon_offset_clamp, 
     GL_EXT_provoking_vertex, GL_EXT_semaphore, GL_EXT_semaphore_fd, 
-    GL_EXT_shader_integer_mix, GL_EXT_texture_array, 
-    GL_EXT_texture_compression_dxt1, GL_EXT_texture_compression_rgtc, 
-    GL_EXT_texture_compression_s3tc, GL_EXT_texture_filter_anisotropic, 
-    GL_EXT_texture_integer, GL_EXT_texture_mirror_clamp, GL_EXT_texture_sRGB, 
+    GL_EXT_shader_image_load_formatted, GL_EXT_shader_integer_mix, 
+    GL_EXT_texture_array, GL_EXT_texture_compression_dxt1, 
+    GL_EXT_texture_compression_rgtc, GL_EXT_texture_compression_s3tc, 
+    GL_EXT_texture_filter_anisotropic, GL_EXT_texture_integer, 
+    GL_EXT_texture_mirror_clamp, GL_EXT_texture_sRGB, GL_EXT_texture_sRGB_R8, 
     GL_EXT_texture_sRGB_decode, GL_EXT_texture_shared_exponent, 
     GL_EXT_texture_snorm, GL_EXT_texture_swizzle, GL_EXT_timer_query, 
     GL_EXT_transform_feedback, GL_EXT_vertex_array_bgra, 
     GL_EXT_vertex_attrib_64bit, GL_EXT_window_rectangles, 
     GL_IBM_multimode_draw_arrays, GL_KHR_blend_equation_advanced, 
     GL_KHR_context_flush_control, GL_KHR_debug, GL_KHR_no_error, 
-    GL_KHR_robust_buffer_access_behavior, GL_KHR_robustness, 
-    GL_KHR_texture_compression_astc_ldr, 
+    GL_KHR_parallel_shader_compile, GL_KHR_robust_buffer_access_behavior, 
+    GL_KHR_robustness, GL_KHR_texture_compression_astc_ldr, 
     GL_KHR_texture_compression_astc_sliced_3d, GL_MESA_pack_invert, 
     GL_MESA_shader_integer_functions, GL_MESA_texture_signed_rgba, 
     GL_NVX_gpu_memory_info, GL_NV_conditional_render, GL_NV_depth_clamp, 
     GL_NV_packed_depth_stencil, GL_NV_texture_barrier, GL_NV_vdpau_interop, 
     GL_OES_EGL_image, GL_S3_s3tc
 
-OpenGL version string: 4.5 (Compatibility Profile) Mesa 19.0.5
+OpenGL version string: 4.5 (Compatibility Profile) Mesa 19.2.0-devel (git-dfb023f14c)
 OpenGL shading language version string: 4.50
 OpenGL context flags: (none)
 OpenGL profile mask: compatibility profile
@@ -365,15 +368,15 @@ OpenGL extensions:
     GL_ARB_map_buffer_alignment, GL_ARB_map_buffer_range, GL_ARB_multi_bind, 
     GL_ARB_multi_draw_indirect, GL_ARB_multisample, GL_ARB_multitexture, 
     GL_ARB_occlusion_query, GL_ARB_occlusion_query2, 
-    GL_ARB_pipeline_statistics_query, GL_ARB_pixel_buffer_object, 
-    GL_ARB_point_parameters, GL_ARB_point_sprite, GL_ARB_polygon_offset_clamp, 
-    GL_ARB_program_interface_query, GL_ARB_provoking_vertex, 
-    GL_ARB_query_buffer_object, GL_ARB_robust_buffer_access_behavior, 
-    GL_ARB_robustness, GL_ARB_sample_shading, GL_ARB_sampler_objects, 
-    GL_ARB_seamless_cube_map, GL_ARB_seamless_cubemap_per_texture, 
-    GL_ARB_separate_shader_objects, GL_ARB_shader_atomic_counter_ops, 
-    GL_ARB_shader_atomic_counters, GL_ARB_shader_ballot, 
-    GL_ARB_shader_bit_encoding, GL_ARB_shader_clock, 
+    GL_ARB_parallel_shader_compile, GL_ARB_pipeline_statistics_query, 
+    GL_ARB_pixel_buffer_object, GL_ARB_point_parameters, GL_ARB_point_sprite, 
+    GL_ARB_polygon_offset_clamp, GL_ARB_program_interface_query, 
+    GL_ARB_provoking_vertex, GL_ARB_query_buffer_object, 
+    GL_ARB_robust_buffer_access_behavior, GL_ARB_robustness, 
+    GL_ARB_sample_shading, GL_ARB_sampler_objects, GL_ARB_seamless_cube_map, 
+    GL_ARB_seamless_cubemap_per_texture, GL_ARB_separate_shader_objects, 
+    GL_ARB_shader_atomic_counter_ops, GL_ARB_shader_atomic_counters, 
+    GL_ARB_shader_ballot, GL_ARB_shader_bit_encoding, GL_ARB_shader_clock, 
     GL_ARB_shader_draw_parameters, GL_ARB_shader_group_vote, 
     GL_ARB_shader_image_load_store, GL_ARB_shader_image_size, 
     GL_ARB_shader_objects, GL_ARB_shader_precision, 
@@ -417,22 +420,24 @@ OpenGL extensions:
     GL_EXT_framebuffer_blit, GL_EXT_framebuffer_multisample, 
     GL_EXT_framebuffer_multisample_blit_scaled, GL_EXT_framebuffer_object, 
     GL_EXT_framebuffer_sRGB, GL_EXT_gpu_program_parameters, 
-    GL_EXT_memory_object, GL_EXT_memory_object_fd, GL_EXT_multi_draw_arrays, 
-    GL_EXT_packed_depth_stencil, GL_EXT_packed_float, GL_EXT_packed_pixels, 
-    GL_EXT_pixel_buffer_object, GL_EXT_point_parameters, 
-    GL_EXT_polygon_offset_clamp, GL_EXT_provoking_vertex, 
-    GL_EXT_rescale_normal, GL_EXT_secondary_color, GL_EXT_semaphore, 
-    GL_EXT_semaphore_fd, GL_EXT_separate_specular_color, 
-    GL_EXT_shader_integer_mix, GL_EXT_shadow_funcs, GL_EXT_stencil_two_side, 
-    GL_EXT_stencil_wrap, GL_EXT_subtexture, GL_EXT_texture, GL_EXT_texture3D, 
-    GL_EXT_texture_array, GL_EXT_texture_compression_dxt1, 
-    GL_EXT_texture_compression_latc, GL_EXT_texture_compression_rgtc, 
-    GL_EXT_texture_compression_s3tc, GL_EXT_texture_cube_map, 
-    GL_EXT_texture_edge_clamp, GL_EXT_texture_env_add, 
-    GL_EXT_texture_env_combine, GL_EXT_texture_env_dot3, 
-    GL_EXT_texture_filter_anisotropic, GL_EXT_texture_integer, 
-    GL_EXT_texture_lod_bias, GL_EXT_texture_mirror_clamp, 
-    GL_EXT_texture_object, GL_EXT_texture_rectangle, GL_EXT_texture_sRGB, 
+    GL_EXT_gpu_shader4, GL_EXT_memory_object, GL_EXT_memory_object_fd, 
+    GL_EXT_multi_draw_arrays, GL_EXT_packed_depth_stencil, 
+    GL_EXT_packed_float, GL_EXT_packed_pixels, GL_EXT_pixel_buffer_object, 
+    GL_EXT_point_parameters, GL_EXT_polygon_offset_clamp, 
+    GL_EXT_provoking_vertex, GL_EXT_rescale_normal, GL_EXT_secondary_color, 
+    GL_EXT_semaphore, GL_EXT_semaphore_fd, GL_EXT_separate_specular_color, 
+    GL_EXT_shader_image_load_formatted, GL_EXT_shader_integer_mix, 
+    GL_EXT_shadow_funcs, GL_EXT_stencil_two_side, GL_EXT_stencil_wrap, 
+    GL_EXT_subtexture, GL_EXT_texture, GL_EXT_texture3D, 
+    GL_EXT_texture_array, GL_EXT_texture_buffer_object, 
+    GL_EXT_texture_compression_dxt1, GL_EXT_texture_compression_latc, 
+    GL_EXT_texture_compression_rgtc, GL_EXT_texture_compression_s3tc, 
+    GL_EXT_texture_cube_map, GL_EXT_texture_edge_clamp, 
+    GL_EXT_texture_env_add, GL_EXT_texture_env_combine, 
+    GL_EXT_texture_env_dot3, GL_EXT_texture_filter_anisotropic, 
+    GL_EXT_texture_integer, GL_EXT_texture_lod_bias, 
+    GL_EXT_texture_mirror_clamp, GL_EXT_texture_object, 
+    GL_EXT_texture_rectangle, GL_EXT_texture_sRGB, GL_EXT_texture_sRGB_R8, 
     GL_EXT_texture_sRGB_decode, GL_EXT_texture_shared_exponent, 
     GL_EXT_texture_snorm, GL_EXT_texture_swizzle, GL_EXT_timer_query, 
     GL_EXT_transform_feedback, GL_EXT_vertex_array, GL_EXT_vertex_array_bgra, 
@@ -440,8 +445,9 @@ OpenGL extensions:
     GL_IBM_multimode_draw_arrays, GL_IBM_rasterpos_clip, 
     GL_IBM_texture_mirrored_repeat, GL_INGR_blend_func_separate, 
     GL_KHR_blend_equation_advanced, GL_KHR_context_flush_control, 
-    GL_KHR_debug, GL_KHR_no_error, GL_KHR_robust_buffer_access_behavior, 
-    GL_KHR_robustness, GL_KHR_texture_compression_astc_ldr, 
+    GL_KHR_debug, GL_KHR_no_error, GL_KHR_parallel_shader_compile, 
+    GL_KHR_robust_buffer_access_behavior, GL_KHR_robustness, 
+    GL_KHR_texture_compression_astc_ldr, 
     GL_KHR_texture_compression_astc_sliced_3d, GL_MESA_pack_invert, 
     GL_MESA_shader_integer_functions, GL_MESA_texture_signed_rgba, 
     GL_MESA_window_pos, GL_NVX_gpu_memory_info, GL_NV_blend_square, 
@@ -453,7 +459,7 @@ OpenGL extensions:
     GL_SGIS_generate_mipmap, GL_SGIS_texture_border_clamp, 
     GL_SGIS_texture_edge_clamp, GL_SGIS_texture_lod, GL_SUN_multi_draw_arrays
 
-OpenGL ES profile version string: OpenGL ES 3.2 Mesa 19.0.5
+OpenGL ES profile version string: OpenGL ES 3.2 Mesa 19.2.0-devel (git-dfb023f14c)
 OpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.20
 OpenGL ES profile extensions:
     GL_AMD_framebuffer_multisample_advanced, GL_AMD_performance_monitor, 
@@ -462,12 +468,12 @@ OpenGL ES profile extensions:
     GL_EXT_base_instance, GL_EXT_blend_func_extended, GL_EXT_blend_minmax, 
     GL_EXT_buffer_storage, GL_EXT_clip_cull_distance, 
     GL_EXT_color_buffer_float, GL_EXT_compressed_ETC1_RGB8_sub_texture, 
-    GL_EXT_copy_image, GL_EXT_discard_framebuffer, 
+    GL_EXT_copy_image, GL_EXT_depth_clamp, GL_EXT_discard_framebuffer, 
     GL_EXT_disjoint_timer_query, GL_EXT_draw_buffers, 
     GL_EXT_draw_buffers_indexed, GL_EXT_draw_elements_base_vertex, 
-    GL_EXT_frag_depth, GL_EXT_geometry_point_size, GL_EXT_geometry_shader, 
-    GL_EXT_gpu_shader5, GL_EXT_map_buffer_range, GL_EXT_memory_object, 
-    GL_EXT_memory_object_fd, GL_EXT_multi_draw_arrays, 
+    GL_EXT_float_blend, GL_EXT_frag_depth, GL_EXT_geometry_point_size, 
+    GL_EXT_geometry_shader, GL_EXT_gpu_shader5, GL_EXT_map_buffer_range, 
+    GL_EXT_memory_object, GL_EXT_memory_object_fd, GL_EXT_multi_draw_arrays, 
     GL_EXT_occlusion_query_boolean, GL_EXT_polygon_offset_clamp, 
     GL_EXT_primitive_bounding_box, GL_EXT_read_format_bgra, 
     GL_EXT_render_snorm, GL_EXT_robustness, GL_EXT_sRGB_write_control, 
@@ -477,19 +483,21 @@ OpenGL ES profile extensions:
     GL_EXT_tessellation_shader, GL_EXT_texture_border_clamp, 
     GL_EXT_texture_buffer, GL_EXT_texture_compression_bptc, 
     GL_EXT_texture_compression_dxt1, GL_EXT_texture_compression_rgtc, 
-    GL_EXT_texture_compression_s3tc, GL_EXT_texture_cube_map_array, 
-    GL_EXT_texture_filter_anisotropic, GL_EXT_texture_format_BGRA8888, 
-    GL_EXT_texture_norm16, GL_EXT_texture_rg, GL_EXT_texture_sRGB_R8, 
+    GL_EXT_texture_compression_s3tc, GL_EXT_texture_compression_s3tc_srgb, 
+    GL_EXT_texture_cube_map_array, GL_EXT_texture_filter_anisotropic, 
+    GL_EXT_texture_format_BGRA8888, GL_EXT_texture_norm16, 
+    GL_EXT_texture_query_lod, GL_EXT_texture_rg, GL_EXT_texture_sRGB_R8, 
     GL_EXT_texture_sRGB_decode, GL_EXT_texture_type_2_10_10_10_REV, 
     GL_EXT_texture_view, GL_EXT_unpack_subimage, GL_EXT_window_rectangles, 
     GL_KHR_blend_equation_advanced, GL_KHR_context_flush_control, 
-    GL_KHR_debug, GL_KHR_no_error, GL_KHR_robust_buffer_access_behavior, 
-    GL_KHR_robustness, GL_KHR_texture_compression_astc_ldr, 
+    GL_KHR_debug, GL_KHR_no_error, GL_KHR_parallel_shader_compile, 
+    GL_KHR_robust_buffer_access_behavior, GL_KHR_robustness, 
+    GL_KHR_texture_compression_astc_ldr, 
     GL_KHR_texture_compression_astc_sliced_3d, 
-    GL_MESA_shader_integer_functions, GL_NV_draw_buffers, 
-    GL_NV_fbo_color_attachments, GL_NV_image_formats, GL_NV_read_buffer, 
-    GL_NV_read_depth, GL_NV_read_depth_stencil, GL_NV_read_stencil, 
-    GL_OES_EGL_image, GL_OES_EGL_image_external, 
+    GL_MESA_shader_integer_functions, GL_NV_conditional_render, 
+    GL_NV_draw_buffers, GL_NV_fbo_color_attachments, GL_NV_image_formats, 
+    GL_NV_read_buffer, GL_NV_read_depth, GL_NV_read_depth_stencil, 
+    GL_NV_read_stencil, GL_OES_EGL_image, GL_OES_EGL_image_external, 
     GL_OES_EGL_image_external_essl3, GL_OES_EGL_sync, 
     GL_OES_compressed_ETC1_RGB8_texture, GL_OES_copy_image, GL_OES_depth24, 
     GL_OES_depth_texture, GL_OES_depth_texture_cube_map, 

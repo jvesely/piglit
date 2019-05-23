@@ -9,7 +9,7 @@
     <h1>Results for program@execute@builtin@builtin-uchar-sub_sat-1.0.generated</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> pass</p>
+      <p><b>Result:</b> fail</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -20,11 +20,11 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>0</td>
+        <td>1</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:01.352107</td>
+        <td>0:00:01.738756</td>
       </tr>
       <tr>
         <td>Stdout</td>
@@ -34,7 +34,7 @@
 # Platform supporting only version 1.1. Running test on that version.
 # Running on:
 #   Platform: Clover
-#   Device: AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 7.1.0)
+#   Device: AMD RAVEN (DRM 3.30.0, 5.1.4-gentoo, LLVM 9.0.0)
 #   OpenCL version: 2.0
 #   OpenCL C version: 1.1
 #   Build options:  -cl-std=CL1.1
@@ -50,7 +50,9 @@ Using kernel test_2_sub_sat_uchar
 Setting kernel arguments...
 Running the kernel...
 Validating results...
- Argument 0: PASS
+Expecting 1 (0x1) with tolerance 0, but got 0 (0x0)
+Error at uchar[1]
+ Argument 0: FAIL
 &gt; Running kernel test: sub_sat uchar4
 Using kernel test_4_sub_sat_uchar
 Setting kernel arguments...
@@ -69,7 +71,7 @@ Setting kernel arguments...
 Running the kernel...
 Validating results...
  Argument 0: PASS
-&gt;&gt; All of the tests PASSED
+&gt;&gt; Some or all of the tests FAILED
 # Result:
 </pre>
         </td>
