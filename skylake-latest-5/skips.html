@@ -1,26 +1,24 @@
 
 
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
     <title>Result summary</title>
-    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <h1>Result summary</h1>
     <p>Currently showing: skips</p>
     <p>Show:
         <a href="index.html">all</a>
-          | <a href="enabled.html">enabled</a>
-          | <a href="regressions.html">regressions</a>
-          | <a href="fixes.html">fixes</a>
-          | <a href="changes.html">changes</a>
-          | <a href="disabled.html">disabled</a>
-          | <a href="problems.html">problems</a>
           | skips
+          | <a href="disabled.html">disabled</a>
+          | <a href="regressions.html">regressions</a>
+          | <a href="problems.html">problems</a>
+          | <a href="enabled.html">enabled</a>
+          | <a href="changes.html">changes</a>
+          | <a href="fixes.html">fixes</a>
     </p>
     <table>
       <colgroup>
@@ -33,22 +31,21 @@
         <col />
         <col />
         <col />
+        <col />
       </colgroup>
       <tr>
         <th/>
-          <th class="head"><b>beignet_17_10_01</b><br />          (<a href="beignet_17_10_01/index.html">info</a>)</th>
-          <th class="head"><b>beignet_17_10_22</b><br />          (<a href="beignet_17_10_22/index.html">info</a>)</th>
-          <th class="head"><b>beignet_17_11_04</b><br />          (<a href="beignet_17_11_04/index.html">info</a>)</th>
-          <th class="head"><b>beignet_17_11_15</b><br />          (<a href="beignet_17_11_15/index.html">info</a>)</th>
-          <th class="head"><b>beignet_18_06_11</b><br />          (<a href="beignet_18_06_11/index.html">info</a>)</th>
-          <th class="head"><b>intel_cpu_18_07_17</b><br />          (<a href="intel_cpu_18_07_17/index.html">info</a>)</th>
-          <th class="head"><b>intel_cpu_18_07_18</b><br />          (<a href="intel_cpu_18_07_18/index.html">info</a>)</th>
+          <th class="head"><b>beignet_17_10_22</b><br>          (<a href="beignet_17_10_22/index.html">info</a>)</th>
+          <th class="head"><b>beignet_17_11_04</b><br>          (<a href="beignet_17_11_04/index.html">info</a>)</th>
+          <th class="head"><b>beignet_17_11_15</b><br>          (<a href="beignet_17_11_15/index.html">info</a>)</th>
+          <th class="head"><b>beignet_18_06_11</b><br>          (<a href="beignet_18_06_11/index.html">info</a>)</th>
+          <th class="head"><b>beignet_19_06_05</b><br>          (<a href="beignet_19_06_05/index.html">info</a>)</th>
+          <th class="head"><b>intel_cpu_18_07_18</b><br>          (<a href="intel_cpu_18_07_18/index.html">info</a>)</th>
+          <th class="head"><b>intel_cpu_19_06_05</b><br>          (<a href="intel_cpu_19_06_05/index.html">info</a>)</th>
+          <th class="head"><b>nvidia_19_06_05</b><br>          (<a href="nvidia_19_06_05/index.html">info</a>)</th>
       </tr>
       <tr>
         <td class="head"><b>all</b></td>
-          <td class="crash">
-            <b>3729/3797</b>
-          </td>
           <td class="crash">
             <b>3864/3937</b>
           </td>
@@ -61,11 +58,17 @@
           <td class="crash">
             <b>4063/4090</b>
           </td>
-          <td class="crash">
-            <b>3995/4030</b>
+          <td class="fail">
+            <b>3872/3961</b>
           </td>
           <td class="crash">
             <b>3982/4022</b>
+          </td>
+          <td class="crash">
+            <b>4010/4046</b>
+          </td>
+          <td class="crash">
+            <b>3995/4024</b>
           </td>
       </tr>
       
@@ -98,6 +101,9 @@
               <td class="skip">
                 <b>0/0</b>
               </td>
+              <td class="skip">
+                <b>0/0</b>
+              </td>
             
             </tr><tr>
         
@@ -106,12 +112,6 @@
             egl_khr_cl_event2
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/interop@egl_khr_cl_event2.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/interop@egl_khr_cl_event2.html">
@@ -138,13 +138,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/interop@egl_khr_cl_event2.html">
+            <a href="beignet_19_06_05/interop@egl_khr_cl_event2.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/interop@egl_khr_cl_event2.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/interop@egl_khr_cl_event2.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/interop@egl_khr_cl_event2.html">
               skip
             </a>
           </td>
@@ -158,9 +170,6 @@
               </div>
             </td>
               <td class="crash">
-                <b>3644/3711</b>
-              </td>
-              <td class="crash">
                 <b>3779/3851</b>
               </td>
               <td class="crash">
@@ -172,11 +181,17 @@
               <td class="crash">
                 <b>3978/4004</b>
               </td>
-              <td class="crash">
-                <b>3919/3945</b>
+              <td class="fail">
+                <b>3788/3875</b>
               </td>
               <td class="crash">
                 <b>3909/3936</b>
+              </td>
+              <td class="fail">
+                <b>3935/3961</b>
+              </td>
+              <td class="fail">
+                <b>3952/3963</b>
               </td>
             
             </tr><tr>
@@ -202,10 +217,13 @@
                 <b>18/18</b>
               </td>
               <td class="pass">
+                <b>18/18</b>
+              </td>
+              <td class="pass">
                 <b>17/17</b>
               </td>
               <td class="pass">
-                <b>18/18</b>
+                <b>17/17</b>
               </td>
             
             </tr><tr>
@@ -215,12 +233,6 @@
             cl_version_2_0 must be defined for opencl 2.0 and later
           </div>
         </td>
-          
-          <td class="pass">
-            <a href="beignet_17_10_01/program@check predefined preprocessor macros.html">
-              pass
-            </a>
-          </td>
           
           <td class="pass">
             <a href="beignet_17_10_22/program@check predefined preprocessor macros.html">
@@ -246,15 +258,27 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@check predefined preprocessor macros.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@check predefined preprocessor macros.html">
+              pass
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@check predefined preprocessor macros.html">
               pass
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@check predefined preprocessor macros.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@check predefined preprocessor macros.html">
+              skip
             </a>
           </td>
         </tr>
@@ -267,9 +291,6 @@
               </div>
             </td>
               <td class="crash">
-                <b>3602/3669</b>
-              </td>
-              <td class="crash">
                 <b>3737/3809</b>
               </td>
               <td class="crash">
@@ -281,26 +302,73 @@
               <td class="crash">
                 <b>3936/3962</b>
               </td>
-              <td class="crash">
-                <b>3880/3904</b>
+              <td class="fail">
+                <b>3746/3833</b>
               </td>
               <td class="crash">
                 <b>3869/3894</b>
+              </td>
+              <td class="fail">
+                <b>3896/3920</b>
+              </td>
+              <td class="fail">
+                <b>3912/3922</b>
               </td>
             
             </tr><tr>
         
         <td>
           <div class="group" style="margin-left: 5.25em">
-            amdgcn-f64-inline-immediates
+            amdgcn-callee-saved-registers
           </div>
         </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="skip">
-            <a href="beignet_17_10_01/program@execute@amdgcn-f64-inline-immediates.html">
+            <a href="beignet_19_06_05/program@execute@amdgcn-callee-saved-registers.html">
               skip
             </a>
           </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@amdgcn-callee-saved-registers.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@amdgcn-callee-saved-registers.html">
+              skip
+            </a>
+          </td>
+        </tr>
+        
+        <tr>
+        
+        <td>
+          <div class="group" style="margin-left: 5.25em">
+            amdgcn-f64-inline-immediates
+          </div>
+        </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@amdgcn-f64-inline-immediates.html">
@@ -326,14 +394,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@amdgcn-f64-inline-immediates.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@amdgcn-f64-inline-immediates.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@amdgcn-f64-inline-immediates.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@amdgcn-f64-inline-immediates.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@amdgcn-f64-inline-immediates.html">
               pass
             </a>
           </td>
@@ -346,12 +426,6 @@
             atomic_int64_add-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_add-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_add-global.html">
@@ -378,13 +452,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_add-global.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_add-global.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_add-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_add-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_add-global.html">
               skip
             </a>
           </td>
@@ -397,12 +483,6 @@
             atomic_int64_add-global-return
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_add-global-return.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_add-global-return.html">
@@ -429,13 +509,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_add-global-return.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_add-global-return.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_add-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_add-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_add-global-return.html">
               skip
             </a>
           </td>
@@ -448,12 +540,6 @@
             atomic_int64_add-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_add-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_add-local.html">
@@ -480,13 +566,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_add-local.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_add-local.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_add-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_add-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_add-local.html">
               skip
             </a>
           </td>
@@ -499,12 +597,6 @@
             atomic_int64_and-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_and-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_and-global.html">
@@ -531,13 +623,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_and-global.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_and-global.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_and-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_and-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_and-global.html">
               skip
             </a>
           </td>
@@ -550,12 +654,6 @@
             atomic_int64_and-global-return
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_and-global-return.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_and-global-return.html">
@@ -582,13 +680,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_and-global-return.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_and-global-return.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_and-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_and-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_and-global-return.html">
               skip
             </a>
           </td>
@@ -601,12 +711,6 @@
             atomic_int64_and-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_and-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_and-local.html">
@@ -633,13 +737,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_and-local.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_and-local.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_and-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_and-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_and-local.html">
               skip
             </a>
           </td>
@@ -652,12 +768,6 @@
             atomic_int64_cmpxchg-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_cmpxchg-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_cmpxchg-global.html">
@@ -684,13 +794,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_cmpxchg-global.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_cmpxchg-global.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_cmpxchg-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_cmpxchg-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_cmpxchg-global.html">
               skip
             </a>
           </td>
@@ -703,12 +825,6 @@
             atomic_int64_cmpxchg-global-return
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_cmpxchg-global-return.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_cmpxchg-global-return.html">
@@ -735,13 +851,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_cmpxchg-global-return.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_cmpxchg-global-return.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_cmpxchg-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_cmpxchg-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_cmpxchg-global-return.html">
               skip
             </a>
           </td>
@@ -754,12 +882,6 @@
             atomic_int64_cmpxchg-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_cmpxchg-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_cmpxchg-local.html">
@@ -786,13 +908,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_cmpxchg-local.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_cmpxchg-local.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_cmpxchg-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_cmpxchg-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_cmpxchg-local.html">
               skip
             </a>
           </td>
@@ -805,12 +939,6 @@
             atomic_int64_dec-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_dec-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_dec-global.html">
@@ -837,13 +965,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_dec-global.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_dec-global.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_dec-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_dec-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_dec-global.html">
               skip
             </a>
           </td>
@@ -856,12 +996,6 @@
             atomic_int64_dec-global-return
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_dec-global-return.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_dec-global-return.html">
@@ -888,13 +1022,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_dec-global-return.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_dec-global-return.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_dec-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_dec-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_dec-global-return.html">
               skip
             </a>
           </td>
@@ -907,12 +1053,6 @@
             atomic_int64_dec-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_dec-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_dec-local.html">
@@ -939,13 +1079,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_dec-local.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_dec-local.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_dec-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_dec-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_dec-local.html">
               skip
             </a>
           </td>
@@ -958,12 +1110,6 @@
             atomic_int64_inc-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_inc-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_inc-global.html">
@@ -990,13 +1136,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_inc-global.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_inc-global.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_inc-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_inc-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_inc-global.html">
               skip
             </a>
           </td>
@@ -1009,12 +1167,6 @@
             atomic_int64_inc-global-return
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_inc-global-return.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_inc-global-return.html">
@@ -1041,13 +1193,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_inc-global-return.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_inc-global-return.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_inc-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_inc-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_inc-global-return.html">
               skip
             </a>
           </td>
@@ -1060,12 +1224,6 @@
             atomic_int64_inc-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_inc-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_inc-local.html">
@@ -1092,13 +1250,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_inc-local.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_inc-local.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_inc-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_inc-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_inc-local.html">
               skip
             </a>
           </td>
@@ -1111,12 +1281,6 @@
             atomic_int64_max-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_max-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_max-global.html">
@@ -1143,13 +1307,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_max-global.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_max-global.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_max-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_max-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_max-global.html">
               skip
             </a>
           </td>
@@ -1162,12 +1338,6 @@
             atomic_int64_max-global-return
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_max-global-return.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_max-global-return.html">
@@ -1194,13 +1364,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_max-global-return.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_max-global-return.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_max-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_max-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_max-global-return.html">
               skip
             </a>
           </td>
@@ -1213,12 +1395,6 @@
             atomic_int64_max-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_max-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_max-local.html">
@@ -1245,13 +1421,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_max-local.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_max-local.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_max-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_max-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_max-local.html">
               skip
             </a>
           </td>
@@ -1264,12 +1452,6 @@
             atomic_int64_min-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_min-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_min-global.html">
@@ -1296,13 +1478,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_min-global.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_min-global.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_min-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_min-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_min-global.html">
               skip
             </a>
           </td>
@@ -1315,12 +1509,6 @@
             atomic_int64_min-global-return
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_min-global-return.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_min-global-return.html">
@@ -1347,13 +1535,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_min-global-return.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_min-global-return.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_min-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_min-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_min-global-return.html">
               skip
             </a>
           </td>
@@ -1366,12 +1566,6 @@
             atomic_int64_min-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_min-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_min-local.html">
@@ -1398,13 +1592,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_min-local.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_min-local.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_min-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_min-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_min-local.html">
               skip
             </a>
           </td>
@@ -1417,12 +1623,6 @@
             atomic_int64_or-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_or-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_or-global.html">
@@ -1449,13 +1649,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_or-global.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_or-global.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_or-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_or-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_or-global.html">
               skip
             </a>
           </td>
@@ -1468,12 +1680,6 @@
             atomic_int64_or-global-return
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_or-global-return.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_or-global-return.html">
@@ -1500,13 +1706,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_or-global-return.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_or-global-return.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_or-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_or-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_or-global-return.html">
               skip
             </a>
           </td>
@@ -1519,12 +1737,6 @@
             atomic_int64_or-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_or-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_or-local.html">
@@ -1551,13 +1763,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_or-local.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_or-local.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_or-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_or-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_or-local.html">
               skip
             </a>
           </td>
@@ -1570,12 +1794,6 @@
             atomic_int64_sub-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_sub-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_sub-global.html">
@@ -1602,13 +1820,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_sub-global.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_sub-global.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_sub-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_sub-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_sub-global.html">
               skip
             </a>
           </td>
@@ -1621,12 +1851,6 @@
             atomic_int64_sub-global-return
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_sub-global-return.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_sub-global-return.html">
@@ -1653,13 +1877,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_sub-global-return.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_sub-global-return.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_sub-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_sub-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_sub-global-return.html">
               skip
             </a>
           </td>
@@ -1672,12 +1908,6 @@
             atomic_int64_sub-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_sub-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_sub-local.html">
@@ -1704,13 +1934,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_sub-local.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_sub-local.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_sub-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_sub-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_sub-local.html">
               skip
             </a>
           </td>
@@ -1723,12 +1965,6 @@
             atomic_int64_xchg-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_xchg-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_xchg-global.html">
@@ -1755,13 +1991,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_xchg-global.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_xchg-global.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_xchg-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_xchg-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_xchg-global.html">
               skip
             </a>
           </td>
@@ -1774,12 +2022,6 @@
             atomic_int64_xchg-global-return
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_xchg-global-return.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_xchg-global-return.html">
@@ -1806,13 +2048,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_xchg-global-return.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_xchg-global-return.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_xchg-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_xchg-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_xchg-global-return.html">
               skip
             </a>
           </td>
@@ -1825,12 +2079,6 @@
             atomic_int64_xchg-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_xchg-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_xchg-local.html">
@@ -1857,13 +2105,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_xchg-local.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_xchg-local.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_xchg-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_xchg-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_xchg-local.html">
               skip
             </a>
           </td>
@@ -1876,12 +2136,6 @@
             atomic_int64_xor-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_xor-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_xor-global.html">
@@ -1908,13 +2162,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_xor-global.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_xor-global.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_xor-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_xor-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_xor-global.html">
               skip
             </a>
           </td>
@@ -1927,12 +2193,6 @@
             atomic_int64_xor-global-return
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_xor-global-return.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_xor-global-return.html">
@@ -1959,13 +2219,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_xor-global-return.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_xor-global-return.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_xor-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_xor-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_xor-global-return.html">
               skip
             </a>
           </td>
@@ -1978,12 +2250,6 @@
             atomic_int64_xor-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@atomic_int64_xor-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@atomic_int64_xor-local.html">
@@ -2010,13 +2276,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@atomic_int64_xor-local.html">
+            <a href="beignet_19_06_05/program@execute@atomic_int64_xor-local.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@atomic_int64_xor-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@atomic_int64_xor-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@atomic_int64_xor-local.html">
               skip
             </a>
           </td>
@@ -2030,9 +2308,6 @@
               </div>
             </td>
               <td class="fail">
-                <b>1547/1607</b>
-              </td>
-              <td class="fail">
                 <b>1682/1747</b>
               </td>
               <td class="fail">
@@ -2045,10 +2320,16 @@
                 <b>1772/1779</b>
               </td>
               <td class="fail">
+                <b>1672/1747</b>
+              </td>
+              <td class="fail">
                 <b>1727/1747</b>
               </td>
               <td class="fail">
                 <b>1727/1747</b>
+              </td>
+              <td class="fail">
+                <b>1737/1747</b>
               </td>
             
             </tr><tr>
@@ -2058,12 +2339,6 @@
             builtin-shuffle-double-ulong
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@builtin@builtin-shuffle-double-ulong.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@builtin@builtin-shuffle-double-ulong.html">
@@ -2089,15 +2364,27 @@
             </a>
           </td>
           
-          <td class="fail">
-            <a href="intel_cpu_18_07_17/program@execute@builtin@builtin-shuffle-double-ulong.html">
-              fail
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@builtin@builtin-shuffle-double-ulong.html">
+              skip
             </a>
           </td>
           
           <td class="fail">
             <a href="intel_cpu_18_07_18/program@execute@builtin@builtin-shuffle-double-ulong.html">
               fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="intel_cpu_19_06_05/program@execute@builtin@builtin-shuffle-double-ulong.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@builtin@builtin-shuffle-double-ulong.html">
+              pass
             </a>
           </td>
         </tr>
@@ -2109,12 +2396,6 @@
             builtin-shuffle-half-ushort
           </div>
         </td>
-          
-          <td class="pass">
-            <a href="beignet_17_10_01/program@execute@builtin@builtin-shuffle-half-ushort.html">
-              pass
-            </a>
-          </td>
           
           <td class="pass">
             <a href="beignet_17_10_22/program@execute@builtin@builtin-shuffle-half-ushort.html">
@@ -2140,14 +2421,26 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@builtin@builtin-shuffle-half-ushort.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@builtin@builtin-shuffle-half-ushort.html">
+              pass
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@builtin@builtin-shuffle-half-ushort.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@builtin@builtin-shuffle-half-ushort.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@builtin@builtin-shuffle-half-ushort.html">
               skip
             </a>
           </td>
@@ -2160,12 +2453,6 @@
             builtin-shuffle2-double-ulong
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@builtin@builtin-shuffle2-double-ulong.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@builtin@builtin-shuffle2-double-ulong.html">
@@ -2191,14 +2478,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@builtin@builtin-shuffle2-double-ulong.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@builtin@builtin-shuffle2-double-ulong.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@builtin@builtin-shuffle2-double-ulong.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@builtin@builtin-shuffle2-double-ulong.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@builtin@builtin-shuffle2-double-ulong.html">
               pass
             </a>
           </td>
@@ -2211,12 +2510,6 @@
             builtin-shuffle2-half-ushort
           </div>
         </td>
-          
-          <td class="pass">
-            <a href="beignet_17_10_01/program@execute@builtin@builtin-shuffle2-half-ushort.html">
-              pass
-            </a>
-          </td>
           
           <td class="pass">
             <a href="beignet_17_10_22/program@execute@builtin@builtin-shuffle2-half-ushort.html">
@@ -2242,14 +2535,26 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@builtin@builtin-shuffle2-half-ushort.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@builtin@builtin-shuffle2-half-ushort.html">
+              pass
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@builtin@builtin-shuffle2-half-ushort.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@builtin@builtin-shuffle2-half-ushort.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@builtin@builtin-shuffle2-half-ushort.html">
               skip
             </a>
           </td>
@@ -2262,12 +2567,6 @@
             call-clobbers-amdgcn
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@call-clobbers-amdgcn.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@call-clobbers-amdgcn.html">
@@ -2294,13 +2593,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@call-clobbers-amdgcn.html">
+            <a href="beignet_19_06_05/program@execute@call-clobbers-amdgcn.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@call-clobbers-amdgcn.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@call-clobbers-amdgcn.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@call-clobbers-amdgcn.html">
               skip
             </a>
           </td>
@@ -2313,12 +2624,6 @@
             fdiv-modifiers-f64
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@fdiv-modifiers-f64.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@fdiv-modifiers-f64.html">
@@ -2344,14 +2649,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@fdiv-modifiers-f64.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@fdiv-modifiers-f64.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@fdiv-modifiers-f64.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@fdiv-modifiers-f64.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@fdiv-modifiers-f64.html">
               pass
             </a>
           </td>
@@ -2364,12 +2681,6 @@
             load-hi16-generic
           </div>
         </td>
-          
-          <td class="pass">
-            <a href="beignet_17_10_01/program@execute@load-hi16-generic.html">
-              pass
-            </a>
-          </td>
           
           <td class="pass">
             <a href="beignet_17_10_22/program@execute@load-hi16-generic.html">
@@ -2395,15 +2706,27 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@load-hi16-generic.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@load-hi16-generic.html">
+              pass
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@load-hi16-generic.html">
               pass
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@load-hi16-generic.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@load-hi16-generic.html">
+              skip
             </a>
           </td>
         </tr>
@@ -2415,10 +2738,6 @@
             load-lo16-generic
           </div>
         </td>
-          
-          <td class="notrun">
-            notrun
-          </td>
           
           <td class="notrun">
             notrun
@@ -2440,15 +2759,27 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@load-lo16-generic.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@load-lo16-generic.html">
+              pass
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@load-lo16-generic.html">
               pass
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@load-lo16-generic.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@load-lo16-generic.html">
+              skip
             </a>
           </td>
         </tr>
@@ -2460,12 +2791,6 @@
             mad-mix
           </div>
         </td>
-          
-          <td class="pass">
-            <a href="beignet_17_10_01/program@execute@mad-mix.html">
-              pass
-            </a>
-          </td>
           
           <td class="pass">
             <a href="beignet_17_10_22/program@execute@mad-mix.html">
@@ -2491,14 +2816,26 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@mad-mix.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@mad-mix.html">
+              pass
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@mad-mix.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@mad-mix.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@mad-mix.html">
               skip
             </a>
           </td>
@@ -2532,6 +2869,9 @@
               <td class="skip">
                 <b>0/0</b>
               </td>
+              <td class="skip">
+                <b>0/0</b>
+              </td>
             
             </tr><tr>
         
@@ -2540,12 +2880,6 @@
             this test should skip
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@program-tester-check-local-size-test-should-skip.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@program-tester-check-local-size-test-should-skip.html">
@@ -2572,13 +2906,25 @@
           </td>
           
           <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@program-tester-check-local-size-test-should-skip.html">
+            <a href="beignet_19_06_05/program@execute@program-tester-check-local-size-test-should-skip.html">
               skip
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@program-tester-check-local-size-test-should-skip.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@program-tester-check-local-size-test-should-skip.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@program-tester-check-local-size-test-should-skip.html">
               skip
             </a>
           </td>
@@ -2591,12 +2937,6 @@
             scalar-arithmetic-double
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@scalar-arithmetic-double.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@scalar-arithmetic-double.html">
@@ -2622,14 +2962,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@scalar-arithmetic-double.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@scalar-arithmetic-double.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@scalar-arithmetic-double.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@scalar-arithmetic-double.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@scalar-arithmetic-double.html">
               pass
             </a>
           </td>
@@ -2642,12 +2994,6 @@
             store-hi16-generic
           </div>
         </td>
-          
-          <td class="pass">
-            <a href="beignet_17_10_01/program@execute@store-hi16-generic.html">
-              pass
-            </a>
-          </td>
           
           <td class="pass">
             <a href="beignet_17_10_22/program@execute@store-hi16-generic.html">
@@ -2673,15 +3019,27 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@store-hi16-generic.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@store-hi16-generic.html">
+              pass
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@store-hi16-generic.html">
               pass
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@store-hi16-generic.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@store-hi16-generic.html">
+              skip
             </a>
           </td>
         </tr>
@@ -2703,6 +3061,9 @@
                 <b>135/135</b>
               </td>
               <td class="pass">
+                <b>150/150</b>
+              </td>
+              <td class="pass">
                 <b>135/135</b>
               </td>
               <td class="pass">
@@ -2722,12 +3083,6 @@
             store-double-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@store@store-double-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@store@store-double-global.html">
@@ -2753,14 +3108,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@store@store-double-global.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@store@store-double-global.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@store@store-double-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@store@store-double-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@store@store-double-global.html">
               pass
             </a>
           </td>
@@ -2773,12 +3140,6 @@
             store-double-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@store@store-double-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@store@store-double-local.html">
@@ -2804,14 +3165,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@store@store-double-local.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@store@store-double-local.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@store@store-double-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@store@store-double-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@store@store-double-local.html">
               pass
             </a>
           </td>
@@ -2824,12 +3197,6 @@
             store-double16-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@store@store-double16-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@store@store-double16-global.html">
@@ -2855,14 +3222,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@store@store-double16-global.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@store@store-double16-global.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@store@store-double16-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@store@store-double16-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@store@store-double16-global.html">
               pass
             </a>
           </td>
@@ -2875,12 +3254,6 @@
             store-double16-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@store@store-double16-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@store@store-double16-local.html">
@@ -2906,14 +3279,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@store@store-double16-local.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@store@store-double16-local.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@store@store-double16-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@store@store-double16-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@store@store-double16-local.html">
               pass
             </a>
           </td>
@@ -2926,12 +3311,6 @@
             store-double2-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@store@store-double2-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@store@store-double2-global.html">
@@ -2957,14 +3336,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@store@store-double2-global.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@store@store-double2-global.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@store@store-double2-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@store@store-double2-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@store@store-double2-global.html">
               pass
             </a>
           </td>
@@ -2977,12 +3368,6 @@
             store-double2-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@store@store-double2-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@store@store-double2-local.html">
@@ -3008,14 +3393,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@store@store-double2-local.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@store@store-double2-local.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@store@store-double2-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@store@store-double2-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@store@store-double2-local.html">
               pass
             </a>
           </td>
@@ -3028,12 +3425,6 @@
             store-double4-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@store@store-double4-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@store@store-double4-global.html">
@@ -3059,14 +3450,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@store@store-double4-global.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@store@store-double4-global.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@store@store-double4-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@store@store-double4-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@store@store-double4-global.html">
               pass
             </a>
           </td>
@@ -3079,12 +3482,6 @@
             store-double4-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@store@store-double4-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@store@store-double4-local.html">
@@ -3110,14 +3507,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@store@store-double4-local.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@store@store-double4-local.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@store@store-double4-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@store@store-double4-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@store@store-double4-local.html">
               pass
             </a>
           </td>
@@ -3130,12 +3539,6 @@
             store-double8-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@store@store-double8-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@store@store-double8-global.html">
@@ -3161,14 +3564,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@store@store-double8-global.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@store@store-double8-global.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@store@store-double8-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@store@store-double8-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@store@store-double8-global.html">
               pass
             </a>
           </td>
@@ -3181,12 +3596,6 @@
             store-double8-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@store@store-double8-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@store@store-double8-local.html">
@@ -3212,14 +3621,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@store@store-double8-local.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@store@store-double8-local.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@store@store-double8-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@store@store-double8-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@store@store-double8-local.html">
               pass
             </a>
           </td>
@@ -3242,10 +3663,13 @@
                 <b>488/488</b>
               </td>
               <td class="pass">
+                <b>528/528</b>
+              </td>
+              <td class="pass">
                 <b>488/488</b>
               </td>
               <td class="pass">
-                <b>528/528</b>
+                <b>488/488</b>
               </td>
               <td class="pass">
                 <b>488/488</b>
@@ -3261,12 +3685,6 @@
             vload-double-constant
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vload@vload-double-constant.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vload@vload-double-constant.html">
@@ -3292,14 +3710,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@vload@vload-double-constant.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vload@vload-double-constant.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@vload@vload-double-constant.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@vload@vload-double-constant.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vload@vload-double-constant.html">
               pass
             </a>
           </td>
@@ -3312,12 +3742,6 @@
             vload-double-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vload@vload-double-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vload@vload-double-global.html">
@@ -3343,14 +3767,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@vload@vload-double-global.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vload@vload-double-global.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@vload@vload-double-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@vload@vload-double-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vload@vload-double-global.html">
               pass
             </a>
           </td>
@@ -3363,12 +3799,6 @@
             vload-double-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vload@vload-double-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vload@vload-double-local.html">
@@ -3394,14 +3824,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@vload@vload-double-local.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vload@vload-double-local.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@vload@vload-double-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@vload@vload-double-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vload@vload-double-local.html">
               pass
             </a>
           </td>
@@ -3414,12 +3856,6 @@
             vload-double-private
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vload@vload-double-private.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vload@vload-double-private.html">
@@ -3445,14 +3881,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@vload@vload-double-private.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vload@vload-double-private.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@vload@vload-double-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@vload@vload-double-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vload@vload-double-private.html">
               pass
             </a>
           </td>
@@ -3465,12 +3913,6 @@
             vload-half-constant
           </div>
         </td>
-          
-          <td class="pass">
-            <a href="beignet_17_10_01/program@execute@vload@vload-half-constant.html">
-              pass
-            </a>
-          </td>
           
           <td class="pass">
             <a href="beignet_17_10_22/program@execute@vload@vload-half-constant.html">
@@ -3496,14 +3938,26 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@vload@vload-half-constant.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@vload@vload-half-constant.html">
+              pass
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@vload@vload-half-constant.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@vload@vload-half-constant.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@vload@vload-half-constant.html">
               skip
             </a>
           </td>
@@ -3516,12 +3970,6 @@
             vload-half-global
           </div>
         </td>
-          
-          <td class="pass">
-            <a href="beignet_17_10_01/program@execute@vload@vload-half-global.html">
-              pass
-            </a>
-          </td>
           
           <td class="pass">
             <a href="beignet_17_10_22/program@execute@vload@vload-half-global.html">
@@ -3547,14 +3995,26 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@vload@vload-half-global.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@vload@vload-half-global.html">
+              pass
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@vload@vload-half-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@vload@vload-half-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@vload@vload-half-global.html">
               skip
             </a>
           </td>
@@ -3567,12 +4027,6 @@
             vload-half-local
           </div>
         </td>
-          
-          <td class="pass">
-            <a href="beignet_17_10_01/program@execute@vload@vload-half-local.html">
-              pass
-            </a>
-          </td>
           
           <td class="pass">
             <a href="beignet_17_10_22/program@execute@vload@vload-half-local.html">
@@ -3598,14 +4052,26 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@vload@vload-half-local.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@vload@vload-half-local.html">
+              pass
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@vload@vload-half-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@vload@vload-half-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@vload@vload-half-local.html">
               skip
             </a>
           </td>
@@ -3618,12 +4084,6 @@
             vload-half-private
           </div>
         </td>
-          
-          <td class="pass">
-            <a href="beignet_17_10_01/program@execute@vload@vload-half-private.html">
-              pass
-            </a>
-          </td>
           
           <td class="pass">
             <a href="beignet_17_10_22/program@execute@vload@vload-half-private.html">
@@ -3649,14 +4109,26 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@vload@vload-half-private.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@vload@vload-half-private.html">
+              pass
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@vload@vload-half-private.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@vload@vload-half-private.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@vload@vload-half-private.html">
               skip
             </a>
           </td>
@@ -3679,16 +4151,19 @@
                 <b>360/366</b>
               </td>
               <td class="fail">
-                <b>360/366</b>
-              </td>
-              <td class="fail">
                 <b>389/402</b>
+              </td>
+              <td class="pass">
+                <b>366/366</b>
+              </td>
+              <td class="crash">
+                <b>410/414</b>
               </td>
               <td class="fail">
                 <b>429/432</b>
               </td>
-              <td class="crash">
-                <b>410/414</b>
+              <td class="pass">
+                <b>432/432</b>
               </td>
             
             </tr><tr>
@@ -3698,12 +4173,6 @@
             vstore-double-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vstore@vstore-double-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vstore@vstore-double-global.html">
@@ -3729,14 +4198,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@vstore@vstore-double-global.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vstore@vstore-double-global.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@vstore@vstore-double-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@vstore@vstore-double-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vstore@vstore-double-global.html">
               pass
             </a>
           </td>
@@ -3749,12 +4230,6 @@
             vstore-double-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vstore@vstore-double-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vstore@vstore-double-local.html">
@@ -3780,14 +4255,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@vstore@vstore-double-local.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vstore@vstore-double-local.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@vstore@vstore-double-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@vstore@vstore-double-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vstore@vstore-double-local.html">
               pass
             </a>
           </td>
@@ -3800,12 +4287,6 @@
             vstore-double-private
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vstore@vstore-double-private.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vstore@vstore-double-private.html">
@@ -3831,14 +4312,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@vstore@vstore-double-private.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vstore@vstore-double-private.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@vstore@vstore-double-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@vstore@vstore-double-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vstore@vstore-double-private.html">
               pass
             </a>
           </td>
@@ -3851,12 +4344,6 @@
             vstore-half-global
           </div>
         </td>
-          
-          <td class="pass">
-            <a href="beignet_17_10_01/program@execute@vstore@vstore-half-global.html">
-              pass
-            </a>
-          </td>
           
           <td class="pass">
             <a href="beignet_17_10_22/program@execute@vstore@vstore-half-global.html">
@@ -3882,14 +4369,26 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@vstore@vstore-half-global.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@vstore@vstore-half-global.html">
+              pass
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@vstore@vstore-half-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@vstore@vstore-half-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@vstore@vstore-half-global.html">
               skip
             </a>
           </td>
@@ -3902,12 +4401,6 @@
             vstore-half-local
           </div>
         </td>
-          
-          <td class="pass">
-            <a href="beignet_17_10_01/program@execute@vstore@vstore-half-local.html">
-              pass
-            </a>
-          </td>
           
           <td class="pass">
             <a href="beignet_17_10_22/program@execute@vstore@vstore-half-local.html">
@@ -3933,14 +4426,26 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@vstore@vstore-half-local.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@vstore@vstore-half-local.html">
+              pass
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@vstore@vstore-half-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@vstore@vstore-half-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@vstore@vstore-half-local.html">
               skip
             </a>
           </td>
@@ -3953,12 +4458,6 @@
             vstore-half-private
           </div>
         </td>
-          
-          <td class="fail">
-            <a href="beignet_17_10_01/program@execute@vstore@vstore-half-private.html">
-              fail
-            </a>
-          </td>
           
           <td class="fail">
             <a href="beignet_17_10_22/program@execute@vstore@vstore-half-private.html">
@@ -3984,14 +4483,26 @@
             </a>
           </td>
           
-          <td class="skip">
-            <a href="intel_cpu_18_07_17/program@execute@vstore@vstore-half-private.html">
-              skip
+          <td class="pass">
+            <a href="beignet_19_06_05/program@execute@vstore@vstore-half-private.html">
+              pass
             </a>
           </td>
           
           <td class="skip">
             <a href="intel_cpu_18_07_18/program@execute@vstore@vstore-half-private.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="intel_cpu_19_06_05/program@execute@vstore@vstore-half-private.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="nvidia_19_06_05/program@execute@vstore@vstore-half-private.html">
               skip
             </a>
           </td>
@@ -4004,12 +4515,6 @@
             vstore_half-double-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vstore@vstore_half-double-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vstore@vstore_half-double-global.html">
@@ -4035,14 +4540,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@vstore@vstore_half-double-global.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vstore@vstore_half-double-global.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@vstore@vstore_half-double-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@vstore@vstore_half-double-global.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vstore@vstore_half-double-global.html">
               pass
             </a>
           </td>
@@ -4055,12 +4572,6 @@
             vstore_half-double-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vstore@vstore_half-double-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vstore@vstore_half-double-local.html">
@@ -4086,14 +4597,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@vstore@vstore_half-double-local.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vstore@vstore_half-double-local.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@vstore@vstore_half-double-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@vstore@vstore_half-double-local.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vstore@vstore_half-double-local.html">
               pass
             </a>
           </td>
@@ -4106,12 +4629,6 @@
             vstore_half-double-private
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vstore@vstore_half-double-private.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vstore@vstore_half-double-private.html">
@@ -4137,14 +4654,26 @@
             </a>
           </td>
           
-          <td class="pass">
-            <a href="intel_cpu_18_07_17/program@execute@vstore@vstore_half-double-private.html">
-              pass
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vstore@vstore_half-double-private.html">
+              skip
             </a>
           </td>
           
           <td class="pass">
             <a href="intel_cpu_18_07_18/program@execute@vstore@vstore_half-double-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="intel_cpu_19_06_05/program@execute@vstore@vstore_half-double-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vstore@vstore_half-double-private.html">
               pass
             </a>
           </td>
@@ -4157,12 +4686,6 @@
             vstorea_half-double-global
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vstore@vstorea_half-double-global.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vstore@vstorea_half-double-global.html">
@@ -4188,15 +4711,27 @@
             </a>
           </td>
           
-          <td class="fail">
-            <a href="intel_cpu_18_07_17/program@execute@vstore@vstorea_half-double-global.html">
-              fail
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vstore@vstorea_half-double-global.html">
+              skip
             </a>
           </td>
           
           <td class="fail">
             <a href="intel_cpu_18_07_18/program@execute@vstore@vstorea_half-double-global.html">
               fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="intel_cpu_19_06_05/program@execute@vstore@vstorea_half-double-global.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vstore@vstorea_half-double-global.html">
+              pass
             </a>
           </td>
         </tr>
@@ -4208,12 +4743,6 @@
             vstorea_half-double-local
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vstore@vstorea_half-double-local.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vstore@vstorea_half-double-local.html">
@@ -4239,15 +4768,27 @@
             </a>
           </td>
           
-          <td class="fail">
-            <a href="intel_cpu_18_07_17/program@execute@vstore@vstorea_half-double-local.html">
-              fail
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vstore@vstorea_half-double-local.html">
+              skip
             </a>
           </td>
           
           <td class="fail">
             <a href="intel_cpu_18_07_18/program@execute@vstore@vstorea_half-double-local.html">
               fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="intel_cpu_19_06_05/program@execute@vstore@vstorea_half-double-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vstore@vstorea_half-double-local.html">
+              pass
             </a>
           </td>
         </tr>
@@ -4259,12 +4800,6 @@
             vstorea_half-double-private
           </div>
         </td>
-          
-          <td class="skip">
-            <a href="beignet_17_10_01/program@execute@vstore@vstorea_half-double-private.html">
-              skip
-            </a>
-          </td>
           
           <td class="skip">
             <a href="beignet_17_10_22/program@execute@vstore@vstorea_half-double-private.html">
@@ -4290,15 +4825,27 @@
             </a>
           </td>
           
-          <td class="fail">
-            <a href="intel_cpu_18_07_17/program@execute@vstore@vstorea_half-double-private.html">
-              fail
+          <td class="skip">
+            <a href="beignet_19_06_05/program@execute@vstore@vstorea_half-double-private.html">
+              skip
             </a>
           </td>
           
           <td class="crash">
             <a href="intel_cpu_18_07_18/program@execute@vstore@vstorea_half-double-private.html">
               crash
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="intel_cpu_19_06_05/program@execute@vstore@vstorea_half-double-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="nvidia_19_06_05/program@execute@vstore@vstorea_half-double-private.html">
+              pass
             </a>
           </td>
         </tr>

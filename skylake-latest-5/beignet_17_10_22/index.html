@@ -1,12 +1,10 @@
 
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//END"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
     <title>beignet_17_10_22 - System info</title>
-    <link rel="stylesheet" href="../result.css" type="text/css" />
+    <link rel="stylesheet" href="../result.css">
   </head>
   <body>
     <h1>System info for beignet_17_10_22</h1>
@@ -49,22 +47,10 @@
         <td>OrderedDict([('execute', True), ('process_isolation', True), ('sync', False), ('forced_test_list', None), ('ignore_missing', False), ('profile', ['tests/cl.py']), ('concurrent', 'some'), ('log_level', 'quiet'), ('deqp_mustpass', False), ('dmesg', False), ('include_filter', []), ('monitoring', False), ('valgrind', False), ('platform', 'mixed_glx_egl'), ('exclude_filter', []), ('env', OrderedDict([('PIGLIT_SOURCE_DIR', '/home/orome/piglit'), ('PIGLIT_PLATFORM', 'mixed_glx_egl')]))])</td>
       </tr>
       <tr>
-        <td>uname -a</td>
+        <td>info</td>
         <td>
-          <pre>Linux ulmo 4.13.9-gentoo #2 SMP PREEMPT Sun Oct 22 02:01:03 EDT 2017 x86_64 Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz GenuineIntel GNU/Linux
-</pre>
-        </td>
-      </tr>
-      <tr>
-        <td>lspci</td>
-        <td>
-          <pre>None</pre>
-        </td>
-      </tr>
-      <tr>
-        <td>glxinfo</td>
-        <td>
-          <pre>name of display: :0
+          <table>
+                <tr><td>glxinfo</td><td><pre>name of display: :0
 display: :0  screen: 0
 direct rendering: Yes
 server glx vendor string: SGI
@@ -572,13 +558,10 @@ OpenGL ES profile extensions:
 0x0f3 24 dc  0  24  0 r  y .   8  8  8  0 .  .  0 24  8  0  0  0  0  4 1 None
 0x0f4 24 dc  0  24  0 r  y .   8  8  8  0 .  .  0 24  8  0  0  0  0  8 1 None
 
-</pre>
-        </td>
-      </tr>
-      <tr>
-        <td>clinfo</td>
-        <td>
-          <pre>None</pre>
+</pre></td></tr>
+                <tr><td>uname</td><td><pre>Linux ulmo 4.13.9-gentoo #2 SMP PREEMPT Sun Oct 22 02:01:03 EDT 2017 x86_64 Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz GenuineIntel GNU/Linux
+</pre></td></tr>
+          </table>
         </td>
       </tr>
     </table>

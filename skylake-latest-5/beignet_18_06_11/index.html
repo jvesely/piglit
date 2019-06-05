@@ -1,12 +1,10 @@
 
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//END"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
     <title>beignet_18_06_11 - System info</title>
-    <link rel="stylesheet" href="../result.css" type="text/css" />
+    <link rel="stylesheet" href="../result.css">
   </head>
   <body>
     <h1>System info for beignet_18_06_11</h1>
@@ -49,22 +47,162 @@
         <td>OrderedDict([('jobs', None), ('valgrind', False), ('ignore_missing', False), ('concurrent', 'some'), ('exclude_filter', []), ('monitoring', False), ('process_isolation', True), ('platform', 'mixed_glx_egl'), ('sync', False), ('execute', True), ('deqp_mustpass', False), ('profile', ['tests/cl.py']), ('forced_test_list', None), ('env', OrderedDict([('PIGLIT_SOURCE_DIR', '/home/orome/piglit'), ('PIGLIT_PLATFORM', 'mixed_glx_egl')])), ('include_filter', []), ('log_level', 'quiet'), ('dmesg', False)])</td>
       </tr>
       <tr>
-        <td>uname -a</td>
+        <td>info</td>
         <td>
-          <pre>Linux ulmo 4.17.0-gentoo #3 SMP PREEMPT Tue Jun 5 09:04:44 PDT 2018 x86_64 Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz GenuineIntel GNU/Linux
-</pre>
-        </td>
-      </tr>
-      <tr>
-        <td>lspci</td>
-        <td>
-          <pre>None</pre>
-        </td>
-      </tr>
-      <tr>
-        <td>glxinfo</td>
-        <td>
-          <pre>name of display: :0
+          <table>
+                <tr><td>clinfo</td><td><pre>Number of platforms                               1
+  Platform Name                                   Intel Gen OCL Driver
+  Platform Vendor                                 Intel
+  Platform Version                                OpenCL 2.0 beignet 1.4 (git-33b54755)
+  Platform Profile                                FULL_PROFILE
+  Platform Extensions                             cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_3d_image_writes cl_khr_image2d_from_buffer cl_khr_depth_images cl_khr_spir cl_khr_icd cl_intel_accelerator cl_intel_subgroups cl_intel_subgroups_short cl_intel_required_subgroup_size cl_intel_media_block_io cl_intel_planar_yuv cl_khr_gl_sharing
+  Platform Extensions function suffix             Intel
+
+  Platform Name                                   Intel Gen OCL Driver
+Number of devices                                 1
+  Device Name                                     Intel(R) HD Graphics Skylake Halo GT2
+  Device Vendor                                   Intel
+  Device Vendor ID                                0x8086
+  Device Version                                  OpenCL 2.0 beignet 1.4 (git-33b54755)
+  Driver Version                                  1.4
+  Device OpenCL C Version                         OpenCL C 2.0 beignet 1.4 (git-33b54755)
+  Device Type                                     GPU
+  Device Profile                                  FULL_PROFILE
+  Device Available                                Yes
+  Compiler Available                              Yes
+  Linker Available                                Yes
+  Max compute units                               24
+  Max clock frequency                             1000MHz
+  Device Partition                                (core)
+    Max number of sub-devices                     1
+    Supported partition types                     None, None, None
+    Supported affinity domains                    (n/a)
+  Max work item dimensions                        3
+  Max work item sizes                             512x512x512
+  Max work group size                             256
+  Preferred work group size multiple              16
+  Sub-group sizes (Intel)                         8, 16
+  Preferred / native vector sizes                 
+    char                                                16 / 8       
+    short                                                8 / 8       
+    int                                                  4 / 4       
+    long                                                 2 / 2       
+    half                                                 0 / 8        (cl_khr_fp16)
+    float                                                4 / 4       
+    double                                               0 / 2        (cl_khr_fp64)
+  Half-precision Floating-point support           (cl_khr_fp16)
+    Denormals                                     No
+    Infinity and NANs                             Yes
+    Round to nearest                              Yes
+    Round to zero                                 No
+    Round to infinity                             No
+    IEEE754-2008 fused multiply-add               No
+    Support is emulated in software               No
+  Single-precision Floating-point support         (core)
+    Denormals                                     No
+    Infinity and NANs                             Yes
+    Round to nearest                              Yes
+    Round to zero                                 No
+    Round to infinity                             No
+    IEEE754-2008 fused multiply-add               No
+    Support is emulated in software               No
+    Correctly-rounded divide and sqrt operations  No
+  Double-precision Floating-point support         (cl_khr_fp64)
+    Denormals                                     No
+    Infinity and NANs                             No
+    Round to nearest                              No
+    Round to zero                                 No
+    Round to infinity                             No
+    IEEE754-2008 fused multiply-add               No
+    Support is emulated in software               No
+  Address bits                                    32, Little-Endian
+  Global memory size                              4294967296 (4GiB)
+  Error Correction support                        No
+  Max memory allocation                           3221225472 (3GiB)
+  Unified memory for Host and Device              Yes
+  Shared Virtual Memory (SVM) capabilities        (core)
+    Coarse-grained buffer sharing                 Yes
+    Fine-grained buffer sharing                   No
+    Fine-grained system sharing                   No
+    Atomics                                       No
+  Minimum alignment for any data type             128 bytes
+  Alignment of base address                       1024 bits (128 bytes)
+  Preferred alignment for atomics                 
+    SVM                                           0 bytes
+    Global                                        0 bytes
+    Local                                         0 bytes
+  Max size for global variable                    65536 (64KiB)
+  Preferred total size of global vars             65536 (64KiB)
+  Global Memory cache type                        Read/Write
+  Global Memory cache size                        8192 (8KiB)
+  Global Memory cache line size                   64 bytes
+  Image support                                   Yes
+    Max number of samplers per kernel             16
+    Max size for 1D images from buffer            65536 pixels
+    Max 1D or 2D image array size                 2048 images
+    Base address alignment for 2D image buffers   4096 bytes
+    Pitch alignment for 2D image buffers          1 pixels
+    Max 2D image size                             8192x8192 pixels
+    Max planar YUV image size                     8192x8192 pixels
+    Max 3D image size                             8192x8192x2048 pixels
+    Max number of read image args                 128
+    Max number of write image args                8
+    Max number of read/write image args           8
+  Max number of pipe args                         16
+  Max active pipe reservations                    1
+  Max pipe packet size                            1024
+  Local memory type                               Local
+  Local memory size                               65536 (64KiB)
+  Max number of constant args                     8
+  Max constant buffer size                        134217728 (128MiB)
+  Max size of kernel argument                     1024
+  Queue properties (on host)                      
+    Out-of-order execution                        No
+    Profiling                                     Yes
+  Queue properties (on device)                    
+    Out-of-order execution                        Yes
+    Profiling                                     Yes
+    Preferred size                                16384 (16KiB)
+    Max size                                      262144 (256KiB)
+  Max queues on device                            1
+  Max events on device                            1024
+  Prefer user sync for interop                    Yes
+  Profiling timer resolution                      80ns
+  Execution capabilities                          
+    Run OpenCL kernels                            Yes
+    Run native kernels                            Yes
+    SPIR versions                                 1.2
+  printf() buffer size                            1048576 (1024KiB)
+  Built-in kernels                                __cl_copy_region_align4;__cl_copy_region_align16;__cl_copy_region_unalign_same_offset;__cl_copy_region_unalign_dst_offset;__cl_copy_region_unalign_src_offset;__cl_copy_buffer_rect;__cl_copy_buffer_rect_align4;__cl_copy_image_1d_to_1d;__cl_copy_image_2d_to_2d;__cl_copy_image_3d_to_2d;__cl_copy_image_2d_to_3d;__cl_copy_image_3d_to_3d;__cl_copy_image_2d_to_buffer;__cl_copy_image_2d_to_buffer_align4;__cl_copy_image_2d_to_buffer_align16;__cl_copy_image_3d_to_buffer;__cl_copy_image_3d_to_buffer_align4;__cl_copy_image_3d_to_buffer_align16;__cl_copy_buffer_to_image_2d;__cl_copy_buffer_to_image_2d_align4;__cl_copy_buffer_to_image_2d_align16;__cl_copy_buffer_to_image_3d;__cl_copy_buffer_to_image_3d_align4;__cl_copy_buffer_to_image_3d_align16;__cl_copy_image_1d_array_to_1d_array;__cl_copy_image_2d_array_to_2d_array;__cl_copy_image_2d_array_to_2d;__cl_copy_image_2d_array_to_3d;__cl_copy_image_2d_to_2d_array;__cl_copy_image_3d_to_2d_array;__cl_fill_region_unalign;__cl_fill_region_align2;__cl_fill_region_align4;__cl_fill_region_align8_2;__cl_fill_region_align8_4;__cl_fill_region_align8_8;__cl_fill_region_align8_16;__cl_fill_region_align128;__cl_fill_image_1d;__cl_fill_image_1d_array;__cl_fill_image_2d;__cl_fill_image_2d_array;__cl_fill_image_3d;
+    Device-side AVC Motion Estimation version     <printDeviceInfo:165: get CL_DEVICE_AVC_ME_VERSION_INTEL : error -30>
+      Supports texture sampler use                <printDeviceInfo:166: get CL_DEVICE_AVC_ME_SUPPORTS_TEXTURE_SAMPLER_USE_INTEL : error -30>
+      Supports preemption                         <printDeviceInfo:167: get CL_DEVICE_AVC_ME_SUPPORTS_PREEMPTION_INTEL : error -30>
+  Device Extensions                               cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_3d_image_writes cl_khr_image2d_from_buffer cl_khr_depth_images cl_khr_spir cl_khr_icd cl_intel_accelerator cl_intel_subgroups cl_intel_subgroups_short cl_intel_required_subgroup_size cl_intel_media_block_io cl_intel_planar_yuv cl_khr_gl_sharing cl_khr_fp64 cl_khr_fp16 cl_intel_device_side_avc_motion_estimation
+
+NULL platform behavior
+  clGetPlatformInfo(NULL, CL_PLATFORM_NAME, ...)  Intel Gen OCL Driver
+  clGetDeviceIDs(NULL, CL_DEVICE_TYPE_ALL, ...)   Success [Intel]
+  clCreateContext(NULL, ...) [default]            Success [Intel]
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_DEFAULT)  Success (1)
+    Platform Name                                 Intel Gen OCL Driver
+    Device Name                                   Intel(R) HD Graphics Skylake Halo GT2
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_CPU)  No devices found in platform
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_GPU)  Success (1)
+    Platform Name                                 Intel Gen OCL Driver
+    Device Name                                   Intel(R) HD Graphics Skylake Halo GT2
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_ACCELERATOR)  No devices found in platform
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_CUSTOM)  No devices found in platform
+  clCreateContextFromType(NULL, CL_DEVICE_TYPE_ALL)  Success (1)
+    Platform Name                                 Intel Gen OCL Driver
+    Device Name                                   Intel(R) HD Graphics Skylake Halo GT2
+
+ICD loader properties
+  ICD loader Name                                 OpenCL ICD Loader
+  ICD loader Vendor                               OCL Icd free software
+  ICD loader Version                              2.2.11
+  ICD loader Profile                              OpenCL 2.2
+</pre></td></tr>
+                <tr><td>glxinfo</td><td><pre>name of display: :0
 display: :0  screen: 0
 direct rendering: Yes
 server glx vendor string: SGI
@@ -596,164 +734,10 @@ OpenGL ES profile extensions:
 0x0ff 24 dc  0  32  0 r  y .   8  8  8  8 .  s  0 24  8  0  0  0  0  8 1 None
 0x100 24 dc  0  32  0 r  y .   8  8  8  8 .  s  0 24  8  0  0  0  0 16 1 None
 
-</pre>
-        </td>
-      </tr>
-      <tr>
-        <td>clinfo</td>
-        <td>
-          <pre>Number of platforms                               1
-  Platform Name                                   Intel Gen OCL Driver
-  Platform Vendor                                 Intel
-  Platform Version                                OpenCL 2.0 beignet 1.4 (git-33b54755)
-  Platform Profile                                FULL_PROFILE
-  Platform Extensions                             cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_3d_image_writes cl_khr_image2d_from_buffer cl_khr_depth_images cl_khr_spir cl_khr_icd cl_intel_accelerator cl_intel_subgroups cl_intel_subgroups_short cl_intel_required_subgroup_size cl_intel_media_block_io cl_intel_planar_yuv cl_khr_gl_sharing
-  Platform Extensions function suffix             Intel
-
-  Platform Name                                   Intel Gen OCL Driver
-Number of devices                                 1
-  Device Name                                     Intel(R) HD Graphics Skylake Halo GT2
-  Device Vendor                                   Intel
-  Device Vendor ID                                0x8086
-  Device Version                                  OpenCL 2.0 beignet 1.4 (git-33b54755)
-  Driver Version                                  1.4
-  Device OpenCL C Version                         OpenCL C 2.0 beignet 1.4 (git-33b54755)
-  Device Type                                     GPU
-  Device Profile                                  FULL_PROFILE
-  Device Available                                Yes
-  Compiler Available                              Yes
-  Linker Available                                Yes
-  Max compute units                               24
-  Max clock frequency                             1000MHz
-  Device Partition                                (core)
-    Max number of sub-devices                     1
-    Supported partition types                     None, None, None
-    Supported affinity domains                    (n/a)
-  Max work item dimensions                        3
-  Max work item sizes                             512x512x512
-  Max work group size                             256
-  Preferred work group size multiple              16
-  Sub-group sizes (Intel)                         8, 16
-  Preferred / native vector sizes                 
-    char                                                16 / 8       
-    short                                                8 / 8       
-    int                                                  4 / 4       
-    long                                                 2 / 2       
-    half                                                 0 / 8        (cl_khr_fp16)
-    float                                                4 / 4       
-    double                                               0 / 2        (cl_khr_fp64)
-  Half-precision Floating-point support           (cl_khr_fp16)
-    Denormals                                     No
-    Infinity and NANs                             Yes
-    Round to nearest                              Yes
-    Round to zero                                 No
-    Round to infinity                             No
-    IEEE754-2008 fused multiply-add               No
-    Support is emulated in software               No
-  Single-precision Floating-point support         (core)
-    Denormals                                     No
-    Infinity and NANs                             Yes
-    Round to nearest                              Yes
-    Round to zero                                 No
-    Round to infinity                             No
-    IEEE754-2008 fused multiply-add               No
-    Support is emulated in software               No
-    Correctly-rounded divide and sqrt operations  No
-  Double-precision Floating-point support         (cl_khr_fp64)
-    Denormals                                     No
-    Infinity and NANs                             No
-    Round to nearest                              No
-    Round to zero                                 No
-    Round to infinity                             No
-    IEEE754-2008 fused multiply-add               No
-    Support is emulated in software               No
-  Address bits                                    32, Little-Endian
-  Global memory size                              4294967296 (4GiB)
-  Error Correction support                        No
-  Max memory allocation                           3221225472 (3GiB)
-  Unified memory for Host and Device              Yes
-  Shared Virtual Memory (SVM) capabilities        (core)
-    Coarse-grained buffer sharing                 Yes
-    Fine-grained buffer sharing                   No
-    Fine-grained system sharing                   No
-    Atomics                                       No
-  Minimum alignment for any data type             128 bytes
-  Alignment of base address                       1024 bits (128 bytes)
-  Preferred alignment for atomics                 
-    SVM                                           0 bytes
-    Global                                        0 bytes
-    Local                                         0 bytes
-  Max size for global variable                    65536 (64KiB)
-  Preferred total size of global vars             65536 (64KiB)
-  Global Memory cache type                        Read/Write
-  Global Memory cache size                        8192 (8KiB)
-  Global Memory cache line size                   64 bytes
-  Image support                                   Yes
-    Max number of samplers per kernel             16
-    Max size for 1D images from buffer            65536 pixels
-    Max 1D or 2D image array size                 2048 images
-    Base address alignment for 2D image buffers   4096 bytes
-    Pitch alignment for 2D image buffers          1 pixels
-    Max 2D image size                             8192x8192 pixels
-    Max planar YUV image size                     8192x8192 pixels
-    Max 3D image size                             8192x8192x2048 pixels
-    Max number of read image args                 128
-    Max number of write image args                8
-    Max number of read/write image args           8
-  Max number of pipe args                         16
-  Max active pipe reservations                    1
-  Max pipe packet size                            1024
-  Local memory type                               Local
-  Local memory size                               65536 (64KiB)
-  Max number of constant args                     8
-  Max constant buffer size                        134217728 (128MiB)
-  Max size of kernel argument                     1024
-  Queue properties (on host)                      
-    Out-of-order execution                        No
-    Profiling                                     Yes
-  Queue properties (on device)                    
-    Out-of-order execution                        Yes
-    Profiling                                     Yes
-    Preferred size                                16384 (16KiB)
-    Max size                                      262144 (256KiB)
-  Max queues on device                            1
-  Max events on device                            1024
-  Prefer user sync for interop                    Yes
-  Profiling timer resolution                      80ns
-  Execution capabilities                          
-    Run OpenCL kernels                            Yes
-    Run native kernels                            Yes
-    SPIR versions                                 1.2
-  printf() buffer size                            1048576 (1024KiB)
-  Built-in kernels                                __cl_copy_region_align4;__cl_copy_region_align16;__cl_copy_region_unalign_same_offset;__cl_copy_region_unalign_dst_offset;__cl_copy_region_unalign_src_offset;__cl_copy_buffer_rect;__cl_copy_buffer_rect_align4;__cl_copy_image_1d_to_1d;__cl_copy_image_2d_to_2d;__cl_copy_image_3d_to_2d;__cl_copy_image_2d_to_3d;__cl_copy_image_3d_to_3d;__cl_copy_image_2d_to_buffer;__cl_copy_image_2d_to_buffer_align4;__cl_copy_image_2d_to_buffer_align16;__cl_copy_image_3d_to_buffer;__cl_copy_image_3d_to_buffer_align4;__cl_copy_image_3d_to_buffer_align16;__cl_copy_buffer_to_image_2d;__cl_copy_buffer_to_image_2d_align4;__cl_copy_buffer_to_image_2d_align16;__cl_copy_buffer_to_image_3d;__cl_copy_buffer_to_image_3d_align4;__cl_copy_buffer_to_image_3d_align16;__cl_copy_image_1d_array_to_1d_array;__cl_copy_image_2d_array_to_2d_array;__cl_copy_image_2d_array_to_2d;__cl_copy_image_2d_array_to_3d;__cl_copy_image_2d_to_2d_array;__cl_copy_image_3d_to_2d_array;__cl_fill_region_unalign;__cl_fill_region_align2;__cl_fill_region_align4;__cl_fill_region_align8_2;__cl_fill_region_align8_4;__cl_fill_region_align8_8;__cl_fill_region_align8_16;__cl_fill_region_align128;__cl_fill_image_1d;__cl_fill_image_1d_array;__cl_fill_image_2d;__cl_fill_image_2d_array;__cl_fill_image_3d;
-    Device-side AVC Motion Estimation version     <printDeviceInfo:165: get CL_DEVICE_AVC_ME_VERSION_INTEL : error -30>
-      Supports texture sampler use                <printDeviceInfo:166: get CL_DEVICE_AVC_ME_SUPPORTS_TEXTURE_SAMPLER_USE_INTEL : error -30>
-      Supports preemption                         <printDeviceInfo:167: get CL_DEVICE_AVC_ME_SUPPORTS_PREEMPTION_INTEL : error -30>
-  Device Extensions                               cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_3d_image_writes cl_khr_image2d_from_buffer cl_khr_depth_images cl_khr_spir cl_khr_icd cl_intel_accelerator cl_intel_subgroups cl_intel_subgroups_short cl_intel_required_subgroup_size cl_intel_media_block_io cl_intel_planar_yuv cl_khr_gl_sharing cl_khr_fp64 cl_khr_fp16 cl_intel_device_side_avc_motion_estimation
-
-NULL platform behavior
-  clGetPlatformInfo(NULL, CL_PLATFORM_NAME, ...)  Intel Gen OCL Driver
-  clGetDeviceIDs(NULL, CL_DEVICE_TYPE_ALL, ...)   Success [Intel]
-  clCreateContext(NULL, ...) [default]            Success [Intel]
-  clCreateContextFromType(NULL, CL_DEVICE_TYPE_DEFAULT)  Success (1)
-    Platform Name                                 Intel Gen OCL Driver
-    Device Name                                   Intel(R) HD Graphics Skylake Halo GT2
-  clCreateContextFromType(NULL, CL_DEVICE_TYPE_CPU)  No devices found in platform
-  clCreateContextFromType(NULL, CL_DEVICE_TYPE_GPU)  Success (1)
-    Platform Name                                 Intel Gen OCL Driver
-    Device Name                                   Intel(R) HD Graphics Skylake Halo GT2
-  clCreateContextFromType(NULL, CL_DEVICE_TYPE_ACCELERATOR)  No devices found in platform
-  clCreateContextFromType(NULL, CL_DEVICE_TYPE_CUSTOM)  No devices found in platform
-  clCreateContextFromType(NULL, CL_DEVICE_TYPE_ALL)  Success (1)
-    Platform Name                                 Intel Gen OCL Driver
-    Device Name                                   Intel(R) HD Graphics Skylake Halo GT2
-
-ICD loader properties
-  ICD loader Name                                 OpenCL ICD Loader
-  ICD loader Vendor                               OCL Icd free software
-  ICD loader Version                              2.2.11
-  ICD loader Profile                              OpenCL 2.2
-</pre>
+</pre></td></tr>
+                <tr><td>uname</td><td><pre>Linux ulmo 4.17.0-gentoo #3 SMP PREEMPT Tue Jun 5 09:04:44 PDT 2018 x86_64 Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz GenuineIntel GNU/Linux
+</pre></td></tr>
+          </table>
         </td>
       </tr>
     </table>
