@@ -9,7 +9,7 @@
     <h1>Results for api@clcompileprogram</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> crash</p>
+      <p><b>Result:</b> timeout</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -20,22 +20,17 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>-15</td>
+        <td>None</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:02:10.353260</td>
+        <td>0:01:03.074558</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>## Test: clCompileProgram (/home/orome/piglit/tests/cl/api/compile-program.c) ##
-
-# Platform supporting only version 1.2. Running test on that version.
-# Running on:
-#   Platform: Intel(R) OpenCL
-#   OpenCL version: 1.2
-# Result:
+          <pre>An internal exception that should have been handled was not:
+Test run time exceeded timeout value (60 seconds)
 </pre>
         </td>
       </tr>
