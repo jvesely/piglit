@@ -9,7 +9,7 @@
     <h1>Results for program@execute@pyrit-wpa-psk</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> timeout</p>
+      <p><b>Result:</b> pass</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -20,17 +20,39 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>None</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:01:03.070336</td>
+        <td>0:01:09.633826</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>An internal exception that should have been handled was not:
-Test run time exceeded timeout value (60 seconds)
+          <pre>## Test: Pyrit WPA2-PSK accelerator (/home/vesely/piglit/tests/cl/program/program-tester.c) ##
+
+# Platform supporting only version 1.1. Running test on that version.
+# Running on:
+#   Platform: Clover
+#   Device: AMD TURKS (DRM 2.50.0 / 5.1.12-300.fc30.x86_64, LLVM 9.0.0)
+#   OpenCL version: 2.0
+#   OpenCL C version: 1.1
+#   Build options:  -cl-std=CL1.1
+Program has been built successfully
+&gt; Running kernel test: Modified SHA1
+Using kernel sha1_process_test
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 1: PASS
+&gt; Running kernel test: Full
+Using kernel opencl_pmk_kernel
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 1: PASS
+&gt;&gt; All of the tests PASSED
+# Result:
 </pre>
         </td>
       </tr>
