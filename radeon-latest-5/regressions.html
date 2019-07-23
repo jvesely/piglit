@@ -12,18 +12,19 @@
     <p>Currently showing: regressions</p>
     <p>Show:
         <a href="index.html">all</a>
-          | <a href="skips.html">skips</a>
-          | <a href="disabled.html">disabled</a>
-          | <a href="fixes.html">fixes</a>
-          | <a href="changes.html">changes</a>
-          | <a href="problems.html">problems</a>
-          | <a href="enabled.html">enabled</a>
           | regressions
+          | <a href="changes.html">changes</a>
+          | <a href="skips.html">skips</a>
+          | <a href="problems.html">problems</a>
+          | <a href="fixes.html">fixes</a>
+          | <a href="enabled.html">enabled</a>
+          | <a href="disabled.html">disabled</a>
     </p>
     <table>
       <colgroup>
         <col />
 
+        <col />
         <col />
         <col />
         <col />
@@ -39,6 +40,7 @@
           <th class="head"><b>radeon6_19_07_23</b><br>          (<a href="radeon6_19_07_23/index.html">info</a>)</th>
           <th class="head"><b>radeon7_19_07_23</b><br>          (<a href="radeon7_19_07_23/index.html">info</a>)</th>
           <th class="head"><b>radeon8_19_07_23</b><br>          (<a href="radeon8_19_07_23/index.html">info</a>)</th>
+          <th class="head"><b>radeon9_19_07_23</b><br>          (<a href="radeon9_19_07_23/index.html">info</a>)</th>
           <th class="head"><b>radeon_19_07_17</b><br>          (<a href="radeon_19_07_17/index.html">info</a>)</th>
           <th class="head"><b>radeon_19_07_20</b><br>          (<a href="radeon_19_07_20/index.html">info</a>)</th>
           <th class="head"><b>radeon_19_07_21</b><br>          (<a href="radeon_19_07_21/index.html">info</a>)</th>
@@ -50,6 +52,9 @@
         <td class="head"><b>all</b></td>
           <td class="crash">
             <b>3371/3479</b>
+          </td>
+          <td class="crash">
+            <b>3337/3449</b>
           </td>
           <td class="crash">
             <b>3337/3449</b>
@@ -110,6 +115,9 @@
                 <b>46/48</b>
               </td>
               <td class="fail">
+                <b>46/48</b>
+              </td>
+              <td class="fail">
                 <b>55/57</b>
               </td>
             
@@ -135,6 +143,12 @@
           
           <td class="pass">
             <a href="radeon8_19_07_23/api@clcreateprogramwithbinary.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon9_19_07_23/api@clcreateprogramwithbinary.html">
               pass
             </a>
           </td>
@@ -193,6 +207,9 @@
                 <b>3263/3373</b>
               </td>
               <td class="crash">
+                <b>3263/3373</b>
+              </td>
+              <td class="crash">
                 <b>3300/3441</b>
               </td>
               <td class="crash">
@@ -220,6 +237,9 @@
             </td>
               <td class="crash">
                 <b>3262/3366</b>
+              </td>
+              <td class="crash">
+                <b>3228/3336</b>
               </td>
               <td class="crash">
                 <b>3228/3336</b>
@@ -268,6 +288,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@i32-stack-array.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@i32-stack-array.html">
               crash
             </a>
           </td>
@@ -336,6 +362,12 @@
           </td>
           
           <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@multiple-stack-objects.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
             <a href="radeon_19_07_17/program@execute@multiple-stack-objects.html">
               crash
             </a>
@@ -389,6 +421,9 @@
                 <b>336/394</b>
               </td>
               <td class="crash">
+                <b>336/394</b>
+              </td>
+              <td class="crash">
                 <b>328/394</b>
               </td>
               <td class="crash">
@@ -414,6 +449,9 @@
                 <b>vload-short-private</b>
               </div>
             </td>
+              <td class="fail">
+                <b>8/10</b>
+              </td>
               <td class="fail">
                 <b>8/10</b>
               </td>
@@ -464,6 +502,12 @@
           
           <td class="pass">
             <a href="radeon8_19_07_23/program@execute@vload@vload-short-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
@@ -531,6 +575,12 @@
             </a>
           </td>
           
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-private.html">
+              pass
+            </a>
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-short-private.html">
               fail
@@ -590,6 +640,12 @@
           
           <td class="pass">
             <a href="radeon8_19_07_23/program@execute@vload@vload-short-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
@@ -657,6 +713,12 @@
             </a>
           </td>
           
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-private.html">
+              pass
+            </a>
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-short-private.html">
               fail
@@ -711,6 +773,9 @@
                 <b>8/10</b>
               </td>
               <td class="fail">
+                <b>8/10</b>
+              </td>
+              <td class="fail">
                 <b>4/10</b>
               </td>
               <td class="fail">
@@ -751,6 +816,12 @@
           
           <td class="pass">
             <a href="radeon8_19_07_23/program@execute@vload@vload-ushort-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-private.html">
               pass
             </a>
           </td>
@@ -818,6 +889,12 @@
             </a>
           </td>
           
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-private.html">
+              pass
+            </a>
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-ushort-private.html">
               fail
@@ -877,6 +954,12 @@
           
           <td class="pass">
             <a href="radeon8_19_07_23/program@execute@vload@vload-ushort-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-private.html">
               pass
             </a>
           </td>
@@ -944,6 +1027,12 @@
             </a>
           </td>
           
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-private.html">
+              pass
+            </a>
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-ushort-private.html">
               fail
@@ -997,6 +1086,9 @@
               <td class="fail">
                 <b>316/318</b>
               </td>
+              <td class="crash">
+                <b>316/318</b>
+              </td>
               <td class="fail">
                 <b>316/318</b>
               </td>
@@ -1039,6 +1131,12 @@
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vstore@vstore-long-private.html">
               fail
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore-long-private.html">
+              crash
             </a>
           </td>
           
@@ -1102,6 +1200,12 @@
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vstore@vstore-ulong-private.html">
               fail
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore-ulong-private.html">
+              crash
             </a>
           </td>
           

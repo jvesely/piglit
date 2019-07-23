@@ -12,18 +12,19 @@
     <p>Currently showing: problems</p>
     <p>Show:
         <a href="index.html">all</a>
-          | <a href="skips.html">skips</a>
-          | <a href="disabled.html">disabled</a>
-          | <a href="fixes.html">fixes</a>
-          | <a href="changes.html">changes</a>
-          | problems
-          | <a href="enabled.html">enabled</a>
           | <a href="regressions.html">regressions</a>
+          | <a href="changes.html">changes</a>
+          | <a href="skips.html">skips</a>
+          | problems
+          | <a href="fixes.html">fixes</a>
+          | <a href="enabled.html">enabled</a>
+          | <a href="disabled.html">disabled</a>
     </p>
     <table>
       <colgroup>
         <col />
 
+        <col />
         <col />
         <col />
         <col />
@@ -39,6 +40,7 @@
           <th class="head"><b>radeon6_19_07_23</b><br>          (<a href="radeon6_19_07_23/index.html">info</a>)</th>
           <th class="head"><b>radeon7_19_07_23</b><br>          (<a href="radeon7_19_07_23/index.html">info</a>)</th>
           <th class="head"><b>radeon8_19_07_23</b><br>          (<a href="radeon8_19_07_23/index.html">info</a>)</th>
+          <th class="head"><b>radeon9_19_07_23</b><br>          (<a href="radeon9_19_07_23/index.html">info</a>)</th>
           <th class="head"><b>radeon_19_07_17</b><br>          (<a href="radeon_19_07_17/index.html">info</a>)</th>
           <th class="head"><b>radeon_19_07_20</b><br>          (<a href="radeon_19_07_20/index.html">info</a>)</th>
           <th class="head"><b>radeon_19_07_21</b><br>          (<a href="radeon_19_07_21/index.html">info</a>)</th>
@@ -50,6 +52,9 @@
         <td class="head"><b>all</b></td>
           <td class="crash">
             <b>3371/3479</b>
+          </td>
+          <td class="crash">
+            <b>3337/3449</b>
           </td>
           <td class="crash">
             <b>3337/3449</b>
@@ -110,6 +115,9 @@
                 <b>46/48</b>
               </td>
               <td class="fail">
+                <b>46/48</b>
+              </td>
+              <td class="fail">
                 <b>55/57</b>
               </td>
             
@@ -135,6 +143,12 @@
           
           <td class="pass">
             <a href="radeon8_19_07_23/api@clcreateprogramwithbinary.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon9_19_07_23/api@clcreateprogramwithbinary.html">
               pass
             </a>
           </td>
@@ -203,6 +217,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/api@clgetextensionfunctionaddressforplatform.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/api@clgetextensionfunctionaddressforplatform.html">
               skip
             </a>
@@ -261,6 +281,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/api@clretainevent and clreleaseevent.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/api@clretainevent and clreleaseevent.html">
               fail
             </a>
           </td>
@@ -333,6 +359,9 @@
               <td class="fail">
                 <b>6/7</b>
               </td>
+              <td class="fail">
+                <b>6/7</b>
+              </td>
               <td class="pass">
                 <b>8/8</b>
               </td>
@@ -359,6 +388,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/api@clsetkernelarg.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/api@clsetkernelarg.html">
               fail
             </a>
           </td>
@@ -417,6 +452,9 @@
                 <b>3263/3373</b>
               </td>
               <td class="crash">
+                <b>3263/3373</b>
+              </td>
+              <td class="crash">
                 <b>3300/3441</b>
               </td>
               <td class="crash">
@@ -442,6 +480,9 @@
                 <b>build</b>
               </div>
             </td>
+              <td class="crash">
+                <b>19/21</b>
+              </td>
               <td class="crash">
                 <b>19/21</b>
               </td>
@@ -492,6 +533,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@build@optimization-options-cl10.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@build@optimization-options-cl10.html">
               crash
             </a>
           </td>
@@ -559,6 +606,12 @@
             </a>
           </td>
           
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@build@optimization-options-cl11+.html">
+              crash
+            </a>
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@build@optimization-options-cl11+.html">
               fail
@@ -613,6 +666,9 @@
                 <b>3228/3336</b>
               </td>
               <td class="crash">
+                <b>3228/3336</b>
+              </td>
+              <td class="crash">
                 <b>3265/3404</b>
               </td>
               <td class="crash">
@@ -653,6 +709,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@atomic_add-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_add-global-return.html">
               fail
             </a>
           </td>
@@ -710,6 +772,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -736,6 +801,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -793,6 +862,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -870,6 +943,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_and-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_and-global-return.html">
               fail
             </a>
@@ -922,6 +1001,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -948,6 +1030,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1005,6 +1091,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1082,6 +1172,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_cmpxchg-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_cmpxchg-global-return.html">
               fail
             </a>
@@ -1134,6 +1230,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -1160,6 +1259,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1217,6 +1320,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1294,6 +1401,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_dec-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_dec-global-return.html">
               fail
             </a>
@@ -1346,6 +1459,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -1372,6 +1488,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1429,6 +1549,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1506,6 +1630,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_inc-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_inc-global-return.html">
               fail
             </a>
@@ -1558,6 +1688,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -1584,6 +1717,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1641,6 +1778,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1718,6 +1859,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_int32_add-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_int32_add-global-return.html">
               fail
             </a>
@@ -1770,6 +1917,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -1796,6 +1946,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1853,6 +2007,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -1930,6 +2088,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_int32_and-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_int32_and-global-return.html">
               fail
             </a>
@@ -1982,6 +2146,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -2008,6 +2175,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2065,6 +2236,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2142,6 +2317,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_int32_cmpxchg-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_int32_cmpxchg-global-return.html">
               fail
             </a>
@@ -2194,6 +2375,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -2220,6 +2404,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2277,6 +2465,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2354,6 +2546,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_int32_dec-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_int32_dec-global-return.html">
               fail
             </a>
@@ -2406,6 +2604,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -2432,6 +2633,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2489,6 +2694,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2566,6 +2775,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_int32_inc-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_int32_inc-global-return.html">
               fail
             </a>
@@ -2618,6 +2833,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -2644,6 +2862,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2701,6 +2923,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2778,6 +3004,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_int32_max-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_int32_max-global-return.html">
               fail
             </a>
@@ -2830,6 +3062,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -2856,6 +3091,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2913,6 +3152,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -2990,6 +3233,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_int32_min-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_int32_min-global-return.html">
               fail
             </a>
@@ -3042,6 +3291,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -3068,6 +3320,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3125,6 +3381,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3202,6 +3462,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_int32_or-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_int32_or-global-return.html">
               fail
             </a>
@@ -3254,6 +3520,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -3280,6 +3549,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3337,6 +3610,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3414,6 +3691,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_int32_sub-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_int32_sub-global-return.html">
               fail
             </a>
@@ -3466,6 +3749,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -3492,6 +3778,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3549,6 +3839,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3626,6 +3920,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_int32_xchg-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_int32_xchg-global-return.html">
               fail
             </a>
@@ -3678,6 +3978,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -3704,6 +4007,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3761,6 +4068,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3838,6 +4149,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_int32_xor-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_int32_xor-global-return.html">
               fail
             </a>
@@ -3890,6 +4207,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -3916,6 +4236,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -3973,6 +4297,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -4050,6 +4378,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_max-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_max-global-return.html">
               fail
             </a>
@@ -4102,6 +4436,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -4128,6 +4465,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -4185,6 +4526,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -4262,6 +4607,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_min-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_min-global-return.html">
               fail
             </a>
@@ -4314,6 +4665,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -4340,6 +4694,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -4397,6 +4755,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -4474,6 +4836,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_or-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_or-global-return.html">
               fail
             </a>
@@ -4526,6 +4894,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -4552,6 +4923,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -4609,6 +4984,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -4686,6 +5065,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_sub-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_sub-global-return.html">
               fail
             </a>
@@ -4738,6 +5123,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -4764,6 +5152,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -4821,6 +5213,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -4898,6 +5294,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_xchg-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_xchg-global-return.html">
               fail
             </a>
@@ -4950,6 +5352,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>3/6</b>
               </td>
@@ -4976,6 +5381,10 @@
             threads float
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -5046,6 +5455,10 @@
             notrun
           </td>
           
+          <td class="notrun">
+            notrun
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_xchg-global-return.html">
               fail
@@ -5090,6 +5503,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -5167,6 +5584,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@atomic_xor-global-return.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@atomic_xor-global-return.html">
               fail
             </a>
@@ -5219,6 +5642,9 @@
               <td class="notrun">
                 <b>0/0</b>
               </td>
+              <td class="notrun">
+                <b>0/0</b>
+              </td>
               <td class="fail">
                 <b>2/4</b>
               </td>
@@ -5245,6 +5671,10 @@
             threads int
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -5302,6 +5732,10 @@
             threads uint
           </div>
         </td>
+          
+          <td class="notrun">
+            notrun
+          </td>
           
           <td class="notrun">
             notrun
@@ -5383,6 +5817,9 @@
               <td class="crash">
                 <b>1516/1526</b>
               </td>
+              <td class="crash">
+                <b>1516/1526</b>
+              </td>
               <td class="pass">
                 <b>1747/1747</b>
               </td>
@@ -5409,6 +5846,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@builtin@builtin-float-sincos-1.0.generated.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-float-sincos-1.0.generated.html">
               crash
             </a>
           </td>
@@ -5477,6 +5920,12 @@
           </td>
           
           <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle-char-uchar.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
             <a href="radeon_19_07_17/program@execute@builtin@builtin-shuffle-char-uchar.html">
               crash
             </a>
@@ -5535,6 +5984,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@builtin@builtin-shuffle-float-uint.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle-float-uint.html">
               crash
             </a>
           </td>
@@ -5603,6 +6058,12 @@
           </td>
           
           <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle-int-uint.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
             <a href="radeon_19_07_17/program@execute@builtin@builtin-shuffle-int-uint.html">
               crash
             </a>
@@ -5661,6 +6122,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@builtin@builtin-shuffle-long-ulong.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle-long-ulong.html">
               crash
             </a>
           </td>
@@ -5729,6 +6196,12 @@
           </td>
           
           <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle-short-ushort.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
             <a href="radeon_19_07_17/program@execute@builtin@builtin-shuffle-short-ushort.html">
               crash
             </a>
@@ -5787,6 +6260,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@builtin@builtin-shuffle-uchar-uchar.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle-uchar-uchar.html">
               crash
             </a>
           </td>
@@ -5855,6 +6334,12 @@
           </td>
           
           <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle-uint-uint.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
             <a href="radeon_19_07_17/program@execute@builtin@builtin-shuffle-uint-uint.html">
               crash
             </a>
@@ -5913,6 +6398,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@builtin@builtin-shuffle-ulong-ulong.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle-ulong-ulong.html">
               crash
             </a>
           </td>
@@ -5981,6 +6472,12 @@
           </td>
           
           <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle-ushort-ushort.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
             <a href="radeon_19_07_17/program@execute@builtin@builtin-shuffle-ushort-ushort.html">
               crash
             </a>
@@ -6039,6 +6536,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@calls.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@calls.html">
               crash
             </a>
           </td>
@@ -6106,6 +6609,12 @@
             </a>
           </td>
           
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@calls-large-struct.html">
+              crash
+            </a>
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@execute@calls-large-struct.html">
               fail
@@ -6163,6 +6672,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@calls-struct.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@calls-struct.html">
               crash
             </a>
           </td>
@@ -6226,6 +6741,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@calls-workitem-id.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@calls-workitem-id.html">
               crash
             </a>
           </td>
@@ -6298,6 +6819,9 @@
               <td class="fail">
                 <b>0/4</b>
               </td>
+              <td class="fail">
+                <b>0/4</b>
+              </td>
               <td class="pass">
                 <b>4/4</b>
               </td>
@@ -6324,6 +6848,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@global-memory.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@global-memory.html">
               fail
             </a>
           </td>
@@ -6392,6 +6922,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@global-memory.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@global-memory.html">
               fail
             </a>
@@ -6450,6 +6986,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@global-memory.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@global-memory.html">
               fail
             </a>
           </td>
@@ -6518,6 +7060,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@global-memory.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@global-memory.html">
               fail
             </a>
@@ -6576,6 +7124,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@i32-stack-array.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@i32-stack-array.html">
               crash
             </a>
           </td>
@@ -6643,6 +7197,12 @@
             </a>
           </td>
           
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@image-attributes.html">
+              crash
+            </a>
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@execute@image-attributes.html">
               fail
@@ -6702,6 +7262,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@image-read-2d.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@image-read-2d.html">
               crash
             </a>
           </td>
@@ -6770,6 +7336,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@image-write-2d.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@image-write-2d.html">
               fail
             </a>
@@ -6828,6 +7400,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@multiple-stack-objects.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@multiple-stack-objects.html">
               crash
             </a>
           </td>
@@ -6895,6 +7473,12 @@
             </a>
           </td>
           
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@realign-stack.html">
+              crash
+            </a>
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@execute@realign-stack.html">
               fail
@@ -6952,6 +7536,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@sampler.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@sampler.html">
               crash
             </a>
           </td>
@@ -7019,6 +7609,12 @@
             </a>
           </td>
           
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@tail-calls.html">
+              crash
+            </a>
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@execute@tail-calls.html">
               fail
@@ -7063,6 +7659,9 @@
                 <b>vload</b>
               </div>
             </td>
+              <td class="crash">
+                <b>336/394</b>
+              </td>
               <td class="crash">
                 <b>336/394</b>
               </td>
@@ -7122,6 +7721,9 @@
               <td class="fail">
                 <b>0/10</b>
               </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
               <td class="pass">
                 <b>10/10</b>
               </td>
@@ -7148,6 +7750,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-char-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-constant.html">
               fail
             </a>
           </td>
@@ -7216,6 +7824,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-char-constant.html">
               fail
             </a>
@@ -7274,6 +7888,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-char-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-constant.html">
               fail
             </a>
           </td>
@@ -7342,6 +7962,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-char-constant.html">
               fail
             </a>
@@ -7400,6 +8026,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-char-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-constant.html">
               fail
             </a>
           </td>
@@ -7468,6 +8100,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-char-constant.html">
               fail
             </a>
@@ -7526,6 +8164,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-char-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-constant.html">
               fail
             </a>
           </td>
@@ -7594,6 +8238,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-char-constant.html">
               fail
             </a>
@@ -7652,6 +8302,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-char-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-constant.html">
               fail
             </a>
           </td>
@@ -7720,6 +8376,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-char-constant.html">
               fail
             </a>
@@ -7778,6 +8440,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@vload@vload-char-global.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-global.html">
               crash
             </a>
           </td>
@@ -7850,6 +8518,9 @@
               <td class="fail">
                 <b>0/10</b>
               </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
               <td class="pass">
                 <b>10/10</b>
               </td>
@@ -7876,6 +8547,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-char-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-local.html">
               fail
             </a>
           </td>
@@ -7944,6 +8621,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-char-local.html">
               fail
             </a>
@@ -8002,6 +8685,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-char-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-local.html">
               fail
             </a>
           </td>
@@ -8070,6 +8759,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-char-local.html">
               fail
             </a>
@@ -8128,6 +8823,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-char-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-local.html">
               fail
             </a>
           </td>
@@ -8196,6 +8897,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-char-local.html">
               fail
             </a>
@@ -8254,6 +8961,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-char-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-local.html">
               fail
             </a>
           </td>
@@ -8322,6 +9035,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-char-local.html">
               fail
             </a>
@@ -8380,6 +9099,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-char-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-local.html">
               fail
             </a>
           </td>
@@ -8448,6 +9173,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-char-local.html">
               fail
             </a>
@@ -8506,6 +9237,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@vload@vload-char-private.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-char-private.html">
               crash
             </a>
           </td>
@@ -8578,6 +9315,9 @@
               <td class="fail">
                 <b>8/10</b>
               </td>
+              <td class="fail">
+                <b>8/10</b>
+              </td>
               <td class="pass">
                 <b>10/10</b>
               </td>
@@ -8604,6 +9344,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-short-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-constant.html">
               fail
             </a>
           </td>
@@ -8672,6 +9418,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-short-constant.html">
               fail
             </a>
@@ -8730,6 +9482,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@vload@vload-short-global.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-global.html">
               crash
             </a>
           </td>
@@ -8802,6 +9560,9 @@
               <td class="fail">
                 <b>8/10</b>
               </td>
+              <td class="fail">
+                <b>8/10</b>
+              </td>
               <td class="pass">
                 <b>10/10</b>
               </td>
@@ -8828,6 +9589,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-short-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-local.html">
               fail
             </a>
           </td>
@@ -8896,6 +9663,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-short-local.html">
               fail
             </a>
@@ -8949,6 +9722,9 @@
                 <b>8/10</b>
               </td>
               <td class="fail">
+                <b>8/10</b>
+              </td>
+              <td class="fail">
                 <b>4/10</b>
               </td>
               <td class="fail">
@@ -8989,6 +9765,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-short-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-private.html">
               fail
             </a>
           </td>
@@ -9056,6 +9838,12 @@
             </a>
           </td>
           
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-private.html">
+              pass
+            </a>
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-short-private.html">
               fail
@@ -9115,6 +9903,12 @@
           
           <td class="pass">
             <a href="radeon8_19_07_23/program@execute@vload@vload-short-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
@@ -9183,6 +9977,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-short-private.html">
               fail
             </a>
@@ -9241,6 +10041,12 @@
           
           <td class="pass">
             <a href="radeon8_19_07_23/program@execute@vload@vload-short-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
@@ -9304,6 +10110,12 @@
           
           <td class="pass">
             <a href="radeon8_19_07_23/program@execute@vload@vload-short-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-short-private.html">
               pass
             </a>
           </td>
@@ -9376,6 +10188,9 @@
               <td class="fail">
                 <b>0/10</b>
               </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
               <td class="pass">
                 <b>10/10</b>
               </td>
@@ -9402,6 +10217,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-uchar-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-constant.html">
               fail
             </a>
           </td>
@@ -9470,6 +10291,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-uchar-constant.html">
               fail
             </a>
@@ -9528,6 +10355,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-uchar-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-constant.html">
               fail
             </a>
           </td>
@@ -9596,6 +10429,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-uchar-constant.html">
               fail
             </a>
@@ -9654,6 +10493,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-uchar-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-constant.html">
               fail
             </a>
           </td>
@@ -9722,6 +10567,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-uchar-constant.html">
               fail
             </a>
@@ -9780,6 +10631,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-uchar-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-constant.html">
               fail
             </a>
           </td>
@@ -9848,6 +10705,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-uchar-constant.html">
               fail
             </a>
@@ -9906,6 +10769,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-uchar-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-constant.html">
               fail
             </a>
           </td>
@@ -9974,6 +10843,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-uchar-constant.html">
               fail
             </a>
@@ -10032,6 +10907,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@vload@vload-uchar-global.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-global.html">
               crash
             </a>
           </td>
@@ -10104,6 +10985,9 @@
               <td class="fail">
                 <b>0/10</b>
               </td>
+              <td class="fail">
+                <b>0/10</b>
+              </td>
               <td class="pass">
                 <b>10/10</b>
               </td>
@@ -10130,6 +11014,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-uchar-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-local.html">
               fail
             </a>
           </td>
@@ -10198,6 +11088,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-uchar-local.html">
               fail
             </a>
@@ -10256,6 +11152,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-uchar-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-local.html">
               fail
             </a>
           </td>
@@ -10324,6 +11226,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-uchar-local.html">
               fail
             </a>
@@ -10382,6 +11290,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-uchar-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-local.html">
               fail
             </a>
           </td>
@@ -10450,6 +11364,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-uchar-local.html">
               fail
             </a>
@@ -10508,6 +11428,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-uchar-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-local.html">
               fail
             </a>
           </td>
@@ -10576,6 +11502,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-uchar-local.html">
               fail
             </a>
@@ -10634,6 +11566,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-uchar-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-local.html">
               fail
             </a>
           </td>
@@ -10702,6 +11640,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-uchar-local.html">
               fail
             </a>
@@ -10760,6 +11704,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@vload@vload-uchar-private.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-uchar-private.html">
               crash
             </a>
           </td>
@@ -10832,6 +11782,9 @@
               <td class="fail">
                 <b>8/10</b>
               </td>
+              <td class="fail">
+                <b>8/10</b>
+              </td>
               <td class="pass">
                 <b>10/10</b>
               </td>
@@ -10858,6 +11811,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-ushort-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-constant.html">
               fail
             </a>
           </td>
@@ -10926,6 +11885,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-constant.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-ushort-constant.html">
               fail
             </a>
@@ -10984,6 +11949,12 @@
           
           <td class="crash">
             <a href="radeon8_19_07_23/program@execute@vload@vload-ushort-global.html">
+              crash
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-global.html">
               crash
             </a>
           </td>
@@ -11056,6 +12027,9 @@
               <td class="fail">
                 <b>8/10</b>
               </td>
+              <td class="fail">
+                <b>8/10</b>
+              </td>
               <td class="pass">
                 <b>10/10</b>
               </td>
@@ -11082,6 +12056,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-ushort-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-local.html">
               fail
             </a>
           </td>
@@ -11150,6 +12130,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-local.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-ushort-local.html">
               fail
             </a>
@@ -11203,6 +12189,9 @@
                 <b>8/10</b>
               </td>
               <td class="fail">
+                <b>8/10</b>
+              </td>
+              <td class="fail">
                 <b>4/10</b>
               </td>
               <td class="fail">
@@ -11243,6 +12232,12 @@
           
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vload@vload-ushort-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-private.html">
               fail
             </a>
           </td>
@@ -11310,6 +12305,12 @@
             </a>
           </td>
           
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-private.html">
+              pass
+            </a>
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-ushort-private.html">
               fail
@@ -11369,6 +12370,12 @@
           
           <td class="pass">
             <a href="radeon8_19_07_23/program@execute@vload@vload-ushort-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-private.html">
               pass
             </a>
           </td>
@@ -11437,6 +12444,12 @@
           </td>
           
           <td class="fail">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-private.html">
+              fail
+            </a>
+          </td>
+          
+          <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-ushort-private.html">
               fail
             </a>
@@ -11495,6 +12508,12 @@
           
           <td class="pass">
             <a href="radeon8_19_07_23/program@execute@vload@vload-ushort-private.html">
+              pass
+            </a>
+          </td>
+          
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-private.html">
               pass
             </a>
           </td>
@@ -11562,6 +12581,12 @@
             </a>
           </td>
           
+          <td class="pass">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-ushort-private.html">
+              pass
+            </a>
+          </td>
+          
           <td class="fail">
             <a href="radeon_19_07_17/program@execute@vload@vload-ushort-private.html">
               fail
@@ -11615,6 +12640,9 @@
               <td class="fail">
                 <b>316/318</b>
               </td>
+              <td class="crash">
+                <b>316/318</b>
+              </td>
               <td class="fail">
                 <b>316/318</b>
               </td>
@@ -11657,6 +12685,12 @@
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vstore@vstore-long-private.html">
               fail
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore-long-private.html">
+              crash
             </a>
           </td>
           
@@ -11720,6 +12754,12 @@
           <td class="fail">
             <a href="radeon8_19_07_23/program@execute@vstore@vstore-ulong-private.html">
               fail
+            </a>
+          </td>
+          
+          <td class="crash">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore-ulong-private.html">
+              crash
             </a>
           </td>
           

@@ -12,18 +12,19 @@
     <p>Currently showing: skips</p>
     <p>Show:
         <a href="index.html">all</a>
-          | skips
-          | <a href="disabled.html">disabled</a>
-          | <a href="fixes.html">fixes</a>
-          | <a href="changes.html">changes</a>
-          | <a href="problems.html">problems</a>
-          | <a href="enabled.html">enabled</a>
           | <a href="regressions.html">regressions</a>
+          | <a href="changes.html">changes</a>
+          | skips
+          | <a href="problems.html">problems</a>
+          | <a href="fixes.html">fixes</a>
+          | <a href="enabled.html">enabled</a>
+          | <a href="disabled.html">disabled</a>
     </p>
     <table>
       <colgroup>
         <col />
 
+        <col />
         <col />
         <col />
         <col />
@@ -39,6 +40,7 @@
           <th class="head"><b>radeon6_19_07_23</b><br>          (<a href="radeon6_19_07_23/index.html">info</a>)</th>
           <th class="head"><b>radeon7_19_07_23</b><br>          (<a href="radeon7_19_07_23/index.html">info</a>)</th>
           <th class="head"><b>radeon8_19_07_23</b><br>          (<a href="radeon8_19_07_23/index.html">info</a>)</th>
+          <th class="head"><b>radeon9_19_07_23</b><br>          (<a href="radeon9_19_07_23/index.html">info</a>)</th>
           <th class="head"><b>radeon_19_07_17</b><br>          (<a href="radeon_19_07_17/index.html">info</a>)</th>
           <th class="head"><b>radeon_19_07_20</b><br>          (<a href="radeon_19_07_20/index.html">info</a>)</th>
           <th class="head"><b>radeon_19_07_21</b><br>          (<a href="radeon_19_07_21/index.html">info</a>)</th>
@@ -50,6 +52,9 @@
         <td class="head"><b>all</b></td>
           <td class="crash">
             <b>3371/3479</b>
+          </td>
+          <td class="crash">
+            <b>3337/3449</b>
           </td>
           <td class="crash">
             <b>3337/3449</b>
@@ -110,6 +115,9 @@
                 <b>46/48</b>
               </td>
               <td class="fail">
+                <b>46/48</b>
+              </td>
+              <td class="fail">
                 <b>55/57</b>
               </td>
             
@@ -135,6 +143,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/api@clcompileprogram.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/api@clcompileprogram.html">
               skip
             </a>
           </td>
@@ -203,6 +217,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/api@clenqueuefillbuffer.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/api@clenqueuefillbuffer.html">
               skip
             </a>
@@ -261,6 +281,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/api@clenqueuefillimage.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/api@clenqueuefillimage.html">
               skip
             </a>
           </td>
@@ -329,6 +355,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/api@clenqueuemigratememobjects.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/api@clenqueuemigratememobjects.html">
               skip
             </a>
@@ -387,6 +419,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/api@clgetextensionfunctionaddressforplatform.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/api@clgetextensionfunctionaddressforplatform.html">
               skip
             </a>
           </td>
@@ -455,6 +493,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/api@clgetimageinfo.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/api@clgetimageinfo.html">
               skip
             </a>
@@ -518,6 +562,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/api@clgetkernelarginfo.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/api@clgetkernelarginfo.html">
               skip
             </a>
@@ -576,6 +626,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/api@cllinkprogram.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/api@cllinkprogram.html">
               skip
             </a>
           </td>
@@ -648,6 +704,9 @@
               <td class="fail">
                 <b>6/7</b>
               </td>
+              <td class="fail">
+                <b>6/7</b>
+              </td>
               <td class="pass">
                 <b>8/8</b>
               </td>
@@ -674,6 +733,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/api@clsetkernelarg.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/api@clsetkernelarg.html">
               skip
             </a>
           </td>
@@ -749,6 +814,9 @@
               <td class="skip">
                 <b>0/0</b>
               </td>
+              <td class="skip">
+                <b>0/0</b>
+              </td>
             
             </tr><tr>
         
@@ -772,6 +840,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/interop@egl_khr_cl_event2.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/interop@egl_khr_cl_event2.html">
               skip
             </a>
           </td>
@@ -830,6 +904,9 @@
                 <b>3263/3373</b>
               </td>
               <td class="crash">
+                <b>3263/3373</b>
+              </td>
+              <td class="crash">
                 <b>3300/3441</b>
               </td>
               <td class="crash">
@@ -855,6 +932,9 @@
                 <b>build</b>
               </div>
             </td>
+              <td class="crash">
+                <b>19/21</b>
+              </td>
               <td class="crash">
                 <b>19/21</b>
               </td>
@@ -905,6 +985,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@build@printf.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@build@printf.html">
               skip
             </a>
           </td>
@@ -978,6 +1064,9 @@
                 <b>14/14</b>
               </td>
               <td class="pass">
+                <b>14/14</b>
+              </td>
+              <td class="pass">
                 <b>17/17</b>
               </td>
             
@@ -1003,6 +1092,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@check predefined preprocessor macros.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@check predefined preprocessor macros.html">
               skip
             </a>
           </td>
@@ -1071,6 +1166,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@check predefined preprocessor macros.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@check predefined preprocessor macros.html">
               skip
             </a>
@@ -1129,6 +1230,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@check predefined preprocessor macros.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@check predefined preprocessor macros.html">
               skip
             </a>
           </td>
@@ -1197,6 +1304,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@check predefined preprocessor macros.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@check predefined preprocessor macros.html">
               skip
             </a>
@@ -1250,6 +1363,9 @@
                 <b>3228/3336</b>
               </td>
               <td class="crash">
+                <b>3228/3336</b>
+              </td>
+              <td class="crash">
                 <b>3265/3404</b>
               </td>
               <td class="crash">
@@ -1290,6 +1406,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@amdgcn-callee-saved-registers.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@amdgcn-callee-saved-registers.html">
               skip
             </a>
           </td>
@@ -1351,6 +1473,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@amdgcn-f64-inline-immediates.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@amdgcn-f64-inline-immediates.html">
               skip
             </a>
           </td>
@@ -1419,6 +1547,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_add-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_add-global.html">
               skip
             </a>
@@ -1477,6 +1611,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_add-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_add-global-return.html">
               skip
             </a>
           </td>
@@ -1545,6 +1685,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_add-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_add-local.html">
               skip
             </a>
@@ -1603,6 +1749,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_and-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_and-global.html">
               skip
             </a>
           </td>
@@ -1671,6 +1823,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_and-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_and-global-return.html">
               skip
             </a>
@@ -1729,6 +1887,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_and-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_and-local.html">
               skip
             </a>
           </td>
@@ -1797,6 +1961,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_cmpxchg-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_cmpxchg-global.html">
               skip
             </a>
@@ -1855,6 +2025,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_cmpxchg-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_cmpxchg-global-return.html">
               skip
             </a>
           </td>
@@ -1923,6 +2099,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_cmpxchg-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_cmpxchg-local.html">
               skip
             </a>
@@ -1981,6 +2163,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_dec-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_dec-global.html">
               skip
             </a>
           </td>
@@ -2049,6 +2237,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_dec-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_dec-global-return.html">
               skip
             </a>
@@ -2107,6 +2301,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_dec-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_dec-local.html">
               skip
             </a>
           </td>
@@ -2175,6 +2375,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_inc-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_inc-global.html">
               skip
             </a>
@@ -2233,6 +2439,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_inc-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_inc-global-return.html">
               skip
             </a>
           </td>
@@ -2301,6 +2513,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_inc-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_inc-local.html">
               skip
             </a>
@@ -2359,6 +2577,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_max-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_max-global.html">
               skip
             </a>
           </td>
@@ -2427,6 +2651,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_max-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_max-global-return.html">
               skip
             </a>
@@ -2485,6 +2715,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_max-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_max-local.html">
               skip
             </a>
           </td>
@@ -2553,6 +2789,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_min-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_min-global.html">
               skip
             </a>
@@ -2611,6 +2853,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_min-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_min-global-return.html">
               skip
             </a>
           </td>
@@ -2679,6 +2927,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_min-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_min-local.html">
               skip
             </a>
@@ -2737,6 +2991,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_or-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_or-global.html">
               skip
             </a>
           </td>
@@ -2805,6 +3065,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_or-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_or-global-return.html">
               skip
             </a>
@@ -2863,6 +3129,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_or-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_or-local.html">
               skip
             </a>
           </td>
@@ -2931,6 +3203,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_sub-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_sub-global.html">
               skip
             </a>
@@ -2989,6 +3267,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_sub-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_sub-global-return.html">
               skip
             </a>
           </td>
@@ -3057,6 +3341,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_sub-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_sub-local.html">
               skip
             </a>
@@ -3115,6 +3405,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_xchg-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_xchg-global.html">
               skip
             </a>
           </td>
@@ -3183,6 +3479,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_xchg-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_xchg-global-return.html">
               skip
             </a>
@@ -3241,6 +3543,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_xchg-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_xchg-local.html">
               skip
             </a>
           </td>
@@ -3309,6 +3617,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_xor-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_xor-global.html">
               skip
             </a>
@@ -3372,6 +3686,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_xor-global-return.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@atomic_int64_xor-global-return.html">
               skip
             </a>
@@ -3430,6 +3750,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@atomic_int64_xor-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@atomic_int64_xor-local.html">
               skip
             </a>
           </td>
@@ -3502,6 +3828,9 @@
               <td class="crash">
                 <b>1516/1526</b>
               </td>
+              <td class="crash">
+                <b>1516/1526</b>
+              </td>
               <td class="pass">
                 <b>1747/1747</b>
               </td>
@@ -3528,6 +3857,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@builtin@builtin-char-popcount-1.2.generated.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-char-popcount-1.2.generated.html">
               skip
             </a>
           </td>
@@ -3596,6 +3931,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-int-popcount-1.2.generated.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@builtin@builtin-int-popcount-1.2.generated.html">
               skip
             </a>
@@ -3654,6 +3995,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@builtin@builtin-long-popcount-1.2.generated.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-long-popcount-1.2.generated.html">
               skip
             </a>
           </td>
@@ -3722,6 +4069,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-short-popcount-1.2.generated.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@builtin@builtin-short-popcount-1.2.generated.html">
               skip
             </a>
@@ -3780,6 +4133,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@builtin@builtin-shuffle-double-ulong.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle-double-ulong.html">
               skip
             </a>
           </td>
@@ -3848,6 +4207,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle-half-ushort.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@builtin@builtin-shuffle-half-ushort.html">
               skip
             </a>
@@ -3906,6 +4271,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@builtin@builtin-shuffle2-double-ulong.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle2-double-ulong.html">
               skip
             </a>
           </td>
@@ -3974,6 +4345,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-shuffle2-half-ushort.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@builtin@builtin-shuffle2-half-ushort.html">
               skip
             </a>
@@ -4032,6 +4409,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@builtin@builtin-uchar-popcount-1.2.generated.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-uchar-popcount-1.2.generated.html">
               skip
             </a>
           </td>
@@ -4100,6 +4483,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-uint-popcount-1.2.generated.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@builtin@builtin-uint-popcount-1.2.generated.html">
               skip
             </a>
@@ -4158,6 +4547,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@builtin@builtin-ulong-popcount-1.2.generated.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-ulong-popcount-1.2.generated.html">
               skip
             </a>
           </td>
@@ -4226,6 +4621,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@builtin@builtin-ushort-popcount-1.2.generated.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@builtin@builtin-ushort-popcount-1.2.generated.html">
               skip
             </a>
@@ -4284,6 +4685,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@call-clobbers-amdgcn.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@call-clobbers-amdgcn.html">
               skip
             </a>
           </td>
@@ -4352,6 +4759,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@fdiv-modifiers-f64.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@fdiv-modifiers-f64.html">
               skip
             </a>
@@ -4410,6 +4823,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@load-hi16-generic.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@load-hi16-generic.html">
               skip
             </a>
           </td>
@@ -4478,6 +4897,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@load-lo16-generic.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@load-lo16-generic.html">
               skip
             </a>
@@ -4536,6 +4961,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@mad-mix.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@mad-mix.html">
               skip
             </a>
           </td>
@@ -4611,6 +5042,9 @@
               <td class="skip">
                 <b>0/0</b>
               </td>
+              <td class="skip">
+                <b>0/0</b>
+              </td>
             
             </tr><tr>
         
@@ -4634,6 +5068,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@program-tester-check-local-size-test-should-skip.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@program-tester-check-local-size-test-should-skip.html">
               skip
             </a>
           </td>
@@ -4702,6 +5142,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@scalar-arithmetic-double.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@scalar-arithmetic-double.html">
               skip
             </a>
@@ -4765,6 +5211,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@scalar-logical-float.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@scalar-logical-float.html">
               skip
             </a>
@@ -4823,6 +5275,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@store-hi16-generic.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@store-hi16-generic.html">
               skip
             </a>
           </td>
@@ -4896,6 +5354,9 @@
                 <b>135/135</b>
               </td>
               <td class="pass">
+                <b>135/135</b>
+              </td>
+              <td class="pass">
                 <b>150/150</b>
               </td>
             
@@ -4921,6 +5382,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@store@store-double-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@store@store-double-global.html">
               skip
             </a>
           </td>
@@ -4989,6 +5456,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@store@store-double-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@store@store-double-local.html">
               skip
             </a>
@@ -5047,6 +5520,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@store@store-double16-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@store@store-double16-global.html">
               skip
             </a>
           </td>
@@ -5115,6 +5594,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@store@store-double16-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@store@store-double16-local.html">
               skip
             </a>
@@ -5173,6 +5658,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@store@store-double2-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@store@store-double2-global.html">
               skip
             </a>
           </td>
@@ -5241,6 +5732,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@store@store-double2-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@store@store-double2-local.html">
               skip
             </a>
@@ -5299,6 +5796,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@store@store-double4-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@store@store-double4-global.html">
               skip
             </a>
           </td>
@@ -5367,6 +5870,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@store@store-double4-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@store@store-double4-local.html">
               skip
             </a>
@@ -5425,6 +5934,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@store@store-double8-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@store@store-double8-global.html">
               skip
             </a>
           </td>
@@ -5493,6 +6008,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@store@store-double8-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@store@store-double8-local.html">
               skip
             </a>
@@ -5546,6 +6067,9 @@
                 <b>336/394</b>
               </td>
               <td class="crash">
+                <b>336/394</b>
+              </td>
+              <td class="crash">
                 <b>328/394</b>
               </td>
               <td class="crash">
@@ -5586,6 +6110,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@vload@vload-double-constant.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-double-constant.html">
               skip
             </a>
           </td>
@@ -5654,6 +6184,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-double-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@vload@vload-double-global.html">
               skip
             </a>
@@ -5712,6 +6248,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@vload@vload-double-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-double-local.html">
               skip
             </a>
           </td>
@@ -5780,6 +6322,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-double-private.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@vload@vload-double-private.html">
               skip
             </a>
@@ -5838,6 +6386,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@vload@vload-half-constant.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-half-constant.html">
               skip
             </a>
           </td>
@@ -5906,6 +6460,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-half-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@vload@vload-half-global.html">
               skip
             </a>
@@ -5964,6 +6524,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@vload@vload-half-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-half-local.html">
               skip
             </a>
           </td>
@@ -6032,6 +6598,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vload@vload-half-private.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@vload@vload-half-private.html">
               skip
             </a>
@@ -6084,6 +6656,9 @@
               <td class="fail">
                 <b>316/318</b>
               </td>
+              <td class="crash">
+                <b>316/318</b>
+              </td>
               <td class="fail">
                 <b>316/318</b>
               </td>
@@ -6125,6 +6700,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@vstore@vstore-double-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore-double-global.html">
               skip
             </a>
           </td>
@@ -6193,6 +6774,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore-double-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@vstore@vstore-double-local.html">
               skip
             </a>
@@ -6251,6 +6838,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@vstore@vstore-double-private.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore-double-private.html">
               skip
             </a>
           </td>
@@ -6319,6 +6912,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore-half-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@vstore@vstore-half-global.html">
               skip
             </a>
@@ -6377,6 +6976,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@vstore@vstore-half-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore-half-local.html">
               skip
             </a>
           </td>
@@ -6445,6 +7050,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore-half-private.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@vstore@vstore-half-private.html">
               skip
             </a>
@@ -6503,6 +7114,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@vstore@vstore_half-double-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore_half-double-global.html">
               skip
             </a>
           </td>
@@ -6571,6 +7188,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore_half-double-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@vstore@vstore_half-double-local.html">
               skip
             </a>
@@ -6629,6 +7252,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@vstore@vstore_half-double-private.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstore_half-double-private.html">
               skip
             </a>
           </td>
@@ -6697,6 +7326,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstorea_half-double-global.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@vstore@vstorea_half-double-global.html">
               skip
             </a>
@@ -6760,6 +7395,12 @@
           </td>
           
           <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstorea_half-double-local.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
             <a href="radeon_19_07_17/program@execute@vstore@vstorea_half-double-local.html">
               skip
             </a>
@@ -6818,6 +7459,12 @@
           
           <td class="skip">
             <a href="radeon8_19_07_23/program@execute@vstore@vstorea_half-double-private.html">
+              skip
+            </a>
+          </td>
+          
+          <td class="skip">
+            <a href="radeon9_19_07_23/program@execute@vstore@vstorea_half-double-private.html">
               skip
             </a>
           </td>
