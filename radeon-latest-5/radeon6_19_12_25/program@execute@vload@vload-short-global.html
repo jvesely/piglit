@@ -24,7 +24,7 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:01.209180</td>
+        <td>0:00:01.221299</td>
       </tr>
       <tr>
         <td>Stdout</td>
@@ -36,7 +36,7 @@
         <td>Stderr</td>
         <td>
           <pre>Overran sorted position:
-t44: i32,ch = load&lt;LD2[%8(addrspace=1)](tbaa=&lt;0x2796558&gt;), zext from i16&gt; t217, t21, undef:i32
+t44: i32,ch = load&lt;LD2[%8(addrspace=1)](tbaa=&lt;0x7ebe28&gt;), zext from i16&gt; t217, t21, undef:i32
   t21: i32 = add nuw t297, Constant:i32&lt;2&gt;
     t297: i32 = CONST_ADDRESS Constant:i32&lt;8228&gt;
       t296: i32 = Constant&lt;8228&gt;
@@ -45,7 +45,7 @@ t44: i32,ch = load&lt;LD2[%8(addrspace=1)](tbaa=&lt;0x2796558&gt;), zext from i1
 Checking if this is due to cycles
 Detected cycle in SelectionDAG
 Offending node:
-t217: ch = store&lt;ST8[%storetmp(addrspace=1)](tbaa=&lt;0x2796558&gt;)&gt; t66, t223, t216, undef:i32
+t217: ch = store&lt;ST8[%storetmp(addrspace=1)](tbaa=&lt;0x7ebe28&gt;)&gt; t66, t223, t216, undef:i32
   t223: v2i32 = BUILD_VECTOR t325, t278
     t325: i32,ch = load&lt;LD4[FixedStack1](align=8)&gt; t304, t324, undef:i32
       t324: i32 = DWORDADDR Constant:i32&lt;4&gt;
@@ -59,7 +59,7 @@ t217: ch = store&lt;ST8[%storetmp(addrspace=1)](tbaa=&lt;0x2796558&gt;)&gt; t66,
           t1: i32 = undef
         t375: i32 = Constant&lt;-65536&gt;
       t273: i32 = and t67, Constant:i32&lt;65535&gt;
-        t67: i32,ch = load&lt;LD2[%arrayidx3.i(addrspace=1)](tbaa=&lt;0x1de12c8&gt;), anyext from i16&gt; t0, t15, undef:i32
+        t67: i32,ch = load&lt;LD2[%arrayidx3.i(addrspace=1)](tbaa=&lt;0x119d368&gt;), anyext from i16&gt; t0, t15, undef:i32
           t15: i32 = add nuw t297, Constant:i32&lt;4&gt;
             t297: i32 = CONST_ADDRESS Constant:i32&lt;8228&gt;
               t296: i32 = Constant&lt;8228&gt;
