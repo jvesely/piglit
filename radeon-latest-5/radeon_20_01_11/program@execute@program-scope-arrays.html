@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>program@execute@program-scope-arrays - Details</title>
+    <link rel="stylesheet" href="../result.css">
+  </head>
+  <body>
+    <h1>Results for program@execute@program-scope-arrays</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> fail</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:01.172127</td>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre>## Test: program-scope-arrays (/home/vesely/piglit/tests/cl/program/program-tester.c) ##
+
+# Platform supporting only version 1.1. Running test on that version.
+# Running on:
+#   Platform: Clover
+#   Device: AMD TURKS (DRM 2.50.0 / 5.4.8-200.fc31.x86_64, LLVM 10.0.0)
+#   OpenCL version: 2.0
+#   OpenCL C version: 1.1
+#   Build options:  -cl-std=CL1.1
+Program has been built successfully
+&gt; Running kernel test: simple-constant-char
+Using kernel simple_constant_char
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt; Running kernel test: given-constant-char
+Using kernel given_constant_char
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+Expecting 2 (0x2) with tolerance 0, but got 0 (0x0)
+Error at char[0]
+ Argument 0: FAIL
+&gt; Running kernel test: simple-gid-char
+Using kernel simple_gid_char
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+Expecting 3 (0x3) with tolerance 0, but got 0 (0x0)
+Error at char[1]
+ Argument 0: FAIL
+&gt; Running kernel test: indirection-char
+Using kernel indirection_char
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+Expecting 1 (0x1) with tolerance 0, but got -128 (0xffffffffffffff80)
+Error at char[0]
+ Argument 0: FAIL
+&gt; Running kernel test: simple-constant
+Using kernel simple_constant
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt; Running kernel test: given-constant
+Using kernel given_constant
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+Expecting 2.000000 (0x40000000) with tolerance 0.000000 (0 ulps), but got 0.000000 (0xa020)
+Error at float[0]
+ Argument 0: FAIL
+&gt; Running kernel test: simple-gid
+Using kernel simple_gid
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+Expecting 4.000000 (0x40800000) with tolerance 0.000000 (0 ulps), but got -0.000000 (0x80000004)
+Error at float[0]
+ Argument 0: FAIL
+&gt; Running kernel test: indirection
+Using kernel indirection
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+Expecting 1.000000 (0x3f800000) with tolerance 0.000000 (0 ulps), but got -0.000000 (0x95e01000)
+Error at float[0]
+ Argument 0: FAIL
+&gt; Running kernel test: simple-constant-2
+Using kernel simple_constant_2
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt; Running kernel test: given-constant-2
+Using kernel given_constant_2
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+Expecting 2.000000 (0x40000000) with tolerance 0.000000 (0 ulps), but got 0.000000 (0x0)
+Error at float[0]
+ Argument 0: FAIL
+&gt; Running kernel test: simple-gid-2
+Using kernel simple_gid_2
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+Expecting 4.000000 (0x40800000) with tolerance 0.000000 (0 ulps), but got -0.000000 (0x80000004)
+Error at float[0]
+ Argument 0: FAIL
+&gt; Running kernel test: indirection-2
+Using kernel indirection_2
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+Expecting 1.000000 (0x3f800000) with tolerance 0.000000 (0 ulps), but got 0.000000 (0x0)
+Error at float[0]
+ Argument 0: FAIL
+&gt; Running kernel test: simple-constant-struct
+Using kernel simple_constant_struct
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+ Argument 1: PASS
+&gt; Running kernel test: given-constant-struct
+Using kernel given_constant_struct
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+Expecting 33.000000 (0x42040000) with tolerance 0.000000 (0 ulps), but got 0.000000 (0x0)
+Error at float[0]
+ Argument 0: FAIL
+Expecting 43 (0x2b) with tolerance 0, but got -2145386496 (0xffffffff80200000)
+Error at int[0]
+ Argument 1: FAIL
+&gt; Running kernel test: simple-gid-struct
+Using kernel simple_gid_struct
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+Expecting 31.000000 (0x41f80000) with tolerance 0.000000 (0 ulps), but got -0.000000 (0x80000004)
+Error at float[0]
+ Argument 0: FAIL
+Expecting 41 (0x29) with tolerance 0, but got -1608515584 (0xffffffffa0200000)
+Error at int[0]
+ Argument 1: FAIL
+&gt; Running kernel test: indirection-struct
+Using kernel indirection_struct
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+Expecting 34.000000 (0x42080000) with tolerance 0.000000 (0 ulps), but got 0.000000 (0x0)
+Error at float[0]
+ Argument 0: FAIL
+Expecting 44 (0x2c) with tolerance 0, but got 0 (0x0)
+Error at int[0]
+ Argument 1: FAIL
+&gt;&gt; Some or all of the tests FAILED
+# Result:
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_SOURCE_DIR=&#34;/home/vesely/piglit&#34; PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          <pre>/home/vesely/piglit/bin/cl-program-tester /home/vesely/piglit/tests/cl/program/execute/program-scope-arrays.cl</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>
