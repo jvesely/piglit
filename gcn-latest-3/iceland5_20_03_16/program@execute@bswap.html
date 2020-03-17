@@ -24,7 +24,7 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:01.513699</td>
+        <td>0:00:01.467145</td>
       </tr>
       <tr>
         <td>Stdout</td>
@@ -44,32 +44,32 @@
       <tr>
         <td>Stderr</td>
         <td>
-          <pre>LLVM ERROR: Cannot select: 0x1f058b8: i32 = zero_extend 0x1f7aba8
-  0x1f7aba8: i32 = srl 0x1e51430, Constant:i32&lt;16&gt;
-    0x1e51430: i32 = bswap 0x15aba10
-      0x15aba10: i32,ch = load&lt;LD2[%arrayidx(addrspace=1)](tbaa=&lt;0x1f8bb78&gt;), zext from i16&gt; 0x123a5a8, 0x157b360, undef:i64
-        0x157b360: i64 = add 0x1e578a0, 0x1ae2fa8
-          0x1e578a0: i64 = bitcast 0x159f108
-            0x159f108: v2i32,ch = load&lt;LD8[undef(addrspace=2)](nontemporal)(dereferenceable)(invariant)&gt; 0x123a5a8, 0x1f7a938, undef:i64
-              0x1f7a938: i64 = add 0x12f2e00, Constant:i64&lt;8&gt;
-                0x12f2e00: i64,ch = CopyFromReg 0x123a5a8, Register:i64 %vreg3
-                  0x159b658: i64 = Register %vreg3
-                0x1f7d2b0: i64 = Constant&lt;8&gt;
-              0x1f89cb0: i64 = undef
-          0x1ae2fa8: i64 = sra 0x1572f38, Constant:i32&lt;31&gt;
-            0x1572f38: i64 = bitcast 0x1a0b100
-              0x1a0b100: v2i32 = BUILD_VECTOR Constant:i32&lt;0&gt;, 0x1f89358
-                0x15a48d0: i32 = Constant&lt;0&gt;
-                0x1f89358: i32 = add 0x1ae35c0, 0x1f7a798
-                  0x1ae35c0: i32 = add 0x159e748, 0x1f7a528
+          <pre>LLVM ERROR: Cannot select: 0x1bbcbd8: i32 = zero_extend 0x1432248
+  0x1432248: i32 = srl 0x10e28e0, Constant:i32&lt;16&gt;
+    0x10e28e0: i32 = bswap 0x1e0bf80
+      0x1e0bf80: i32,ch = load&lt;LD2[%arrayidx(addrspace=1)](tbaa=&lt;0x1131288&gt;), zext from i16&gt; 0x115e178, 0x1bb99a0, undef:i64
+        0x1bb99a0: i64 = add 0x10e8d50, 0x1ceadb8
+          0x10e8d50: i64 = bitcast 0x1d9fe18
+            0x1d9fe18: v2i32,ch = load&lt;LD8[undef(addrspace=2)](nontemporal)(dereferenceable)(invariant)&gt; 0x115e178, 0x1431fd8, undef:i64
+              0x1431fd8: i64 = add 0x1a2b7c0, Constant:i64&lt;8&gt;
+                0x1a2b7c0: i64,ch = CopyFromReg 0x115e178, Register:i64 %vreg3
+                  0x1d9c368: i64 = Register %vreg3
+                0x1434950: i64 = Constant&lt;8&gt;
+              0x1d97fd0: i64 = undef
+          0x1ceadb8: i64 = sra 0x140a628, Constant:i32&lt;31&gt;
+            0x140a628: i64 = bitcast 0x1b340e0
+              0x1b340e0: v2i32 = BUILD_VECTOR Constant:i32&lt;0&gt;, 0x1d97678
+                0x1ce89f0: i32 = Constant&lt;0&gt;
+                0x1d97678: i32 = add 0x1ceb3d0, 0x1431e38
+                  0x1ceb3d0: i32 = add 0x1d9f458, 0x1431bc8
 
 
-                  0x1f7a798: i32 = mul 0x157ba48, 0x1ae3db0
+                  0x1431e38: i32 = mul 0x1bba088, 0x1cebbc0
 
 
-            0x15ac3d0: i32 = Constant&lt;31&gt;
-        0x1f89cb0: i64 = undef
-    0x15a1970: i32 = Constant&lt;16&gt;
+            0x1e0c940: i32 = Constant&lt;31&gt;
+        0x1d97fd0: i64 = undef
+    0x1956fb0: i32 = Constant&lt;16&gt;
 In function: v_bswap_u16_zext32
 </pre>
         </td>
