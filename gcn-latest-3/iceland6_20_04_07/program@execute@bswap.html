@@ -24,7 +24,7 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:01.581829</td>
+        <td>0:00:01.567523</td>
       </tr>
       <tr>
         <td>Stdout</td>
@@ -34,7 +34,7 @@
 # Platform supporting only version 1.1. Running test on that version.
 # Running on:
 #   Platform: Clover
-#   Device: AMD Radeon (TM) R7 M340 (ICELAND, DRM 3.36.0, 5.5.13-200.fc31.x86_64, LLVM 6.0.1)
+#   Device: AMD Radeon (TM) R7 M340 (ICELAND, DRM 3.36.0, 5.5.15-200.fc31.x86_64, LLVM 6.0.1)
 #   OpenCL version: 2.0
 #   OpenCL C version: 1.1
 #   Build options:  -cl-std=CL1.1
@@ -44,32 +44,32 @@
       <tr>
         <td>Stderr</td>
         <td>
-          <pre>LLVM ERROR: Cannot select: 0x25e30b8: i32 = zero_extend 0x2e95980
-  0x2e95980: i32 = srl 0x322d0d0, Constant:i32&lt;16&gt;
-    0x322d0d0: i32 = bswap 0x2e974d0
-      0x2e974d0: i32,ch = load&lt;LD2[%arrayidx(addrspace=1)](tbaa=&lt;0x25f4738&gt;), zext from i16&gt; 0x2027bb0, 0x2e95e60, undef:i64
-        0x2e95e60: i64 = add 0x2e95b88, 0x322c8e0
-          0x2e95b88: i64 = bitcast 0x28f4f80
-            0x28f4f80: v2i32,ch = load&lt;LD8[undef(addrspace=2)](nontemporal)(dereferenceable)(invariant)&gt; 0x2027bb0, 0x2ddcef0, undef:i64
-              0x2ddcef0: i64 = add 0x25dceb8, Constant:i64&lt;8&gt;
-                0x25dceb8: i64,ch = CopyFromReg 0x2027bb0, Register:i64 %3
-                  0x2e914c8: i64 = Register %3
-                0x322f840: i64 = Constant&lt;8&gt;
-              0x2e97330: i64 = undef
-          0x322c8e0: i64 = sra 0x25dd128, Constant:i32&lt;31&gt;
-            0x25dd128: i64 = bitcast 0x30b4fb0
-              0x30b4fb0: v2i32 = BUILD_VECTOR Constant:i32&lt;0&gt;, 0x2e95778
-                0x2ddfbe0: i32 = Constant&lt;0&gt;
-                0x2e95778: i32 = add 0x2c8f6a0, 0x25e3328
-                  0x2c8f6a0: i32 = add 0x25dae98, 0x30ba1c8
+          <pre>LLVM ERROR: Cannot select: 0x11fcfe8: i32 = zero_extend 0x159ed70
+  0x159ed70: i32 = srl 0x128a780, Constant:i32&lt;16&gt;
+    0x128a780: i32 = bswap 0x159fcb0
+      0x159fcb0: i32,ch = load&lt;LD2[%arrayidx(addrspace=1)](tbaa=&lt;0x127b5f8&gt;), zext from i16&gt; 0x1552ea0, 0x159f250, undef:i64
+        0x159f250: i64 = add 0x159ef78, 0x1289f90
+          0x159ef78: i64 = bitcast 0x12b3830
+            0x12b3830: v2i32,ch = load&lt;LD8[undef(addrspace=2)](nontemporal)(dereferenceable)(invariant)&gt; 0x1552ea0, 0x1cdfcc0, undef:i64
+              0x1cdfcc0: i64 = add 0x1ab7758, Constant:i64&lt;8&gt;
+                0x1ab7758: i64,ch = CopyFromReg 0x1552ea0, Register:i64 %3
+                  0x15a7198: i64 = Register %3
+                0x1e48540: i64 = Constant&lt;8&gt;
+              0x159fb10: i64 = undef
+          0x1289f90: i64 = sra 0x1ab79c8, Constant:i32&lt;31&gt;
+            0x1ab79c8: i64 = bitcast 0x1201480
+              0x1201480: v2i32 = BUILD_VECTOR Constant:i32&lt;0&gt;, 0x159eb68
+                0x1282180: i32 = Constant&lt;0&gt;
+                0x159eb68: i32 = add 0x18b5470, 0x11fd258
+                  0x18b5470: i32 = add 0x1a075c8, 0x1206698
 
 
-                  0x25e3328: i32 = mul 0x322a170, 0x2985658
+                  0x11fd258: i32 = mul 0x1287820, 0x1ab6cf8
 
 
-            0x25dec00: i32 = Constant&lt;31&gt;
-        0x2e97330: i64 = undef
-    0x322d340: i32 = Constant&lt;16&gt;
+            0x1a0a320: i32 = Constant&lt;31&gt;
+        0x159fb10: i64 = undef
+    0x128a9f0: i32 = Constant&lt;16&gt;
 In function: v_bswap_u16_zext32
 </pre>
         </td>
