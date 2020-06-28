@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>program@execute@bswap - Details</title>
+    <link rel="stylesheet" href="../result.css">
+  </head>
+  <body>
+    <h1>Results for program@execute@bswap</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> fail</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:01.503549</td>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre>## Test: bswap (tests/cl/program/program-tester.c) ##
+
+# Platform supporting only version 1.1. Running test on that version.
+# Running on:
+#   Platform: Clover
+#   Device: AMD Radeon R7 Graphics (CARRIZO, DRM 3.36.0, 5.6.16-300.fc32.x86_64, LLVM 6.0.1)
+#   OpenCL version: 2.0
+#   OpenCL C version: 1.1
+#   Build options:  -cl-std=CL1.1
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre>LLVM ERROR: Cannot select: 0x235b0e8: i32 = zero_extend 0x2135f40
+  0x2135f40: i32 = srl 0x24d7620, Constant:i32&lt;16&gt;
+    0x24d7620: i32 = bswap 0x2137a90
+      0x2137a90: i32,ch = load&lt;LD2[%arrayidx(addrspace=1)](tbaa=&lt;0x1464938&gt;), zext from i16&gt; 0x1947c80, 0x2136420, undef:i64
+        0x2136420: i64 = add 0x2136148, 0x24d6e30
+          0x2136148: i64 = bitcast 0x18d8990
+            0x18d8990: v2i32,ch = load&lt;LD8[undef(addrspace=2)](nontemporal)(dereferenceable)(invariant)&gt; 0x1947c80, 0x188cc60, undef:i64
+              0x188cc60: i64 = add 0x1c286b8, Constant:i64&lt;8&gt;
+                0x1c286b8: i64,ch = CopyFromReg 0x1947c80, Register:i64 %3
+                  0x213ef78: i64 = Register %3
+                0x1904360: i64 = Constant&lt;8&gt;
+              0x21378f0: i64 = undef
+          0x24d6e30: i64 = sra 0x1c28928, Constant:i32&lt;31&gt;
+            0x1c28928: i64 = bitcast 0x235e570
+              0x235e570: v2i32 = BUILD_VECTOR Constant:i32&lt;0&gt;, 0x2135d38
+                0x24cf020: i32 = Constant&lt;0&gt;
+                0x2135d38: i32 = add 0x2355e00, 0x235b358
+                  0x2355e00: i32 = add 0x1c26698, 0x2364798
+
+
+                  0x235b358: i32 = mul 0x24d46c0, 0x1f37658
+
+
+            0x1c2a400: i32 = Constant&lt;31&gt;
+        0x21378f0: i64 = undef
+    0x24d7890: i32 = Constant&lt;16&gt;
+In function: v_bswap_u16_zext32
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_SOURCE_DIR=&#34;/home/jvesely/piglit&#34; PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          <pre>/home/jvesely/piglit/bin/cl-program-tester /home/jvesely/piglit/tests/cl/program/execute/bswap.cl</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>
