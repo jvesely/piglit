@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>api@clgetdeviceinfo - Details</title>
+    <link rel="stylesheet" href="../result.css">
+  </head>
+  <body>
+    <h1>Results for api@clgetdeviceinfo</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> pass</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:00.107182</td>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre>## Test: clGetDeviceInfo (tests/cl/api/get-device-info.c) ##
+
+# Platform supporting only version 1.1. Running test on that version.
+# Running on:
+#   Platform: Clover
+#   Device: AMD Radeon R7 Graphics (CARRIZO, DRM 3.37.0, 5.7.14-200.fc32.x86_64, LLVM 9.0.1)
+#   OpenCL version: 2.0
+CL_DEVICE_NAME: &#39;AMD Radeon R7 Graphics (CARRIZO, DRM 3.37.0, 5.7.14-200.fc32.x86_64, LLVM 9.0.1)&#39;
+CL_DEVICE_VENDOR: &#39;AMD&#39;
+CL_DEVICE_VENDOR_ID: 4098
+CL_DEVICE_VERSION: &#39;OpenCL 1.1 Mesa 20.3.0-devel (git-b6657a9471)&#39;
+CL_DRIVER_VERSION: &#39;20.3.0-devel&#39;
+CL_DEVICE_TYPE
+CL_DEVICE_PROFILE: &#39;FULL_PROFILE&#39;
+CL_DEVICE_MAX_CLOCK_FREQUENCY: 757 MHz
+CL_DEVICE_MAX_COMPUTE_UNITS: 8
+CL_DEVICE_IMAGE_SUPPORT: CL_FALSE
+CL_DEVICE_EXTENSIONS: &#39;cl_khr_byte_addressable_store cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_fp64&#39;
+CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS: 3
+CL_DEVICE_MAX_WORK_GROUP_SIZE: 256
+CL_DEVICE_MAX_WORK_ITEM_SIZES: (256, 256, 256)
+CL_DEVICE_PREFERRED_VECTOR_WIDTH_CHAR: 16
+CL_DEVICE_PREFERRED_VECTOR_WIDTH_SHORT: 8
+CL_DEVICE_PREFERRED_VECTOR_WIDTH_INT: 4
+CL_DEVICE_PREFERRED_VECTOR_WIDTH_LONG: 2
+CL_DEVICE_PREFERRED_VECTOR_WIDTH_FLOAT: 4
+CL_DEVICE_PREFERRED_VECTOR_WIDTH_DOUBLE: 2
+CL_DEVICE_ADDRESS_BITS: 64
+CL_DEVICE_MAX_READ_IMAGE_ARGS: 32
+CL_DEVICE_MAX_WRITE_IMAGE_ARGS: 32
+CL_DEVICE_GLOBAL_MEM_SIZE: 3221225472
+CL_DEVICE_MAX_MEM_ALLOC_SIZE: 2254857830
+CL_DEVICE_IMAGE2D_MAX_WIDTH: 32768
+CL_DEVICE_IMAGE2D_MAX_HEIGHT: 32768
+CL_DEVICE_IMAGE3D_MAX_WIDTH: 4096
+CL_DEVICE_IMAGE3D_MAX_HEIGHT: 4096
+CL_DEVICE_IMAGE3D_MAX_DEPTH: 4096
+CL_DEVICE_MAX_PARAMETER_SIZE: 1024
+CL_DEVICE_MAX_SAMPLERS: 32
+CL_DEVICE_MEM_BASE_ADDR_ALIGN: 32768
+CL_DEVICE_MIN_DATA_TYPE_ALIGN_SIZE: 128
+CL_DEVICE_SINGLE_FP_CONFIG: 6
+CL_DEVICE_GLOBAL_MEM_CACHE_TYPE: 0
+CL_DEVICE_GLOBAL_MEM_CACHELINE_SIZE: 0
+CL_DEVICE_GLOBAL_MEM_CACHE_SIZE: 0
+CL_DEVICE_MAX_CONSTANT_BUFFER_SIZE: 2147483392
+CL_DEVICE_MAX_CONSTANT_ARGS: 16
+CL_DEVICE_LOCAL_MEM_TYPE
+CL_DEVICE_LOCAL_MEM_SIZE: 32768
+CL_DEVICE_ERROR_CORRECTION_SUPPORT: CL_FALSE
+CL_DEVICE_PROFILING_TIMER_RESOLUTION: 0
+CL_DEVICE_ENDIAN_LITTLE: CL_TRUE
+CL_DEVICE_AVAILABLE: CL_TRUE
+CL_DEVICE_COMPILER_AVAILABLE: CL_TRUE
+CL_DEVICE_EXECUTION_CAPABILITIES: CL_EXEC_KERNEL
+CL_DEVICE_QUEUE_ON_HOST_PROPERTIES: CL_QUEUE_PROFILING_ENABLE, CL_QUEUE_OUT_OF_ORDER_EXEC_MODE_ENABLE
+CL_DEVICE_PLATFORM: 0x8df380
+CL_DEVICE_PREFERRED_VECTOR_WIDTH_HALF: 0
+CL_DEVICE_HOST_UNIFIED_MEMORY: CL_FALSE
+CL_DEVICE_NATIVE_VECTOR_WIDTH_CHAR: 16
+CL_DEVICE_NATIVE_VECTOR_WIDTH_SHORT: 8
+CL_DEVICE_NATIVE_VECTOR_WIDTH_INT: 4
+CL_DEVICE_NATIVE_VECTOR_WIDTH_LONG: 2
+CL_DEVICE_NATIVE_VECTOR_WIDTH_FLOAT: 4
+CL_DEVICE_NATIVE_VECTOR_WIDTH_DOUBLE: 2
+CL_DEVICE_NATIVE_VECTOR_WIDTH_HALF: 0
+CL_DEVICE_OPENCL_C_VERSION: &#39;OpenCL C 1.1 &#39;
+# Result:
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_SOURCE_DIR=&#34;/home/jvesely/piglit&#34; PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          <pre>/home/jvesely/piglit/bin/cl-api-get-device-info</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>
