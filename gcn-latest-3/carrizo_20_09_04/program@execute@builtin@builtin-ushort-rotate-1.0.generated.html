@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>program@execute@builtin@builtin-ushort-rotate-1.0.generated - Details</title>
+    <link rel="stylesheet" href="../result.css">
+  </head>
+  <body>
+    <h1>Results for program@execute@builtin@builtin-ushort-rotate-1.0.generated</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> crash</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>-6</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:01.928331</td>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre>LLVM ERROR: Cannot select: 0x182f230: i16 = rotl 0xf26448, 0xf26650
+  0xf26448: i16,ch = load&lt;(load 2 from %ir.arrayidx, !tbaa !15, addrspace 1)&gt; 0xdc67b8, 0x182f090, undef:i64
+    0x182f090: i64 = add 0xf26990, 0x182f028
+      0xf26990: i64 = bitcast 0xf26788
+        0xf26788: v2i32 = BUILD_VECTOR 0xf26580, 0xf26720
+          0xf26580: i32 = extract_vector_elt 0x182f368, Constant:i32&lt;2&gt;
+            0x182f368: v4i32,ch = load&lt;(dereferenceable invariant load 16 from %ir.0, addrspace 4)&gt; 0xdc67b8, 0xf26928, undef:i64
+              0xf26928: i64 = AssertAlign 0xf26cd0
+                0xf26cd0: i64,ch = CopyFromReg 0xdc67b8, Register:i64 %3
+                  0x182eb48: i64 = Register %3
+              0xf26378: i64 = undef
+            0xf26b98: i32 = Constant&lt;2&gt;
+          0xf26720: i32 = extract_vector_elt 0x182f368, Constant:i32&lt;3&gt;
+            0x182f368: v4i32,ch = load&lt;(dereferenceable invariant load 16 from %ir.0, addrspace 4)&gt; 0xdc67b8, 0xf26928, undef:i64
+              0xf26928: i64 = AssertAlign 0xf26cd0
+                0xf26cd0: i64,ch = CopyFromReg 0xdc67b8, Register:i64 %3
+                  0x182eb48: i64 = Register %3
+              0xf26378: i64 = undef
+            0xf266b8: i32 = Constant&lt;3&gt;
+      0x182f028: i64 = shl 0xf26310, Constant:i32&lt;1&gt;
+        0xf26310: i64,i1 = MAD_U64_U32 0xf27010, 0xf267f0, 0x182eef0
+          0xf27010: i32 = and 0xf26f40, Constant:i32&lt;65535&gt;
+            0xf26f40: i32,ch = load&lt;(dereferenceable load 4 from %ir.7, !tbaa !10, addrspace 4)&gt; 0xdc67b8, 0xf26ed8, undef:i64
+              0xf26ed8: i64 = add nuw 0xf26e08, Constant:i64&lt;4&gt;
+                0xf26e08: i64 = AssertAlign 0x182f508
+                  0x182f508: i64,ch = CopyFromReg 0xdc67b8, Register:i64 %2
+
+                0xf26e70: i64 = Constant&lt;4&gt;
+              0xf26378: i64 = undef
+            0xf26fa8: i32 = Constant&lt;65535&gt;
+          0xf267f0: i32,ch = CopyFromReg 0xdc67b8, Register:i32 %4
+            0x182ec80: i32 = Register %4
+          0x182eef0: i64 = add nuw nsw 0xf26518, 0x182ee88
+            0xf26518: i64 = zero_extend 0x182f1c8
+              0x182f1c8: i32,ch = load&lt;(load 4 from %ir.12, !tbaa !10, addrspace 4)&gt; 0xdc67b8, 0xf27148, undef:i64
+                0xf27148: i64 = add 0x182ea10, Constant:i64&lt;28&gt;
+                  0x182ea10: i64 = AssertAlign 0xf26cd0
+
+                  0x182f4a0: i64 = Constant&lt;28&gt;
+                0xf26378: i64 = undef
+            0x182ee88: i64 = zero_extend 0x182ec18
+              0x182ec18: i32 = AssertZext 0xf26c68, ValueType:ch:i10
+                0xf26c68: i32,ch = CopyFromReg 0xdc67b8, Register:i32 %0
+                  0x182ed50: i32 = Register %0
+        0xf26ac8: i32 = Constant&lt;1&gt;
+    0xf26378: i64 = undef
+  0xf26650: i16,ch = load&lt;(load 2 from %ir.arrayidx2, !tbaa !15, addrspace 1)&gt; 0xdc67b8, 0x182f160, undef:i64
+    0x182f160: i64 = add 0xf264b0, 0x182f028
+      0xf264b0: i64 = bitcast 0xf26c00
+        0xf26c00: v2i32 = BUILD_VECTOR 0x182ea78, 0xf26b30
+          0x182ea78: i32 = extract_vector_elt 0xf263e0, Constant:i32&lt;0&gt;
+            0xf263e0: v4i32,ch = load&lt;(dereferenceable invariant load 16 from %ir.0 + 16, addrspace 4)&gt; 0xdc67b8, 0xf262a8, undef:i64
+              0xf262a8: i64 = add nuw 0xf26928, Constant:i64&lt;16&gt;
+                0xf26928: i64 = AssertAlign 0xf26cd0
+                  0xf26cd0: i64,ch = CopyFromReg 0xdc67b8, Register:i64 %3
+
+                0xf26240: i64 = Constant&lt;16&gt;
+              0xf26378: i64 = undef
+            0xf269f8: i32 = Constant&lt;0&gt;
+          0xf26b30: i32 = extract_vector_elt 0xf263e0, Constant:i32&lt;1&gt;
+            0xf263e0: v4i32,ch = load&lt;(dereferenceable invariant load 16 from %ir.0 + 16, addrspace 4)&gt; 0xdc67b8, 0xf262a8, undef:i64
+              0xf262a8: i64 = add nuw 0xf26928, Constant:i64&lt;16&gt;
+                0xf26928: i64 = AssertAlign 0xf26cd0
+                  0xf26cd0: i64,ch = CopyFromReg 0xdc67b8, Register:i64 %3
+
+                0xf26240: i64 = Constant&lt;16&gt;
+              0xf26378: i64 = undef
+            0xf26ac8: i32 = Constant&lt;1&gt;
+      0x182f028: i64 = shl 0xf26310, Constant:i32&lt;1&gt;
+        0xf26310: i64,i1 = MAD_U64_U32 0xf27010, 0xf267f0, 0x182eef0
+          0xf27010: i32 = and 0xf26f40, Constant:i32&lt;65535&gt;
+            0xf26f40: i32,ch = load&lt;(dereferenceable load 4 from %ir.7, !tbaa !10, addrspace 4)&gt; 0xdc67b8, 0xf26ed8, undef:i64
+              0xf26ed8: i64 = add nuw 0xf26e08, Constant:i64&lt;4&gt;
+                0xf26e08: i64 = AssertAlign 0x182f508
+                  0x182f508: i64,ch = CopyFromReg 0xdc67b8, Register:i64 %2
+
+                0xf26e70: i64 = Constant&lt;4&gt;
+              0xf26378: i64 = undef
+            0xf26fa8: i32 = Constant&lt;65535&gt;
+          0xf267f0: i32,ch = CopyFromReg 0xdc67b8, Register:i32 %4
+            0x182ec80: i32 = Register %4
+          0x182eef0: i64 = add nuw nsw 0xf26518, 0x182ee88
+            0xf26518: i64 = zero_extend 0x182f1c8
+              0x182f1c8: i32,ch = load&lt;(load 4 from %ir.12, !tbaa !10, addrspace 4)&gt; 0xdc67b8, 0xf27148, undef:i64
+                0xf27148: i64 = add 0x182ea10, Constant:i64&lt;28&gt;
+                  0x182ea10: i64 = AssertAlign 0xf26cd0
+
+                  0x182f4a0: i64 = Constant&lt;28&gt;
+                0xf26378: i64 = undef
+            0x182ee88: i64 = zero_extend 0x182ec18
+              0x182ec18: i32 = AssertZext 0xf26c68, ValueType:ch:i10
+                0xf26c68: i32,ch = CopyFromReg 0xdc67b8, Register:i32 %0
+                  0x182ed50: i32 = Register %0
+        0xf26ac8: i32 = Constant&lt;1&gt;
+    0xf26378: i64 = undef
+In function: test_1_rotate_ushort
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_SOURCE_DIR=&#34;/home/jvesely/piglit&#34; PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          <pre>/home/jvesely/piglit/bin/cl-program-tester /home/jvesely/piglit/generated_tests/cl/builtin/int/builtin-ushort-rotate-1.0.generated.cl</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>
