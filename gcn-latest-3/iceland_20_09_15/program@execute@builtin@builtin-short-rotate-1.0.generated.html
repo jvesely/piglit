@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>program@execute@builtin@builtin-short-rotate-1.0.generated - Details</title>
+    <link rel="stylesheet" href="../result.css">
+  </head>
+  <body>
+    <h1>Results for program@execute@builtin@builtin-short-rotate-1.0.generated</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> crash</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>-6</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:02.436568</td>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre>LLVM ERROR: Cannot select: 0x150ca48: i16 = rotl 0x150c6a0, 0x150c020
+  0x150c6a0: i16 = rotr 0x157a868, 0x150bee8
+    0x157a868: i16,ch = load&lt;(load 2 from %ir.25 + 2, !tbaa !17, addrspace 1)&gt; 0x13a6188, 0x150c290, undef:i64
+      0x150c290: i64 = add nuw 0x150c1c0, Constant:i64&lt;2&gt;
+        0x150c1c0: i64 = add 0x1578e30, 0x183b848
+          0x1578e30: i64 = bitcast 0x1578dc8
+            0x1578dc8: v2i32 = BUILD_VECTOR 0x183b710, 0x1578d60
+              0x183b710: i32 = extract_vector_elt 0x157a118, Constant:i32&lt;2&gt;
+                0x157a118: v4i32,ch = load&lt;(dereferenceable invariant load 16 from %ir.0, addrspace 4)&gt; 0x13a6188, 0x1579e40, undef:i64
+                  0x1579e40: i64 = AssertAlign 0x1579108
+
+                  0x157aa08: i64 = undef
+                0x183b778: i32 = Constant&lt;2&gt;
+              0x1578d60: i32 = extract_vector_elt 0x157a118, Constant:i32&lt;3&gt;
+                0x157a118: v4i32,ch = load&lt;(dereferenceable invariant load 16 from %ir.0, addrspace 4)&gt; 0x13a6188, 0x1579e40, undef:i64
+                  0x1579e40: i64 = AssertAlign 0x1579108
+
+                  0x157aa08: i64 = undef
+                0x1578cf8: i32 = Constant&lt;3&gt;
+          0x183b848: i64 = shl 0x183b298, Constant:i32&lt;2&gt;
+            0x183b298: i64,i1 = MAD_U64_U32 0x157a6c8, 0x1579038, 0x183b5d8
+              0x157a6c8: i32 = and 0x183b570, Constant:i32&lt;65535&gt;
+                0x183b570: i32,ch = load&lt;(dereferenceable load 4 from %ir.7, !tbaa !10, addrspace 4)&gt; 0x13a6188, 0x183b368, undef:i64
+                  0x183b368: i64 = add nuw 0x157a660, Constant:i64&lt;4&gt;
+
+
+                  0x157aa08: i64 = undef
+                0x157a528: i32 = Constant&lt;65535&gt;
+              0x1579038: i32,ch = CopyFromReg 0x13a6188, Register:i32 %4
+                0x157a5f8: i32 = Register %4
+              0x183b5d8: i64 = add nuw nsw 0x1579fe0, 0x183b4a0
+                0x1579fe0: i64 = zero_extend 0x150c430
+                  0x150c430: i32,ch = load&lt;(load 4 from %ir.12, !tbaa !10, addrspace 4)&gt; 0x13a6188, 0x157a3f0, undef:i64
+
+
+                0x183b4a0: i64 = zero_extend 0x183bb88
+                  0x183bb88: i32 = AssertZext 0x15790a0, ValueType:ch:i10
+
+            0x183b778: i32 = Constant&lt;2&gt;
+        0x183b3d0: i64 = Constant&lt;2&gt;
+      0x157aa08: i64 = undef
+    0x150bee8: i16 = truncate 0x157a048
+      0x157a048: i32 = srl 0x183bb20, Constant:i32&lt;16&gt;
+        0x183bb20: i32 = and 0x157aad8, 0x150bdb0
+          0x157aad8: i32 = or 0x157a388, 0x183c000
+            0x157a388: i32 = zero_extend 0x1579d70
+              0x1579d70: i16 = sra 0x150c770, Constant:i16&lt;15&gt;
+                0x150c770: i16 = sub 0x157a458, 0x150c498
+                  0x157a458: i16,ch = load&lt;(load 2 from %ir.28, !tbaa !17, addrspace 1)&gt; 0x13a6188, 0x150c3c8, undef:i64
+
+
+                  0x150c498: i16 = and 0x1579f10, Constant:i16&lt;-16&gt;
+
+
+                0x150be18: i16 = Constant&lt;15&gt;
+            0x183c000: i32 = shl 0x183bf30, Constant:i32&lt;16&gt;
+              0x183bf30: i32 = any_extend 0x183b1c8
+                0x183b1c8: i16 = sra 0x150c638, Constant:i16&lt;15&gt;
+                  0x150c638: i16 = sub 0x183c0d0, 0x150c5d0
+
+
+                  0x150be18: i16 = Constant&lt;15&gt;
+              0x150c910: i32 = Constant&lt;16&gt;
+          0x150bdb0: i32 = or 0x157a250, 0x150c8a8
+            0x157a250: i32 = zero_extend 0x183ba50
+              0x183ba50: i16 = sub nsw Constant:i16&lt;0&gt;, 0x150c770
+                0x183bd28: i16 = Constant&lt;0&gt;
+                0x150c770: i16 = sub 0x157a458, 0x150c498
+                  0x157a458: i16,ch = load&lt;(load 2 from %ir.28, !tbaa !17, addrspace 1)&gt; 0x13a6188, 0x150c3c8, undef:i64
+
+
+                  0x150c498: i16 = and 0x1579f10, Constant:i16&lt;-16&gt;
+
+
+            0x150c8a8: i32 = shl 0x157a0b0, Constant:i32&lt;16&gt;
+              0x157a0b0: i32 = any_extend 0x157a320
+                0x157a320: i16 = sub nsw Constant:i16&lt;0&gt;, 0x150c638
+                  0x183bd28: i16 = Constant&lt;0&gt;
+                  0x150c638: i16 = sub 0x183c0d0, 0x150c5d0
+
+
+              0x150c910: i32 = Constant&lt;16&gt;
+        0x150c910: i32 = Constant&lt;16&gt;
+  0x150c020: i16 = truncate 0x150bfb8
+    0x150bfb8: i32 = srl 0x150c840, Constant:i32&lt;16&gt;
+      0x150c840: i32 = and 0x150be80, 0x183bf98
+        0x150be80: i32 = or 0x183b9e8, 0x183b508
+          0x183b9e8: i32 = zero_extend 0x150c770
+            0x150c770: i16 = sub 0x157a458, 0x150c498
+              0x157a458: i16,ch = load&lt;(load 2 from %ir.28, !tbaa !17, addrspace 1)&gt; 0x13a6188, 0x150c3c8, undef:i64
+                0x150c3c8: i64 = add 0x1578c90, 0x183b848
+                  0x1578c90: i64 = bitcast 0x150cc50
+
+                  0x183b848: i64 = shl 0x183b298, Constant:i32&lt;2&gt;
+
+
+                0x157aa08: i64 = undef
+              0x150c498: i16 = and 0x1579f10, Constant:i16&lt;-16&gt;
+                0x1579f10: i16 = add 0x157a458, 0x157ac10
+                  0x157a458: i16,ch = load&lt;(load 2 from %ir.28, !tbaa !17, addrspace 1)&gt; 0x13a6188, 0x150c3c8, undef:i64
+
+
+                  0x157ac10: i16 = srl 0x157a938, Constant:i16&lt;12&gt;
+
+
+                0x150c360: i16 = Constant&lt;-16&gt;
+          0x183b508: i32 = shl 0x150cab0, Constant:i32&lt;16&gt;
+            0x150cab0: i32 = any_extend 0x150c638
+              0x150c638: i16 = sub 0x183c0d0, 0x150c5d0
+                0x183c0d0: i16,ch = load&lt;(load 2 from %ir.28 + 2, !tbaa !17, addrspace 1)&gt; 0x13a6188, 0x150c2f8, undef:i64
+                  0x150c2f8: i64 = add nuw 0x150c3c8, Constant:i64&lt;2&gt;
+
+
+                  0x157aa08: i64 = undef
+                0x150c5d0: i16 = and 0x183bdf8, Constant:i16&lt;-16&gt;
+                  0x183bdf8: i16 = add 0x183c0d0, 0x183b7e0
+
+
+                  0x150c360: i16 = Constant&lt;-16&gt;
+            0x150c910: i32 = Constant&lt;16&gt;
+        0x183bf98: i32 = xor 0x157aad8, Constant:i32&lt;-1&gt;
+          0x157aad8: i32 = or 0x157a388, 0x183c000
+            0x157a388: i32 = zero_extend 0x1579d70
+              0x1579d70: i16 = sra 0x150c770, Constant:i16&lt;15&gt;
+                0x150c770: i16 = sub 0x157a458, 0x150c498
+                  0x157a458: i16,ch = load&lt;(load 2 from %ir.28, !tbaa !17, addrspace 1)&gt; 0x13a6188, 0x150c3c8, undef:i64
+
+
+                  0x150c498: i16 = and 0x1579f10, Constant:i16&lt;-16&gt;
+
+
+                0x150be18: i16 = Constant&lt;15&gt;
+            0x183c000: i32 = shl 0x183bf30, Constant:i32&lt;16&gt;
+              0x183bf30: i32 = any_extend 0x183b1c8
+                0x183b1c8: i16 = sra 0x150c638, Constant:i16&lt;15&gt;
+                  0x150c638: i16 = sub 0x183c0d0, 0x150c5d0
+
+
+                  0x150be18: i16 = Constant&lt;15&gt;
+              0x150c910: i32 = Constant&lt;16&gt;
+          0x183b918: i32 = Constant&lt;-1&gt;
+      0x150c910: i32 = Constant&lt;16&gt;
+In function: test_2_rotate_short
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_SOURCE_DIR=&#34;/home/jvesely/piglit&#34; PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          <pre>/home/jvesely/piglit/bin/cl-program-tester /home/jvesely/piglit/generated_tests/cl/builtin/int/builtin-short-rotate-1.0.generated.cl</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>
